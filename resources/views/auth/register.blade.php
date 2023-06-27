@@ -47,20 +47,20 @@
                                         <label for="password_confirmation">Conferma password</label>
                                     </div>
 
-                                    <div class="form-check mb-3">
+                                    {{-- <div class="form-check mb-3">
                                         <input class="form-check-input" type="checkbox" value=""
                                             id="rememberPasswordCheck">
                                         <label class="form-check-label" for="rememberPasswordCheck">
                                             Remember password
                                         </label>
-                                    </div>
+                                    </div> --}}
 
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"
                                             type="submit">Sign in</button>
-                                        <div class="text-center">
+                                        {{-- <div class="text-center">
                                             <a class="small" href="#">Forgot password?</a>
-                                        </div>
+                                        </div> --}}
                                     </div>
 
                                 </form>
