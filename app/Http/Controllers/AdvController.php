@@ -21,7 +21,7 @@ class AdvController extends Controller
      */
     public function create()
     {
-        //
+        return view('adv.create');
     }
 
     /**
