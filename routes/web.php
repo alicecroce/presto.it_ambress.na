@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdvController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 //Route::get('/', [PublicController::class, 'home'])->name('books.home');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::resource('adv', AdvController::class);
