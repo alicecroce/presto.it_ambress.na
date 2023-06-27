@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+//Route::get('/', [PublicController::class, 'home'])->name('books.home');
 
 //Route::resource('adv', AdvController::class);
