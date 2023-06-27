@@ -10,14 +10,27 @@
                                 <h3 class="login-heading mb-4">Welcome back!</h3>
 
                                 <!-- Sign In Form -->
-                                <form>
+                                <form action="{{ route('login') }}" method="POST">
+                                @csrf
+                                @method('POST')
+
+                                @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+
                                     <div class="form-floating mb-3">
                                         <input type="email" name="email" class="form-control" id="email"
                                             placeholder="name@example.com">
                                         <label for="email">Indirizzo mail</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="password" class="form-control" id="password">
+                                        <input type="password" name="password" class="form-control" id="password">
                                         <label for="password">Password</label>
                                     </div>
 

@@ -13,6 +13,17 @@
                                 <form action="{{ route('register') }}" method="POST">
                                     @csrf
                                     @method('POST')
+
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
+
                                     <div class="form-floating mb-3">
                                         <input type="text" name="name" class="form-control" id="name"
                                             placeholder="Gino">
@@ -39,11 +50,12 @@
                                         <label for="city">Città</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="password" class="form-control" id="password">
+                                        <input type="password" name="password" class="form-control" id="password">
                                         <label for="password">Password</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="password" name="password_confirmation" class="form-control" id="password_confirmation">
+                                        <input type="password" name="password_confirmation" class="form-control"
+                                            id="password_confirmation">
                                         <label for="password_confirmation">Conferma password</label>
                                     </div>
 
