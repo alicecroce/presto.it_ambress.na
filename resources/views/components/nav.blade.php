@@ -1,56 +1,55 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" style="width: 10%" href="/">
-            <img class="img-fluid" src="storage\img\prestoit-logo-con-txt.png" alt="logo presto.it">
+            <img class="img-fluid" src="{{ asset(Storage::url('public/img/prestoit-logo-con-txt.png')) }}"
+                alt="logo presto.it">
         </a>
+        
+        <form class="d-flex" role="search">
+            <input class="form-control flex-grow me-2" type="search" placeholder="Cerca su Presto.it" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Cerca</button>
+        </form>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <input class="form-control me-4" type="search" placeholder="cerca su Presto" aria-label="Search">
-
-            <div class="d-flex me-3 nav-item dropdown" role="button">
-                @auth
-                    <button class="btn btn-outline-success" type="submit">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Accedi o registrati
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown p-1">
+                    @auth
+                        <a class="btn btn-outline-success" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Profilo
                         </a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <form action="{{ route('logout') }}" method="POST">
-                                    @csrf
-                                    <button class="dropdown-item"
-                                        onclick="event.preventDefault(); this.closest('form').submit();">Logout
-                                    </button>
-                                </form>
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                            </li>
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button class="dropdown-item"
+                                    onclick="event.preventDefault(); this.closest('form').submit();">Logout
+                                </button>
+                            </form>
                         </ul>
                     @else
+                        <a class="btn btn-outline-success" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Accedi|Registrati
+                        </a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="{{ route('login') }}">Login</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="{{ route('register') }}">Registrati</a>
-                            </li>
+                            <li><a class="dropdown-item" href="{{ route('login') }}">Accedi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('register') }}">Registrati</a></li>
                         </ul>
-                    </button>
-                @endauth
-            </div>
-
-
-            <div class="d-flex">
-                <a class="btn btn-outline-success" role="button" href="#">Inserisci un annuncio</a>
-            </div>
+                    @endauth
+                </li>
+                <li class="nav-item p-1">
+                    <a class="btn btn-outline-success" role="button" href="#">Inserisci un annuncio</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
