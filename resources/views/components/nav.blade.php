@@ -23,15 +23,32 @@
                         Accedi o registrati
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('login') }}">Login</a></li>
-                        <li><a class="dropdown-item" href="{{ route('register') }}">Regitrati</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        @auth
+                            <li>
+                                <form action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <button class="dropdown-item"
+                                        onclick="event.preventDefault(); this.closest('form').submit();">Logout
+                                    </button>
+                                </form>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            </li>
+                        @else
+                            <li>
+                                <a class="dropdown-item" href="{{ route('login') }}">Login</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{{ route('register') }}">Registrati</a>
+                            </li>
+
+                        @endauth
                     </ul>
                 </button>
-
             </div>
 
 
