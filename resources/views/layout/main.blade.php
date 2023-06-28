@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="storage\img\prestoit-logo-no-txt-little.ico">
     <title>Presto.it</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
