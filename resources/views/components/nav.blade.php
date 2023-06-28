@@ -38,7 +38,7 @@
                     @else
                         <a class="btn btn-outline-success" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Accedi|Registrati
+                            Accedi | Registrati
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{ route('login') }}">Accedi</a></li>
@@ -46,9 +46,11 @@
                         </ul>
                     @endauth
                 </li>
+                @auth
                 <li class="nav-item p-1">
                     <a class="btn btn-outline-success" role="button" href="#">Inserisci un annuncio</a>
                 </li>
+                @endauth
             </ul>
         </div>
     </div>
