@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-            {{-- <img src="./" alt="logo presto.it"> NON CARICA L'IMMAGINE --}}
+        <a class="navbar-brand" style="width: 10%" href="/">
+            <img class="img-fluid" src="storage\img\prestoit-logo-con-txt.png" alt="logo presto.it">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,12 +20,12 @@
                     <ul class="dropdown-menu">
                         @auth
                             <li>
-                                {{-- <form action="{{ route('logout') }}" method="POST">
+                                <form action="{{ route('logout') }}" method="POST">
                                     @csrf
                                     <button class="dropdown-item"
                                         onclick="event.preventDefault(); this.closest('form').submit();">Logout
                                     </button>
-                                </form> --}}
+                                </form>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
