@@ -1,3 +1,4 @@
 <x-main>
-    ciao sono un form di aggiunta 
+    <h1 class="text-center">Inserisci un annuncio</h1>
+    <livewire:adv-create-form/>
 </x-main>

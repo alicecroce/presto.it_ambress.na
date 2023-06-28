@@ -29,7 +29,7 @@ class AdvController extends Controller
      */
     public function store(StoreAdvRequest $request)
     {
-        //
+        
     }
 
     /**

@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Adv extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['title', 'category_id', 'user_id', 'price', 'abstract', 'description', 'img'];
+
+    public function categories(){
+        return $this->belongsTo(Category::class);
+    }
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
