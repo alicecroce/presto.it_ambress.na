@@ -13,12 +13,12 @@
             <input class="form-control me-4" type="search" placeholder="cerca su Presto" aria-label="Search">
 
             <div class="d-flex me-3 nav-item dropdown" role="button">
-                <button class="btn btn-outline-success" type="submit">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Accedi o registrati
-                    </a>
-                    <ul class="dropdown-menu">
-                        @auth
+                @auth
+                    <button class="btn btn-outline-success" type="submit">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Accedi o registrati
+                        </a>
+                        <ul class="dropdown-menu">
                             <li>
                                 <form action="{{ route('logout') }}" method="POST">
                                     @csrf
@@ -33,17 +33,18 @@
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </li>
                             </li>
-                        @else
+                        </ul>
+                    @else
+                        <ul class="dropdown-menu">
                             <li>
                                 <a class="dropdown-item" href="{{ route('login') }}">Login</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('register') }}">Registrati</a>
                             </li>
-
-                        @endauth
-                    </ul>
-                </button>
+                        </ul>
+                    </button>
+                @endauth
             </div>
 
 
