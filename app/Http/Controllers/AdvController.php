@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Adv;
 use App\Http\Requests\StoreAdvRequest;
 use App\Http\Requests\UpdateAdvRequest;
+use App\Models\Category;
 
 class AdvController extends Controller
 {
@@ -13,7 +14,10 @@ class AdvController extends Controller
      */
     public function index()
     {
-        //
+        $advs = Adv::all();
+        $categories = Category::all();
+
+        return view('adv.index', compact('advs', 'categories'));
     }
 
     /**
@@ -27,7 +31,7 @@ class AdvController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreAdvRequest $request)
+    public function store()
     {
         
     }
@@ -51,7 +55,7 @@ class AdvController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateAdvRequest $request, Adv $adv)
+    public function update( Adv $adv)
     {
         //
     }

@@ -15,6 +15,10 @@ class Adv extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function getCategory(){
+        return Category::find($this->category_id)->name;
+    }
+
     public function user(){
         return $this->belongsTo(User::class);
     }
