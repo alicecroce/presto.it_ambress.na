@@ -5,7 +5,7 @@
             </span></h1>
         <h2>carica, vendi, spedisci, guadagni</h2>
         <div class="d-flex">
-            <a href="#about" class="btn-get-started scrollto">Inserisci annuncio</a>
+            <a href="{{ route('adv.index') }}" class="btn-get-started scrollto">Guarda gli annunci</a>
 
         </div>
 </section>
