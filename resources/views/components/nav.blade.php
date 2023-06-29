@@ -7,7 +7,7 @@
         
         <form class="d-flex flex-grow-1 " role="search">
             <input class="form-control flex-grow me-2" type="search" placeholder="Cerca su Presto.it" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Cerca</button>
+            <button class="btn btn-cerca" type="submit">Cerca</button>
         </form>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -36,7 +36,7 @@
                             </form>
                         </ul>
                     @else
-                        <a class="btn btn-outline-success mx-2" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn btn-accedi mx-2" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Accedi | Registrati
                         </a>

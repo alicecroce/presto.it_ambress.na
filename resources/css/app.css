@@ -1,6 +1,8 @@
 @import "bootstrap";
 @import "./auth.css";
 
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -27,6 +29,49 @@ h5,
 h6 {
     font-family: "Roboto", sans-serif;
 }
+
+/*--------------------------------------------------------------
+# navbar Section
+--------------------------------------------------------------*/
+.btn-accedi{
+    border: solid 1px;
+    border-radius: 5px;
+    border-color:  #6230A3;
+    color: #6230A3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn-accedi:hover{
+    background-color: #6230A3;
+    color:#FEC200;
+}
+
+.btn-cerca{
+    border: solid 1px;
+    border-radius: 5px;
+    border-color:  #6230A3;
+    background-color: #6230A3;
+    color: #FEC200;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn-cerca:hover{
+    border: solid 1px;
+    border-radius: 5px;
+    border-color:  #6230A3;
+    color:#6230A3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -89,7 +134,8 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-    background: #6230A3;
+    background-color: #FEC200;
+    color: #6230A3;
 }
 
 @media (max-width: 768px) {

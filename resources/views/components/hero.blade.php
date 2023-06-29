@@ -5,6 +5,6 @@
         </h1>
         <h2>Il tuo shop di fiducia online</h2>
         <div class="d-flex">
-            <a href="{{ route('adv.index') }}" class="btn-get-started scrollto">Guarda gli annunci</a>
+            <a href="{{ route('adv.index') }}" class="btn-get-started scrollto bg-custom">Guarda gli annunci</a>
         </div>
 </section>
