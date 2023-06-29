@@ -5,7 +5,7 @@
                 alt="logo presto.it">
         </a>
         
-        <form class="d-flex" role="search">
+        <form class="d-flex flex-grow-1 " role="search">
             <input class="form-control flex-grow me-2" type="search" placeholder="Cerca su Presto.it" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Cerca</button>
         </form>
@@ -15,7 +15,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse d-flex" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown p-1">
                     @auth
@@ -36,7 +36,7 @@
                             </form>
                         </ul>
                     @else
-                        <a class="btn btn-outline-success" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn btn-outline-success mx-2" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Accedi | Registrati
                         </a>
