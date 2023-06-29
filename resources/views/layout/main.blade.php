@@ -13,7 +13,7 @@
 <body>
 
     <x-nav />
-    <x-hero />
+
 
     {{ $slot }}
     @livewireScripts
