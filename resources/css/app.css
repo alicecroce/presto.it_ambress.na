@@ -147,3 +147,25 @@ h6 {
         font-size: 13px;
     }
 }
+
+
+/*--------------------------------------------------------------
+# show Section
+--------------------------------------------------------------*/
+
+.btn-show{
+    border: solid 2px;
+    border-radius: 5px;
+    border-color:#6230A3;
+    color:#6230A3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+
+.btn-show:hover{
+    background-color:#6230A3;
+    color:#FEC200;
+}

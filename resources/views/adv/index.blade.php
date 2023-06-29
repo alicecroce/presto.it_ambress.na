@@ -2,9 +2,9 @@
     <div class="container my-5">
         @forelse ($advs as $adv)
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img src="https://placehold.co/300/6230A3/FFFFFF/png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ $adv->title }}</h5>
                             <p class="card-text">{{ $adv->abstract }}</p>
@@ -16,7 +16,7 @@
                                     {{$adv->price}}
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-primary float-end">Vedi Annuncio</a>
+                            <a href="{{route('adv.show', ['adv'=> $adv['id']])}}" class="btn btn-show float-end">Vedi Annuncio</a>
                         </div>
                     </div>
                 </div>
