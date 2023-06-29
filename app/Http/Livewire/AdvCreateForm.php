@@ -44,7 +44,7 @@ class AdvCreateForm extends Component
         session()->flash('tasks', 'Adv successfully updated.');
         $this->reset(['title', 'description']);
 
-        return redirect()->route('welcome')->with('success', 'Annuncio aggiunta con successo!');
+        return redirect()->route('welcome')->with('success', 'Annuncio aggiunto con successo!');
     }
     public function render()
     {
