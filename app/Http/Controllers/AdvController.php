@@ -14,8 +14,10 @@ class AdvController extends Controller
      */
     public function index()
     {
-        $advs = Adv::all();
+        $advs = Adv::all()->sortByDesc('created_at');
         $categories = Category::all();
+
+        
 
         return view('adv.index', compact('advs', 'categories'));
     }

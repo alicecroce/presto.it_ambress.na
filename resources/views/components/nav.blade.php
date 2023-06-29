@@ -48,7 +48,7 @@
                 </li>
                 @auth
                 <li class="nav-item p-1 me-1">
-                    <a class="btn btn-accedi" role="button" href="#">Inserisci un annuncio</a>
+                    <a class="btn btn-accedi" role="button" href="{{route('adv.create')}}">Inserisci un annuncio</a>
                 </li>
                 @endauth
             </ul>
