@@ -25,6 +25,7 @@
         <div class="mb-3">
             <label class="form-label" for="category_id">Inserisci una categoria</label>
             <select wire:model="category_id" id="category_id" class="form-control">
+                <option selected>Scegli una categoria</option>
                 @forelse ($categories as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}
                     </option>
