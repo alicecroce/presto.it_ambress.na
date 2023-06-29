@@ -1,7 +1,7 @@
 <x-main>
     <div class="container my-5">
-        @forelse ($advs as $adv)
-            <div class="row">
+        <div class="row">
+            @forelse ($advs as $adv)
                 <div class="col-12 col-md-3">
                     <div class="card">
                         <img src="https://placehold.co/300/6230A3/FFFFFF/png" class="card-img-top" alt="...">
@@ -10,18 +10,21 @@
                             <p class="card-text">{{ $adv->abstract }}</p>
                             <div class="row">
                                 <div class="col">
-                                    {{$adv->getCategory()}}
+                                    {{ $adv->getCategory() }}
                                 </div>
                                 <div class="col">
-                                    {{$adv->price}}
+                                    {{ $adv->price }}
                                 </div>
                             </div>
-                            <a href="{{route('adv.show', ['adv'=> $adv['id']])}}" class="btn btn-show float-end">Vedi Annuncio</a>
+                            <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}" class="btn btn-show float-end">Vedi
+                                Annuncio</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        @empty
-        @endforelse
+
+            @empty
+            Nessun annuncio, sorry
+            @endforelse
+        </div>
     </div>
 </x-main>
