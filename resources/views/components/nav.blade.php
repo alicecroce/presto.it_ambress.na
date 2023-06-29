@@ -19,11 +19,11 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown p-1">
                     @auth
-                        <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn btn-accedi mx-2" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Profilo
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu mx-2">
                             <li><a class="dropdown-item" href="#">Profilo</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -36,18 +36,18 @@
                             </form>
                         </ul>
                     @else
-                        <a class="btn btn-accedi mx-2" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn btn-accedi mx-3" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Accedi | Registrati
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu mx-3">
                             <li><a class="dropdown-item" href="{{ route('login') }}">Accedi</a></li>
                             <li><a class="dropdown-item" href="{{ route('register') }}">Registrati</a></li>
                         </ul>
                     @endauth
                 </li>
                 @auth
-                <li class="nav-item p-1">
+                <li class="nav-item p-1 me-1">
                     <a class="btn btn-accedi" role="button" href="#">Inserisci un annuncio</a>
                 </li>
                 @endauth
