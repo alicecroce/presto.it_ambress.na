@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "bootstrap-icons";
 @import "./auth.css";
 
 
@@ -168,4 +169,32 @@ h6 {
 .btn-show:hover{
     background-color:#6230A3;
     color:#FEC200;
+}
+
+
+/*--------------------------------------------------------------
+# home Section
+--------------------------------------------------------------*/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 9px;
+    }
+
+.category-box{
+    border: solid 2px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #6230A3;
+    height: 12rem;
+}
+
+.sport-color{
+    background-color: #FEC200;
 }

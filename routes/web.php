@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdvController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [CategoryController::class, 'index'])->name('welcome');
 
 Route::resource('adv', AdvController::class);
