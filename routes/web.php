@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', [CategoryController::class, 'index'])->name('welcome');
 
+Route::get('/categoria/{category}', [CategoryController::class, 'categoryFilter'])->name('categoryshow');
+
 Route::resource('adv', AdvController::class);

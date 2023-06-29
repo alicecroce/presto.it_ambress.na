@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Adv;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -14,6 +15,13 @@ class CategoryController extends Controller
     {
         $categories = Category::all();
         return view('welcome', compact('categories'));
+    }
+
+
+    public function categoryFilter(Category $category)
+    {
+        $advs = $category->advs()->get();
+        return view('adv.index', compact('advs'));
     }
 
     /**
