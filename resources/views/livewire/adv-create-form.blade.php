@@ -27,7 +27,7 @@
             <select wire:model="category_id" id="category_id" class="form-control">
                 <option selected>Scegli una categoria</option>
                 @forelse ($categories as $category)
-                    <option value="{{ $category->id }}">{{ $category->name }}
+                    <option value="{{ $category->id }}">{{ ucFirst($category->name) }}
                     </option>
                 @empty
                     Nessuna categoria

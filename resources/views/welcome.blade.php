@@ -9,8 +9,8 @@
 
     <div class="container parent my-5">
         @foreach ($categories as $category)
-            <a class="text-center category-box text-white d-flex justify-content-center align-items-center {{$category->name}}-color"
-                href="{{route('categoryshow', compact('category'))}}">{{$category->name}}</a>
+            <a class="text-center category-box text-white d-flex justify-content-center align-items-center {{ $category->name }}-color"
+                href="{{ route('categoryshow', compact('category')) }}">{{ ucFirst($category->name) }}</a>
         @endforeach
 
                 

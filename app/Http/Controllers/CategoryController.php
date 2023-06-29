@@ -21,6 +21,7 @@ class CategoryController extends Controller
     public function categoryFilter(Category $category)
     {
         $advs = $category->advs()->get();
+
         return view('adv.index', compact('advs'));
     }
 
