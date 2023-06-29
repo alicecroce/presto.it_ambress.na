@@ -33,7 +33,6 @@ class AdvController extends Controller
      */
     public function store()
     {
-        
     }
 
     /**
@@ -41,7 +40,7 @@ class AdvController extends Controller
      */
     public function show(Adv $adv)
     {
-        //
+        return view('adv.show', compact('adv'));
     }
 
     /**
@@ -55,7 +54,7 @@ class AdvController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update( Adv $adv)
+    public function update(Adv $adv)
     {
         //
     }
