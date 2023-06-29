@@ -19,7 +19,7 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown p-1">
                     @auth
-                        <a class="btn btn-outline-success" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Profilo
                         </a>
@@ -48,7 +48,7 @@
                 </li>
                 @auth
                 <li class="nav-item p-1">
-                    <a class="btn btn-outline-success" role="button" href="#">Inserisci un annuncio</a>
+                    <a class="btn btn-accedi" role="button" href="#">Inserisci un annuncio</a>
                 </li>
                 @endauth
             </ul>
