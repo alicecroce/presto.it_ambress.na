@@ -22,7 +22,8 @@ class AdvCreateForm extends Component
     ];
 
 
-    public function store(){
+    public function store()
+    {
         $this->validate();
 
         // $file_path = "";
@@ -32,7 +33,7 @@ class AdvCreateForm extends Component
         // }
         Adv::create([
             'title' => $this->title,
-            'price' =>$this->price,
+            'price' => $this->price,
             'category_id' =>  $this->category_id,
             'user_id' => Auth::id(),
             'abstract' => $this->abstract,

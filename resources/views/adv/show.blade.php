@@ -49,6 +49,7 @@
                         <p class="lh-base">{{ $adv->abstract }}</p>
                         <h5 class="fw-bold">Informazioni aggiuntive</h5>
                         <p class="lh-base">{{ $adv->description }}</p>
+                        
                     </div>
                 </div>
             </div>
