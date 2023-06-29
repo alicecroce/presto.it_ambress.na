@@ -1,9 +1,9 @@
 <x-main>
     <x-hero />
-    <div id="success-message">
+    <div id="success-message" class="m-2 p-2 d-flex justify-content-center">
         @if (session('success'))
-            <h4 class="fw-bold bg-success p-2 text-dark bg-opacity-50 border border-success rounded">
-                {{ session('success') }}</h4>
+            <span class="fw-bold bg-success p-2 text-dark bg-opacity-50 border border-success rounded">
+                {{ session('success') }}</span>
         @endif
     </div>
 
@@ -13,7 +13,7 @@
                 href="{{route('categoryshow', compact('category'))}}">{{$category->name}}</a>
         @endforeach
 
-
+                
 
 
     </div>
