@@ -18,4 +18,8 @@ yarn-error.log
 /.idea
 /.vscode
 /storage/advs.index-shm 
+<<<<<<< Updated upstream
 /storage/advs.index-wal
+=======
+/storage/advs.index-wal
+>>>>>>> Stashed changes

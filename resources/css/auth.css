@@ -3,10 +3,9 @@
 }
 
 .bg-image {
-    background-image: url('C:/Users/giuli/OneDrive/Desktop/Aulab/Progetti-corso/presto.it/public/storage/img/img_login.png');
+    background-image: url("C:/Users/alice/wa_hack_pt_06/Ambress.na_Aula3/Presto.it-Ambress.Na/storage/app/public/img/img login.png");
     background-size: cover;
     background-position: center;
-    
 }
 
 .login-heading {
@@ -18,4 +17,3 @@
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
 }
-
