@@ -5,8 +5,8 @@
                 alt="logo presto.it">
         </a>
         
-        <form class="d-flex flex-grow-1 " role="search">
-            <input class="form-control flex-grow me-2" type="search" placeholder="Cerca su Presto.it" aria-label="Search">
+        <form class="d-flex flex-grow-1" action="{{route('advs.search')}}" method="GET" role="search">
+            <input class="form-control flex-grow me-2" name="searched" type="search" placeholder="Cerca su Presto.it" aria-label="Search">
             <button class="btn btn-cerca" type="submit">Cerca</button>
         </form>
 
