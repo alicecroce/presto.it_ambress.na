@@ -3,7 +3,7 @@
         <div class="row">
             @forelse ($advs as $adv)
                 <div class="col-12 col-md-3">
-                    <div class="card">
+                    <div class="card my-3" style="height: 36rem;">
                         <img src="https://placehold.co/300/6230A3/FFFFFF/png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ $adv->title }}</h5>
@@ -23,7 +23,7 @@
                 </div>
 
             @empty
-            Nessun annuncio, sorry
+                Nessun annuncio, sorry
             @endforelse
         </div>
     </div>
