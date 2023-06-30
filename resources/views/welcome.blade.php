@@ -14,10 +14,6 @@
             <a class="text-center category-box text-white d-flex justify-content-center align-items-center {{ $category->name }}-color"
                 href="{{ route('categoryshow', compact('category')) }}">{{ ucFirst($category->name) }}</a>
         @endforeach
-
-
-
-
     </div>
 
 
