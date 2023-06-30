@@ -1,5 +1,7 @@
 <x-main>
+
     <x-hero />
+    
     <div id="success-message">
         @if (session('success'))
         <div class="m-2 p-2 d-flex justify-content-center">
@@ -15,7 +17,5 @@
                 href="{{ route('categoryshow', compact('category')) }}">{{ ucFirst($category->name) }}</a>
         @endforeach
     </div>
-
-
 
 </x-main>
