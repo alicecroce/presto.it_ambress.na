@@ -5,7 +5,7 @@
                 <div class="col-12 col-md-3">
                     <div class="card my-3" style="height: 36rem;">
                         <img src="https://placehold.co/300/6230A3/FFFFFF/png" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body position-relative">
                             <h5 class="card-title">{{ $adv->title }}</h5>
                             <p class="card-text">{{ $adv->abstract }}</p>
                             <div class="row">
@@ -16,8 +16,12 @@
                                     {{ $adv->price }}
                                 </div>
                             </div>
-                            <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}" class="btn btn-show float-end">Vedi
+
+                            <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}"
+                                class="btn btn-show position-absolute bottom-0 end-0">Vedi
                                 Annuncio</a>
+
+
                         </div>
                     </div>
                 </div>

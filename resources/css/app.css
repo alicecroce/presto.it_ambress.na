@@ -202,6 +202,17 @@ h6 {
 
 }
 
+@media only screen and (max-width: 600px) {
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 9px;
+        font-size: 1.5rem;
+    }
+}
+
 .category-box {
     border: solid 2px;
     border-radius: 50px;
@@ -325,3 +336,7 @@ h6 {
             hsl(270deg 56% 34%) 90%,
             hsl(270deg 57% 34%) 100%);
 }
+
+
+
+
