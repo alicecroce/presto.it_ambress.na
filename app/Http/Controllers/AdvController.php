@@ -48,6 +48,8 @@ class AdvController extends Controller
      */
     public function show(Adv $adv)
     {
+
+        
         $categories = Category::all();
         return view('adv.show', compact(['adv', 'categories']));
     }

@@ -7,9 +7,12 @@
                         <img src="https://placehold.co/300/6230A3/FFFFFF/png" class="card-img-top" alt="...">
                         <div class="card-body position-relative">
                             <h5 class="card-title">{{ $adv->title }}</h5>
-                            <p class="card-text">{{ $adv->abstract }}</p>
+                            <div class="h-50">
+                                <p class="card-text">{{ $adv->abstract }}</p>
+                            </div>
+
                             <div class="row">
-                                <div class="col">
+                                <div class="col  border-top">
                                     {{ $adv->getCategory() }}
                                 </div>
                                 <div class="col">

@@ -36,7 +36,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label" for="description">Inserisci informazioni aggiuntive</label>
-            <textarea wire:model="description" id="description" class="form-control"></textarea>
+            <textarea wire:model="description" id="description"  class="form-control"></textarea>
         </div>
         <button type="submit" class="btn btn-show">Crea annuncio</button>
     </form>

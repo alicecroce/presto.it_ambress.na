@@ -54,7 +54,7 @@
 
                             <li><strong>Prezzo</strong>: {{ $adv->price }}</li>
                             <li><strong>Breve descrizione:</strong>: {{ $adv->abstract }}</li>
-                            <li><strong>Categorie</strong>: </li>
+                            <li><strong>Categorie</strong>: Categoria di esempio</li>
                             <hr>
                             <li><strong>Inserzionista</strong>: <a href="#">Inserzionista esempio</a></li>
                         </ul>
