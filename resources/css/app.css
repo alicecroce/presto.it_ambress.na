@@ -212,6 +212,7 @@ h6 {
     -o-border-radius: 50px;
     background-color: #552586;
     height: 12rem;
+    width: auto;
 }
 
 .libri-color, .moda-e-accessori-color {
