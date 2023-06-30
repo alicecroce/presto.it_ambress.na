@@ -41,11 +41,9 @@ return [
     |
     */
 
-<<<<<<< Updated upstream
-    'queue' => env('SCOUT_QUEUE', false),
-=======
+
     'queue' => env('SCOUT_QUEUE', true),
->>>>>>> Stashed changes
+
 
     /*
     |--------------------------------------------------------------------------
@@ -120,7 +118,7 @@ return [
         'secret' => env('ALGOLIA_SECRET', ''),
     ],
 
-<<<<<<< Updated upstream
+
     'tntsearch' => [
         'storage' => storage_path(),
         'fuzziness' => env('TNTSEARCH_FUZZINESS', true),
@@ -134,8 +132,7 @@ return [
         'maxDocs' => env('TNTSEARCH_MAX_DOCS', 500),
     ],
 
-=======
->>>>>>> Stashed changes
+
     /*
     |--------------------------------------------------------------------------
     | Meilisearch Configuration
