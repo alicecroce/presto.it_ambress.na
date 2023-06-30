@@ -35,7 +35,20 @@ h6 {
 # succes message
 --------------------------------------------------------------*/
 
+.bg-successo {
+    --bs-bg-opacity: 1;
+    background-color: #6230A3!important;
+}
 
+.border-successo {
+    --bs-border-opacity: 1;
+    border-color: #6230A3 !important;
+}
+
+.text-successo {
+    --bs-text-opacity: 1;
+    color: #FEC200 !important;
+}
 
 /*--------------------------------------------------------------
 # navbar Section

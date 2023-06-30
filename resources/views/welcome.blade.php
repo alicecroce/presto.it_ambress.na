@@ -2,10 +2,10 @@
     <x-hero />
     <div id="success-message">
         @if (session('success'))
-            <div class="m-2 p-2 d-flex justify-content-center">
-                <span class="fw-bold bg-success p-2 text-dark bg-opacity-50 border border-success rounded">
-                    {{ session('success') }}</span>
-            </div>
+        <div class="m-2 p-2 d-flex justify-content-center">
+            <span class="fw-bold bg-successo p-2 text-successo bg-opacity-50 border border-successo rounded">
+                {{ session('success') }}</span>
+        </div>
         @endif
     </div>
 
