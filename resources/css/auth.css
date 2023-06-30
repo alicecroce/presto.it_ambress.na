@@ -3,9 +3,10 @@
 }
 
 .bg-image {
-    background-image: url("https://source.unsplash.com/WEQbe2jBg40/600x1200");
+    background-image: url('C:/Users/giuli/OneDrive/Desktop/Aulab/Progetti-corso/presto.it/public/storage/img/img_login.png');
     background-size: cover;
     background-position: center;
+    
 }
 
 .login-heading {

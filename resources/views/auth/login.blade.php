@@ -1,13 +1,15 @@
 <x-main>
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
-            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image opacity-75">
+                
+            </div>
             <div class="col-md-8 col-lg-6">
                 <div class="login d-flex align-items-center py-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4">Welcome back!</h3>
+                                <h3 class="login-heading mb-4">Bentornatə!</h3>
 
                                 <!-- Sign In Form -->
                                 <form action="{{ route('login') }}" method="POST">
@@ -34,16 +36,16 @@
                                         <label for="password">Password</label>
                                     </div>
 
-                                    <div class="form-check mb-3">
+                                    {{-- <div class="form-check mb-3">
                                         <input class="form-check-input" type="checkbox" value=""
                                             id="rememberPasswordCheck">
                                         <label class="form-check-label" for="rememberPasswordCheck">
                                             Remember password
                                         </label>
-                                    </div>
+                                    </div> --}}
 
                                     <div class="d-grid">
-                                        <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"
+                                        <button class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
                                             type="submit">Sign in</button>
                                         <div class="text-center">
                                             <a class="small" href="#">Forgot password?</a>

@@ -7,7 +7,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4">Welcome!</h3>
+                                <h3 class="login-heading mb-4">Benvenutə!</h3>
 
                                 <!-- Sign In Form -->
                                 <form action="{{ route('register') }}" method="POST">
@@ -68,7 +68,7 @@
                                     </div> --}}
 
                                     <div class="d-grid">
-                                        <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"
+                                        <button class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
                                             type="submit">Sign in</button>
                                         {{-- <div class="text-center">
                                             <a class="small" href="#">Forgot password?</a>

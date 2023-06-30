@@ -194,8 +194,7 @@ h6 {
 --------------------------------------------------------------*/
 
 .parent {
-    display: grid flex;
-    flex-wrap: wrap;
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 9px;
