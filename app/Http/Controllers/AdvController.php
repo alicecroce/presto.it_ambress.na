@@ -15,13 +15,14 @@ class AdvController extends Controller
     public function index()
     {
         $advs = Adv::all()->sortByDesc('created_at');
-        $categories = Category::all();        
+        $categories = Category::all();
 
         return view('adv.index', compact('advs', 'categories'));
     }
 
-    public function categoryFilter() {
-        
+    public function categoryFilter()
+    {
+
         $categoriesFiltered = Adv::where('category_id')->get();
 
         return view('adv.index', ['categories' => $categoriesFiltered]);
@@ -47,8 +48,8 @@ class AdvController extends Controller
      */
     public function show(Adv $adv)
     {
-
-        return view('adv.show', compact('adv'));
+        $categories = Category::all();
+        return view('adv.show', compact(['adv', 'categories']));
     }
 
     /**

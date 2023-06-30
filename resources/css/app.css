@@ -2,8 +2,6 @@
 @import "bootstrap-icons";
 @import "./auth.css";
 
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -18,7 +16,7 @@ a {
 }
 
 a:hover {
-    color: #6230A3;
+    color: #6230a3;
     text-decoration: none;
 }
 
@@ -37,17 +35,17 @@ h6 {
 
 .bg-successo {
     --bs-bg-opacity: 1;
-    background-color: #6230A3 !important;
+    background-color: #6230a3 !important;
 }
 
 .border-successo {
     --bs-border-opacity: 1;
-    border-color: #6230A3 !important;
+    border-color: #6230a3 !important;
 }
 
 .text-successo {
     --bs-text-opacity: 1;
-    color: #FEC200 !important;
+    color: #fec200 !important;
 }
 
 /*--------------------------------------------------------------
@@ -56,8 +54,8 @@ h6 {
 .btn-accedi {
     border: solid 1px;
     border-radius: 10px;
-    border-color: #6230A3;
-    color: #6230A3;
+    border-color: #6230a3;
+    color: #6230a3;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -65,16 +63,16 @@ h6 {
 }
 
 .btn-accedi:hover {
-    background-color: #6230A3;
-    color: #FEC200;
+    background-color: #6230a3;
+    color: #fec200;
 }
 
 .btn-cerca {
     border: solid 1px;
     border-radius: 10px;
-    border-color: #6230A3;
-    background-color: #6230A3;
-    color: #FEC200;
+    border-color: #6230a3;
+    background-color: #6230a3;
+    color: #fec200;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -84,14 +82,13 @@ h6 {
 .btn-cerca:hover {
     border: solid 1px;
     border-radius: 10px;
-    border-color: #6230A3;
-    color: #6230A3;
+    border-color: #6230a3;
+    color: #6230a3;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -99,7 +96,8 @@ h6 {
 #hero {
     width: 100%;
     height: 75vh;
-    background: url("https://img.freepik.com/premium-photo/shopping-online-home-concept-online-shopping-is-form-electronic-commerce-that-allows-consumers-directly-buy-goods-from-seller-internet_1205-6258.jpg?w=996") top left;
+    background: url("https://img.freepik.com/premium-photo/shopping-online-home-concept-online-shopping-is-form-electronic-commerce-that-allows-consumers-directly-buy-goods-from-seller-internet_1205-6258.jpg?w=996")
+        top left;
     background-size: cover;
     position: relative;
 }
@@ -128,7 +126,7 @@ h6 {
 }
 
 #hero h1 span {
-    color: #6230A3;
+    color: #6230a3;
 }
 
 #hero h2 {
@@ -149,12 +147,12 @@ h6 {
     border-radius: 4px;
     transition: 0.5s;
     color: #fff;
-    background: #6230A3;
+    background: #6230a3;
 }
 
 #hero .btn-get-started:hover {
-    background-color: #FEC200;
-    color: #6230A3;
+    background-color: #fec200;
+    color: #6230a3;
 }
 
 @media (max-width: 768px) {
@@ -167,7 +165,6 @@ h6 {
     }
 }
 
-
 /*--------------------------------------------------------------
 # show Section
 --------------------------------------------------------------*/
@@ -175,8 +172,8 @@ h6 {
 .btn-show {
     border: solid 2px;
     border-radius: 10px;
-    border-color: #6230A3;
-    color: #6230A3;
+    border-color: #6230a3;
+    color: #6230a3;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -184,10 +181,9 @@ h6 {
 }
 
 .btn-show:hover {
-    background-color: #6230A3;
-    color: #FEC200;
+    background-color: #6230a3;
+    color: #fec200;
 }
-
 
 /*--------------------------------------------------------------
 # home Section
@@ -199,7 +195,6 @@ h6 {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 9px;
     grid-row-gap: 9px;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -225,118 +220,205 @@ h6 {
     width: auto;
 }
 
-.libri-color, .moda-e-accessori-color {
-    background-image: linear-gradient(90deg,
-            hsl(270deg 57% 34%) 0%,
-            hsl(270deg 56% 34%) 11%,
-            hsl(270deg 55% 35%) 23%,
-            hsl(270deg 54% 36%) 34%,
-            hsl(270deg 53% 37%) 45%,
-            hsl(270deg 52% 38%) 57%,
-            hsl(270deg 51% 38%) 68%,
-            hsl(271deg 51% 39%) 79%,
-            hsl(271deg 50% 40%) 90%,
-            hsl(271deg 49% 41%) 100%);
+.libri-color,
+.moda-e-accessori-color {
+    background-image: linear-gradient(
+        90deg,
+        hsl(270deg 57% 34%) 0%,
+        hsl(270deg 56% 34%) 11%,
+        hsl(270deg 55% 35%) 23%,
+        hsl(270deg 54% 36%) 34%,
+        hsl(270deg 53% 37%) 45%,
+        hsl(270deg 52% 38%) 57%,
+        hsl(270deg 51% 38%) 68%,
+        hsl(271deg 51% 39%) 79%,
+        hsl(271deg 50% 40%) 90%,
+        hsl(271deg 49% 41%) 100%
+    );
 }
 
-.cinema-e-musica-color, .elettrodomestici-color {
-    background-image: linear-gradient(90deg,
-            hsl(271deg 49% 41%) 0%,
-            hsl(271deg 48% 42%) 11%,
-            hsl(271deg 46% 43%) 23%,
-            hsl(270deg 45% 44%) 34%,
-            hsl(270deg 44% 45%) 45%,
-            hsl(270deg 43% 46%) 57%,
-            hsl(270deg 42% 47%) 68%,
-            hsl(270deg 41% 48%) 79%,
-            hsl(270deg 40% 50%) 90%,
-            hsl(269deg 40% 51%) 100%);
+.cinema-e-musica-color,
+.elettrodomestici-color {
+    background-image: linear-gradient(
+        90deg,
+        hsl(271deg 49% 41%) 0%,
+        hsl(271deg 48% 42%) 11%,
+        hsl(271deg 46% 43%) 23%,
+        hsl(270deg 45% 44%) 34%,
+        hsl(270deg 44% 45%) 45%,
+        hsl(270deg 43% 46%) 57%,
+        hsl(270deg 42% 47%) 68%,
+        hsl(270deg 41% 48%) 79%,
+        hsl(270deg 40% 50%) 90%,
+        hsl(269deg 40% 51%) 100%
+    );
 }
 
-.telefonia-e-accessori-color, .attrezzature-da-lavoro-color {
-    background-image: linear-gradient(90deg,
-            hsl(269deg 40% 51%) 0%,
-            hsl(270deg 40% 52%) 11%,
-            hsl(270deg 41% 53%) 23%,
-            hsl(270deg 41% 54%) 34%,
-            hsl(270deg 42% 55%) 45%,
-            hsl(270deg 43% 56%) 57%,
-            hsl(270deg 43% 57%) 68%,
-            hsl(270deg 44% 58%) 79%,
-            hsl(271deg 45% 59%) 90%,
-            hsl(271deg 46% 60%) 100%);
+.telefonia-e-accessori-color,
+.attrezzature-da-lavoro-color {
+    background-image: linear-gradient(
+        90deg,
+        hsl(269deg 40% 51%) 0%,
+        hsl(270deg 40% 52%) 11%,
+        hsl(270deg 41% 53%) 23%,
+        hsl(270deg 41% 54%) 34%,
+        hsl(270deg 42% 55%) 45%,
+        hsl(270deg 43% 56%) 57%,
+        hsl(270deg 43% 57%) 68%,
+        hsl(270deg 44% 58%) 79%,
+        hsl(271deg 45% 59%) 90%,
+        hsl(271deg 46% 60%) 100%
+    );
 }
 
-.elettronica-color, .immobili-color {
-    background-image: linear-gradient(90deg,
-            hsl(271deg 46% 60%) 0%,
-            hsl(271deg 46% 61%) 11%,
-            hsl(271deg 46% 62%) 23%,
-            hsl(272deg 46% 63%) 34%,
-            hsl(272deg 47% 64%) 45%,
-            hsl(273deg 47% 65%) 57%,
-            hsl(273deg 47% 66%) 68%,
-            hsl(274deg 48% 67%) 79%,
-            hsl(274deg 48% 68%) 90%,
-            hsl(274deg 48% 69%) 100%);
+.elettronica-color,
+.immobili-color {
+    background-image: linear-gradient(
+        90deg,
+        hsl(271deg 46% 60%) 0%,
+        hsl(271deg 46% 61%) 11%,
+        hsl(271deg 46% 62%) 23%,
+        hsl(272deg 46% 63%) 34%,
+        hsl(272deg 47% 64%) 45%,
+        hsl(273deg 47% 65%) 57%,
+        hsl(273deg 47% 66%) 68%,
+        hsl(274deg 48% 67%) 79%,
+        hsl(274deg 48% 68%) 90%,
+        hsl(274deg 48% 69%) 100%
+    );
 }
 
 .tv-e-fotocamere-color {
-    background-image: linear-gradient(90deg,
-            hsl(274deg 48% 69%) 0%,
-            hsl(274deg 48% 68%) 11%,
-            hsl(274deg 48% 67%) 23%,
-            hsl(273deg 47% 66%) 34%,
-            hsl(273deg 47% 65%) 45%,
-            hsl(272deg 47% 64%) 57%,
-            hsl(272deg 46% 63%) 68%,
-            hsl(271deg 46% 62%) 79%,
-            hsl(271deg 46% 61%) 90%,
-            hsl(271deg 46% 60%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(274deg 48% 69%) 0%,
+        hsl(274deg 48% 68%) 11%,
+        hsl(274deg 48% 67%) 23%,
+        hsl(273deg 47% 66%) 34%,
+        hsl(273deg 47% 65%) 45%,
+        hsl(272deg 47% 64%) 57%,
+        hsl(272deg 46% 63%) 68%,
+        hsl(271deg 46% 62%) 79%,
+        hsl(271deg 46% 61%) 90%,
+        hsl(271deg 46% 60%) 100%
+    );
 }
 
 .sport-color {
-    background-image: linear-gradient(90deg,
-            hsl(271deg 46% 60%) 0%,
-            hsl(271deg 45% 59%) 11%,
-            hsl(270deg 44% 58%) 23%,
-            hsl(270deg 43% 57%) 34%,
-            hsl(270deg 43% 56%) 45%,
-            hsl(270deg 42% 55%) 57%,
-            hsl(270deg 41% 54%) 68%,
-            hsl(270deg 41% 53%) 79%,
-            hsl(270deg 40% 52%) 90%,
-            hsl(269deg 40% 51%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(271deg 46% 60%) 0%,
+        hsl(271deg 45% 59%) 11%,
+        hsl(270deg 44% 58%) 23%,
+        hsl(270deg 43% 57%) 34%,
+        hsl(270deg 43% 56%) 45%,
+        hsl(270deg 42% 55%) 57%,
+        hsl(270deg 41% 54%) 68%,
+        hsl(270deg 41% 53%) 79%,
+        hsl(270deg 40% 52%) 90%,
+        hsl(269deg 40% 51%) 100%
+    );
 }
 
 .biciclette-color {
-    background-image: linear-gradient(90deg,
-            hsl(269deg 40% 51%) 0%,
-            hsl(270deg 40% 50%) 11%,
-            hsl(270deg 41% 48%) 23%,
-            hsl(270deg 42% 47%) 34%,
-            hsl(270deg 43% 46%) 45%,
-            hsl(270deg 44% 45%) 57%,
-            hsl(270deg 45% 44%) 68%,
-            hsl(271deg 46% 43%) 79%,
-            hsl(271deg 48% 42%) 90%,
-            hsl(271deg 49% 41%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(269deg 40% 51%) 0%,
+        hsl(270deg 40% 50%) 11%,
+        hsl(270deg 41% 48%) 23%,
+        hsl(270deg 42% 47%) 34%,
+        hsl(270deg 43% 46%) 45%,
+        hsl(270deg 44% 45%) 57%,
+        hsl(270deg 45% 44%) 68%,
+        hsl(271deg 46% 43%) 79%,
+        hsl(271deg 48% 42%) 90%,
+        hsl(271deg 49% 41%) 100%
+    );
 }
 
 .moto-e-auto-color {
-    background-image: linear-gradient(90deg,
-            hsl(271deg 49% 41%) 0%,
-            hsl(271deg 50% 40%) 11%,
-            hsl(271deg 51% 39%) 23%,
-            hsl(270deg 51% 38%) 34%,
-            hsl(270deg 52% 38%) 45%,
-            hsl(270deg 53% 37%) 57%,
-            hsl(270deg 54% 36%) 68%,
-            hsl(270deg 55% 35%) 79%,
-            hsl(270deg 56% 34%) 90%,
-            hsl(270deg 57% 34%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(271deg 49% 41%) 0%,
+        hsl(271deg 50% 40%) 11%,
+        hsl(271deg 51% 39%) 23%,
+        hsl(270deg 51% 38%) 34%,
+        hsl(270deg 52% 38%) 45%,
+        hsl(270deg 53% 37%) 57%,
+        hsl(270deg 54% 36%) 68%,
+        hsl(270deg 55% 35%) 79%,
+        hsl(270deg 56% 34%) 90%,
+        hsl(270deg 57% 34%) 100%
+    );
 }
 
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+    padding-top: 40px;
+}
 
+.portfolio-details .portfolio-details-slider img {
+    width: 100%;
+}
 
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
 
+.portfolio-details
+    .portfolio-details-slider
+    .swiper-pagination
+    .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #fdc134;
+}
+
+.portfolio-details
+    .portfolio-details-slider
+    .swiper-pagination
+    .swiper-pagination-bullet-active {
+    background-color: #fdc134;
+}
+
+.portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(33, 59, 82, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+    margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+    padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+    padding: 0;
+}
