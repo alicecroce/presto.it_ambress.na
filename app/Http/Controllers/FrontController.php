@@ -10,6 +10,6 @@ class FrontController extends Controller
     public function searchAdvs(Request $request) {
         $advs = Adv::search($request->searched);
 
-        return view('adv.index', compact('advs'))
+        return view('adv.index', compact('advs'));
     }
 }
