@@ -18,7 +18,7 @@
                             </div>
 
                             <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}"
-                                class="btn btn-show position-absolute bottom-0 end-0">Vedi
+                                class="btn btn-show position-absolute bottom-0 end-0 m-3">Vedi
                                 Annuncio</a>
 
 
