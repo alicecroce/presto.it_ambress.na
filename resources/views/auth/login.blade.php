@@ -47,8 +47,12 @@
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
                                             type="submit">Sign in</button>
-                                        <div class="text-center">
+                                        {{-- <div class="text-center">
                                             <a class="small" href="#">Forgot password?</a>
+                                        </div> --}}
+                                        <div class="text-center">
+                                            Non hai un account?
+                                            <a href="{{route('register')}}">Registrati!</a>
                                         </div>
                                     </div>
 

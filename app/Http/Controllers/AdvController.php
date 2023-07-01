@@ -20,12 +20,12 @@ class AdvController extends Controller
         return view('adv.index', compact('advs', 'categories'));
     }
 
-    public function categoryFilter()
+    public function categoryFilter(Category $categories)
     {
 
         $categoriesFiltered = Adv::where('category_id')->get();
 
-        return view('adv.index', ['categories' => $categoriesFiltered]);
+        return view('adv.index', ['categoriesFilt' => $categoriesFiltered, 'categories' => $categories]);
     }
 
     /**
