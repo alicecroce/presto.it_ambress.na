@@ -24,12 +24,12 @@
                                         </div>
                                     @endif
                                     <div class="d-flex d-inline">
-                                        <div class="form-floating mb-3 me-2">
+                                        <div class="form-floating flex-grow-1 mb-3 me-2">
                                             <input type="text" name="name" class="form-control" id="name"
                                                 placeholder="Gino">
                                             <label for="name">Nome</label>
                                         </div>
-                                        <div class="form-floating mb-3 ">
+                                        <div class="form-floating flex-grow-1 mb-3 ">
                                             <input type="text" name="surname" class="form-control" id="surname"
                                                 placeholder="Gini">
                                             <label for="surname">Cognome</label>
@@ -42,12 +42,12 @@
                                         <label for="email">Indirizzo mail</label>
                                     </div>
                                     <div class="d-flex d-inline">
-                                        <div class="form-floating mb-3 me-2">
+                                        <div class="form-floating flex-grow-1 mb-3 me-2">
                                             <input type="text" name="phone" class="form-control" id="phone"
                                                 placeholder="081 555 6667">
                                             <label for="phone">Telefono</label>
                                         </div>
-                                        <div class="form-floating mb-3">
+                                        <div class="form-floating flex-grow-1 mb-3">
                                             <input type="text" name="city" class="form-control" id="city"
                                                 placeholder="Napoli (NA)">
                                             <label for="city">Città</label>
