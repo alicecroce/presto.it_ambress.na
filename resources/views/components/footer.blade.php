@@ -6,7 +6,7 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Presto.it</h3>
+                        <h3 class="">Presto.it</h3>
                         <p>
                             Lorem ipsum dolor sit amet. <br>
                             Napoli, NA 90123<br>
