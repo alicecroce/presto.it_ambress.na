@@ -20,17 +20,16 @@
                         <h4>Link utili</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Registrati</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Accedi</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>I nostri servizi</h4>
+                        <h4>Lavora con noi</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Tutti gli annunci </a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Registrati</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Accedi</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Diventa revisore </a></li>
+
                         </ul>
                     </div>
 

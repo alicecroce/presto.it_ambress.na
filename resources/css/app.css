@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Junge&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Junge&family=Poppins&display=swap");
 
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -437,17 +438,9 @@ h6 {
     background: #fdc134;
 }
 
-#footer h3 { 
+#footer h3 {
     color: #6230a3;
     font-family: "Junge", serif;
-}
-
-#footer .footer-newsletter h4 {
-    font-size: 24px;
-    margin: 0 0 20px 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 600;
 }
 
 #footer .footer-top {
@@ -526,6 +519,27 @@ h6 {
     color: #552586;
 }
 
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #552586;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+    background: #cbaee9;
+    color: #fff;
+    text-decoration: none;
+}
+
 #footer .copyright {
     text-align: center;
     float: left;
@@ -538,23 +552,11 @@ h6 {
     color: #444444;
 }
 
-#footer .footer-top .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #fdc134;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 4px;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-  #footer .footer-top .social-links a:hover {
-    background: #552586;
-    color: #fff;
-    text-decoration: none;
-  }
+@media (max-width: 768px) {
+    #footer .copyright,
+    #footer .credits {
+        float: none;
+        text-align: center;
+        padding: 2px 0;
+    }
+}
