@@ -20,8 +20,10 @@ class CategoryController extends Controller
 
     public function categoryFilter(Category $category)
     {
-        $advs = $category->advs()->get();
+        // $advs = $category->advs()->get();
 
+        $advs = Adv::where('category_id', $category->id)->orderBy('created_at', 'desc')->paginate(5);
+        
         return view('adv.index', compact('advs'));
     }
 

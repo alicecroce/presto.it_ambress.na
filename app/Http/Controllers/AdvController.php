@@ -26,9 +26,9 @@ class AdvController extends Controller
     public function categoryFilter(Category $categories)
     {
 
-        $categoriesFiltered = Adv::where('category_id')->get();
+        //$categoriesFiltered = Adv::where('category_id')->get();
 
-        return view('adv.index', ['categoriesFilt' => $categoriesFiltered, 'categories' => $categories]);
+       // return view('adv.index', ['categoriesFilt' => $categoriesFiltered, 'categories' => $categories]);
     }
 
     /**
