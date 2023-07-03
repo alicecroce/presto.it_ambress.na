@@ -19,7 +19,6 @@ class Adv extends Model
             'title' => $this->title,
             'abstract' => $this->abstract,
             'description' => $this->description,
-            'category' => $this->category,
         ];
         return $array;
     }
