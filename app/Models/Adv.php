@@ -14,11 +14,13 @@ class Adv extends Model
 
     public function toSearchableArray()
     {
+        $category = $this->category;
         $array = [
             'id' => $this->id,
             'title' => $this->title,
             'abstract' => $this->abstract,
             'description' => $this->description,
+            'category' => $category,
         ];
         return $array;
     }
