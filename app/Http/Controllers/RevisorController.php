@@ -13,5 +13,15 @@ class RevisorController extends Controller
         return view('revisor.index', compact('adv_to_check'));
     }
 
+    public function acceptAdv(Adv $adv)
+    {
+        $adv->setAccepted(true);
+        return redirect()->back()->with('message', 'Complimenti, hai accettato l\'annuncio');
+    }
 
+    public function rejectAdv(Adv $adv)
+    {
+        $adv->setAccepted(false);
+        return redirect()->back()->with('message', 'Hai correttamente rifiutato l\'annuncio');
+    }
 }
