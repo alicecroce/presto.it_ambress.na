@@ -12,7 +12,8 @@ class Adv extends Model
 
     protected $fillable = ['title', 'category_id', 'user_id', 'price', 'abstract', 'description', 'img'];
 
-    public function toSearchableArray() {
+    public function toSearchableArray()
+    {
         $category = $this->category;
         $array = [
             'id' => $this->id,
@@ -24,15 +25,30 @@ class Adv extends Model
         return $array;
     }
 
-    public function categories(){
+    public function categories()
+    {
         return $this->belongsTo(Category::class);
     }
 
-    public function getCategory(){
+    public function getCategory()
+    {
         return Category::find($this->category_id)->name;
     }
 
-    public function user(){
+    public function user()
+    {
         return $this->belongsTo(User::class);
+    }
+
+    public function setAccepted($value)
+    {
+        $this->is_accepted = $value;
+        $this->save();
+        return true;
+    }
+
+    public static function toBeRevisionedCount()
+    {
+        return Adv::where('is_accepted', null)->count();
     }
 }

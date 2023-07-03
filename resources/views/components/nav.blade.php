@@ -4,14 +4,16 @@
             <img class="img-fluid" src="{{ asset(Storage::url('public/img/prestoit-logo-con-txt.png')) }}"
                 alt="logo presto.it">
         </a>
-        
-        <form class="d-flex flex-grow-1" action="{{route('advs.search')}}" method="GET" role="search">
-            <input class="form-control flex-grow me-2" name="searched" type="search" placeholder="Cerca su Presto.it" aria-label="Search">
+
+        <form class="d-flex flex-grow-1" action="{{ route('advs.search') }}" method="GET" role="search">
+            <input class="form-control flex-grow me-2" name="searched" type="search" placeholder="Cerca su Presto.it"
+                aria-label="Search">
             <button class="btn btn-cerca" type="submit">Cerca</button>
         </form>
 
-        <button class="navbar-toggler mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mx-1" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -47,9 +49,33 @@
                     @endauth
                 </li>
                 @auth
-                <li class="nav-item p-1 me-1">
-                    <a class="btn btn-accedi" role="button" href="{{route('adv.create')}}">Inserisci un annuncio</a>
-                </li>
+                    <li class="nav-item p-1 me-1">
+                        <a class="btn btn-accedi" role="button" href="{{ route('adv.create') }}">Inserisci un annuncio</a>
+                        @if (Auth::user()->is_revisor)
+                    <li class="nav-item p-1 me-1">
+                        <a class="btn btn-accedi" role="button" href="{{ route('revisor.index') }}">
+                            Area revisore
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-end-pill bg-danger">
+                                {{ App\Models\Adv::toBeRevisionedCount() }}
+                                <span class="visually-hidden">
+                                    Messaggi non letti
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    @endif
+
+
+                    </li>
+
+
+
+
+
+
+
+
                 @endauth
             </ul>
         </div>
