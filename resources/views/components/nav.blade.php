@@ -53,10 +53,9 @@
                         <a class="btn btn-accedi" role="button" href="{{ route('adv.create') }}">Inserisci un annuncio</a>
                         @if (Auth::user()->is_revisor)
                     <li class="nav-item p-1 me-1">
-                        <a class="btn btn-accedi" role="button" href="{{ route('revisor.index') }}">
+                        <a class="btn btn-accedi position-relative" role="button" href="{{ route('revisor.index') }}">
                             Area revisore
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-end-pill bg-danger">
+                            <span class="position-absolute top-0 start-75 badge rounded-pill bg-danger">
                                 {{ App\Models\Adv::toBeRevisionedCount() }}
                                 <span class="visually-hidden">
                                     Messaggi non letti
