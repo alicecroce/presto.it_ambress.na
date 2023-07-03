@@ -21,5 +21,3 @@ yarn-error.log
 /storage/advs.index-shm 
 /storage/advs.index-wal
 /storage/*.index
-/resources/css/auth.css
-/storage/advs.index
