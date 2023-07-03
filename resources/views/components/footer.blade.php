@@ -6,7 +6,7 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3 class="">Presto.it</h3>
+                        <h3>Presto.it</h3>
                         <p>
                             Lorem ipsum dolor sit amet. <br>
                             Napoli, NA 90123<br>
@@ -19,16 +19,16 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Link utili</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Registrati</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Accedi</a></li>
+                            <li><i class="bi bi-arrow-right-short"></i><a href="#">Home</a></li>
+                            <li><i class="bi bi-arrow-right-short"></i><a href="#">Registrati</a></li>
+                            <li><i class="bi bi-arrow-right-short"></i><a href="#">Accedi</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Lavora con noi</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Diventa revisore </a></li>
+                            <li><i class="bi bi-arrow-right-short"></i> <a href="#">Diventa revisore </a></li>
 
                         </ul>
                     </div>
@@ -37,13 +37,13 @@
                         <h4>Our Social Networks</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                         <div class="social-links mt-3">
-                          <a href="#" class="twitter"><i class="bi bi-google"></i></a>
-                          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                          <a href="#" class="google-plus"><i class="bi bi-skype"></i></i></a>
-                          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="twitter"><i class="bi bi-google"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bi bi-skype"></i></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                         </div>
-                      </div>
+                    </div>
 
                 </div>
             </div>
@@ -54,10 +54,8 @@
                 &copy; Copyright <strong><span>Presto.it</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-            </a> Designed by Giulia Volpe, Giuseppe Maria Arnone e Alice Croce  per Aulab srl</a>
-        </div>
+                </a> Designed by <strong><span>Giulia Volpe, Giuseppe Maria Arnone, Alice Croce e Maria
+                        Fallacara</span></strong> per Aulab srl</a>
+            </div>
         </div>
     </footer>
-
-
-
