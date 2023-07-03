@@ -19,9 +19,9 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Link utili</h4>
                         <ul>
-                            <li><i class="bi bi-arrow-right-short"></i><a href="#">Home</a></li>
-                            <li><i class="bi bi-arrow-right-short"></i><a href="#">Registrati</a></li>
-                            <li><i class="bi bi-arrow-right-short"></i><a href="#">Accedi</a></li>
+                            <li><i class="bi bi-arrow-right-short"></i><a href="/">Home</a></li>
+                            <li><i class="bi bi-arrow-right-short"></i><a href="{{ route('register') }}">Registrati</a></li>
+                            <li><i class="bi bi-arrow-right-short"></i><a href="{{ route('login') }}">Accedi</a></li>
                         </ul>
                     </div>
 
