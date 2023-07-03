@@ -9,6 +9,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Address;
 
 class BecomeRevisor extends Mailable
 {
@@ -23,18 +24,14 @@ class BecomeRevisor extends Mailable
         $this->user = $user;
     }
 
-    public  function build()
-    {
-        return $this->from('noreply@presto.it')->view('mail.become_revisor');
-    }
-
     /**
      * Get the message envelope.
      */
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Become Revisor',
+            from: new Address('noreply@presto.it', 'Revisore'),
+            subject: 'Divenire revisore su Presto.it',
         );
     }
 
@@ -44,7 +41,7 @@ class BecomeRevisor extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'mail.become_revisor',
         );
     }
 
