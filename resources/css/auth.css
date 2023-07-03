@@ -3,7 +3,7 @@
 }
 
 .bg-image {
-    background-image: url("C:\Users\giuli\OneDrive\Desktop\Aulab\Progetti-corso\presto.it\public\storage\img\img_login.png");
+    background-image: url("http://127.0.0.1:8000/storage/img/img_login.png");
     background-size: cover;
     background-position: center;
 }

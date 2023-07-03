@@ -25,7 +25,7 @@ class Adv extends Model
         return $array;
     }
 
-    public function categories()
+    public function category()
     {
         return $this->belongsTo(Category::class);
     }
