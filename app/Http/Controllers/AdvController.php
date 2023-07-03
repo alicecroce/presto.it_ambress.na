@@ -6,6 +6,8 @@ use App\Models\Adv;
 use App\Http\Requests\StoreAdvRequest;
 use App\Http\Requests\UpdateAdvRequest;
 use App\Models\Category;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\DB;
 
 class AdvController extends Controller
 {
@@ -14,10 +16,11 @@ class AdvController extends Controller
      */
     public function index()
     {
-        $advs = Adv::all()->sortByDesc('created_at');
+        $advs = Adv::orderBy('created_at', 'desc')->paginate(5);
         $categories = Category::all();
 
         return view('adv.index', compact('advs', 'categories'));
+        
     }
 
     public function categoryFilter(Category $categories)

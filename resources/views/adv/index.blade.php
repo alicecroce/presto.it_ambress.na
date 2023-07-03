@@ -46,5 +46,7 @@
                 Nessun annuncio, sorry
             @endforelse
         </div>
+        {{ $advs->links() }}
     </div>
+
 </x-main>

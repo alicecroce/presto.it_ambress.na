@@ -19,3 +19,5 @@ yarn-error.log
 /.vscode
 /storage/advs.index-shm 
 /storage/advs.index-wal
+/storage/*.index
+/resources/css/auth.css
