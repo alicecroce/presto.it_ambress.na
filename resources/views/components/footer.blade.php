@@ -28,7 +28,7 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Lavora con noi</h4>
                         <ul>
-                            <li><i class="bi bi-arrow-right-short"></i> <a href="#">Diventa revisore </a></li>
+                            <li><i class="bi bi-arrow-right-short"></i> <a href="{{route('become.revisor')}}">Diventa revisore </a></li>
 
                         </ul>
                     </div>
@@ -54,8 +54,7 @@
                 &copy; Copyright <strong><span>Presto.it</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                </a> Designed by <strong><span>Giulia Volpe, Giuseppe Maria Arnone, Alice Croce e Maria
-                        Fallacara</span></strong> per Aulab srl</a>
+                </a> Designed by <strong><span>Giulia Volpe, Giuseppe Maria Arnone, Alice Croce</span></strong> per Aulab srl</a>
             </div>
         </div>
     </footer>
