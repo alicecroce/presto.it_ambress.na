@@ -52,7 +52,7 @@
                         <h3 class="display-5 fw-bold" style="color: #6230A3 ">{{ $adv->title }}</h3>
                         <ul>
 
-                            <li><strong>Prezzo</strong>: {{ $adv->price }} </li>
+                            <li><strong>Prezzo</strong>: € {{ $adv->price }} </li>
                             <li><strong>Breve descrizione:</strong>: {{ $adv->abstract }}</li>
                             <li><strong>Categorie</strong>: Categoria di esempio</li>
                             <hr>

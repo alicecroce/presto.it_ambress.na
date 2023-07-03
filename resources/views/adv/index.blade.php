@@ -29,7 +29,7 @@
                                     {{ $adv->getCategory() }}
                                 </div>
                                 <div class="col">
-                                    {{ $adv->price }}
+                                    € {{ $adv->price }}
                                 </div>
                             </div>
 

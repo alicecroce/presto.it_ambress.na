@@ -16,7 +16,7 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Inserisci il prezzo del tuo articolo</label>
-            <input type="text" class="form-control" id="price" wire:model="price">
+            <input type="number" step="0.01" value="0.00" placeholder="€ 0.00" class="form-control" id="price" wire:model="price">
         </div>
         <div class="mb-3">
             <label class="form-label" for="abstract">Inserisci una breve descrizione</label>
