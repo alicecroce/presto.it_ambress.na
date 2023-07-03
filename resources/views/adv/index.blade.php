@@ -25,7 +25,7 @@
                             </div>
 
                             <div class="row">
-                                <div class="col  border-top">
+                                <div class="col border-top">
                                     {{ $adv->getCategory() }}
                                 </div>
                                 <div class="col">
