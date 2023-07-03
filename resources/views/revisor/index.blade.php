@@ -75,22 +75,25 @@
 
                 </div>
 
-<div class="row">
-    <div class="col-12 col-md-6">
-        <form action="{{route('revisor.accept_adv', [adv=>$adv_to_check])}}" method="POST">
-        @CSRF
-        
-        
-        
-        </form>
+                <div class="row">
 
-    </div>
+                    <div class="col-12 col-md-6">
+                        <form action="{{ route('revisor.accept_adv', ['adv' => $adv_to_check]) }}" method="POST">
+                            @csrf
+                            @method('PATCH')
+                            <button type="submit" class="btn btn-success shadow">Accetta</button>
+                        </form>
+                    </div>
 
-</div>
+                    <div class="col-12 col-md-6">
+                        <form action="{{ route('revisor.reject_adv', ['adv' => $adv_to_check]) }}" method="POST">
+                            @csrf
+                            @method('PATCH')
+                            <button type="submit" class="btn btn-danger shadow">Rifiuta</button>
+                        </form>
+                    </div>
 
-
-
-
+                </div>
 
             </div>
         @endif
