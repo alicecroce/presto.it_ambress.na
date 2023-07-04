@@ -42,9 +42,10 @@ class RevisorController extends Controller
         return redirect()->route('welcome')->with('success', 'Complimenti! Fai ufficialmente parte del team di Ambress.na, sei diventato revisore di Presto.it!');
     }
 
-    public function not_accepted(){
+    public function not_accepted()
+    {
         $advs = Adv::orderBy('created_at', 'desc')->where('is_accepted', false)->paginate(5);
 
-        return view('rejected', compact('advs'));
+        return view('revisor.rejected', compact('advs'));
     }
 }
