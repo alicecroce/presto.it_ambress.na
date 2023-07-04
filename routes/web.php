@@ -4,6 +4,7 @@ use App\Http\Controllers\AdvController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\RevisorController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +34,7 @@ Route::patch('/rifiuta/annuncio/{adv}', [RevisorController::class, 'rejectAdv'])
 Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 Route::get('/richiesta/revisore/rifiutati', [RevisorController::class, 'not_accepted'])->name('rejected');
+
+
+//AREA USER PROFILE
+Route::get('/profilo', [UserController::class, 'index'])->name('user_profile.index');
