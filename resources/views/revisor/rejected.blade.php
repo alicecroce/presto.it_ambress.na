@@ -28,7 +28,7 @@
                                     <form action="{{ route('revisor.accept_adv', ['adv' => $adv]) }}" method="POST">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="submit" class="btn btn-accedi ">Accetta</button>
+                                        <button type="submit" class="btn btn-cerca ">Accetta</button>
                                     </form>
                                 </div>
 
