@@ -76,7 +76,7 @@
                 &copy; Copyright <strong><span>Presto.it</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                </a> Designed by <strong><span>Giulia Volpe, Giuseppe Maria Arnone, Alice Croce</span></strong> per
+                </a> Designed by <strong><span>Giulia Volpe, Giuseppe Maria Arnone, Alice Croce e Maria Fallacara</span></strong> per
                 Aulab srl</a>
             </div>
         </div>
