@@ -12,7 +12,7 @@ class UserController extends Controller
         $advs = Adv::all();
         $categories = Category::all();
 
-        return view('user_profile.index');
+        return view('user_profile.index', compact('advs', 'categories'));
 
     }
 }

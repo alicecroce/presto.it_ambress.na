@@ -26,7 +26,7 @@
                             Profilo
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="{{route('user_profile.index')}}">Profilo</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
