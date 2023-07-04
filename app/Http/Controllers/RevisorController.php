@@ -41,4 +41,10 @@ class RevisorController extends Controller
         Artisan::call('presto:make-user-revisor', ["email" => $user->email]);
         return redirect()->route('welcome')->with('success', 'Complimenti! Fai ufficialmente parte del team di Ambress.na, sei diventato revisore di Presto.it!');
     }
+
+    public function not_accepted(){
+        $advs = Adv::orderBy('created_at', 'desc')->where('is_accepted', false)->paginate(5);
+
+        return view('rejected', compact('advs'));
+    }
 }

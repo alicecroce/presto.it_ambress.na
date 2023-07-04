@@ -32,3 +32,7 @@ Route::patch('/accetta/annuncio/{adv}', [RevisorController::class, 'acceptAdv'])
 Route::patch('/rifiuta/annuncio/{adv}', [RevisorController::class, 'rejectAdv'])->middleware('isRevisor')->name('revisor.reject_adv');
 Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
+
+Route::get('/richiesta/revisore/rifiutati', [RevisorController::class, 'not_accepted'])->name('rejected');
+
+
