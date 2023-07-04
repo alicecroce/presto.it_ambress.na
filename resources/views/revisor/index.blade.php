@@ -1,4 +1,14 @@
 <x-main>
+
+    <div id="success-message">
+        @if (session('success'))
+            <div class="m-2 p-2 d-flex justify-content-center">
+                <span class="fw-bold bg-successo p-2 text-successo bg-opacity-50 border border-successo rounded">
+                    {{ session('success') }}</span>
+            </div>
+        @endif
+    </div>
+
     <section id="portfolio-details" class="portfolio-details">
         @if ($adv_to_check)
             <div class="container">

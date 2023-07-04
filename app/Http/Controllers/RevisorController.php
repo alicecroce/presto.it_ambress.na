@@ -21,13 +21,13 @@ class RevisorController extends Controller
     public function acceptAdv(Adv $adv)
     {
         $adv->setAccepted(true);
-        return redirect()->back()->with('message', 'Complimenti, hai accettato l\'annuncio');
+        return redirect()->route('revisor.index')->with('success', 'Annuncio accettato');
     }
 
     public function rejectAdv(Adv $adv)
     {
         $adv->setAccepted(false);
-        return redirect()->back()->with('message', 'Hai correttamente rifiutato l\'annuncio');
+        return redirect()->route('revisor.index')->with('success', 'Annuncio rifiutato');
     }
 
     public function becomeRevisor()
