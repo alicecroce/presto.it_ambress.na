@@ -46,6 +46,6 @@ class RevisorController extends Controller
     {
         $advs = Adv::orderBy('created_at', 'desc')->where('is_accepted', false)->paginate(5);
 
-        return view('revisor.rejected', compact('advs'));
+        return view('revisor.rejected', ['advs' => $advs]);
     }
 }
