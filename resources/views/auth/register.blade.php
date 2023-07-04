@@ -3,8 +3,16 @@
         <div class="row g-0">
             <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image opacity-75 "></div>
             <div class="col-md-8 col-lg-6">
-                <div class="login d-flex align-items-center py-5">
+                <div class="login d-flex align-items-center py-4">
                     <div class="container">
+                        <div class="row">
+                            <div class="d-flex align-items-center">
+                                <a href="/" class="text-center">
+                                    <img class="img-fluid w-50" src="{{ asset(Storage::url('public/img/prestoit-logo alpha.png')) }}"
+                                    alt="logo presto.it">
+                                </a>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
                                 <h3 class="login-heading mb-4">Benvenutə!</h3>
