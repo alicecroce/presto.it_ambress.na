@@ -17,15 +17,15 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse collapse me-4" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown p-1">
                     @auth
-                        <a class="btn btn-accedi mx-2" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Profilo
                         </a>
-                        <ul class="dropdown-menu mx-2">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Profilo</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -42,27 +42,37 @@
                             aria-expanded="false">
                             Accedi | Registrati
                         </a>
-                        <ul class="dropdown-menu mx-3">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{ route('login') }}">Accedi</a></li>
                             <li><a class="dropdown-item" href="{{ route('register') }}">Registrati</a></li>
                         </ul>
                     @endauth
                 </li>
                 @auth
-                    <li class="nav-item p-1 me-1">
+                    <li class="nav-item p-1">
                         <a class="btn btn-accedi" role="button" href="{{ route('adv.create') }}">Inserisci un annuncio</a>
                     </li>
                     @if (Auth::user()->is_revisor)
-                        <li class="nav-item p-1 mx-1">
-                            <a class="btn btn-accedi position-relative" role="button" href="{{ route('revisor.index') }}">
-                                Area revisore
-                                <span class="position-absolute top-0 start-75 badge rounded-pill bg-danger">
+                        <li class="nav-item dropdown p-1">
+                            <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Area revisore
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('revisor.index') }}">Da revisionare
+                                <span class="position-absolute top-25 start-75 badge rounded-pill bg-danger">
                                     {{ App\Models\Adv::toBeRevisionedCount() }}
                                     <span class="visually-hidden">
                                         Messaggi non letti
                                     </span>
                                 </span>
-                            </a>
+                            </a></li>
+                            <li><a class="dropdown-item" href="{{ route('rejected') }}">Rifiutati</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('adv.index') }}">Tutti gli annunci</a></li>
+                        </ul>
                         </li>
                     @endif
                 @endauth
