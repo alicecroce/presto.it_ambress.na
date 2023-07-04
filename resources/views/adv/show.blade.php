@@ -56,7 +56,7 @@
                             <li><strong>Breve descrizione:</strong>: {{ $adv->abstract }}</li>
                             <li><strong>Categorie</strong>: Categoria di esempio</li>
                             <hr>
-                            <li><strong>Inserzionista</strong>: <a href="#">Inserzionista esempio</a></li>
+                            <li><strong>Inserzionista</strong>: {{ $adv->user->name }} {{ $adv->user->surname }}</li>
                         </ul>
                     </div>
                     <div class="portfolio-description">
