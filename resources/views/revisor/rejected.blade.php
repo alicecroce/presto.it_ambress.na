@@ -1,4 +1,3 @@
-
 <x-main>
     <div class="container my-5">
 
@@ -20,6 +19,16 @@
                                 <div class="col">
                                     € {{ $adv->price }}
                                 </div>
+                            </div>
+
+                            
+                            <div class="col-12 col-md-6">
+                                <form action="{{ route('revisor.accept_adv', ['adv' => $adv_to_check]) }}"
+                                    method="POST">
+                                    @csrf
+                                    @method('PATCH')
+                                    <button type="submit" class="btn btn-success shadow">Accetta</button>
+                                </form>
                             </div>
 
                             <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}"
