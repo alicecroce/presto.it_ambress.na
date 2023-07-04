@@ -19,17 +19,26 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Link utili</h4>
                         <ul>
-                            <li><i class="bi bi-arrow-right-short"></i><a href="/">Home</a></li>
-                            <li><i class="bi bi-arrow-right-short"></i><a href="{{ route('register') }}">Registrati</a>
+                            <li>
+                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a href="/">
+                                    Home</a>
                             </li>
-                            <li><i class="bi bi-arrow-right-short"></i><a href="{{ route('login') }}">Accedi</a></li>
+                            <li>
+                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
+                                    href="{{ route('register') }}">Registrati</a>
+                            </li>
+                            <li>
+                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
+                                    href="{{ route('login') }}">Accedi</a>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Lavora con noi</h4>
                         <ul>
-                            <li><i class="bi bi-arrow-right-short"></i>
+                            <li>
+                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
                                 <a href="{{ route('become.revisor') }}">Diventa revisore </a>
                             </li>
 
@@ -40,11 +49,21 @@
                         <h4>Our Social Networks</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                         <div class="social-links mt-3">
-                            <a href="#"><i class="bi bi-twitter"></i></a>
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-google"></i></a>
-                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#">
+                                <box-icon type='logo' name='twitter' color='#ffffff'></box-icon>
+                            </a>
+                            <a href="#">
+                                <box-icon name='facebook' type='logo' color='#ffffff'></box-icon>
+                            </a>
+                            <a href="#">
+                                <box-icon name='instagram' type='logo' color='#ffffff'></box-icon>
+                            </a>
+                            <a href="#">
+                                <box-icon type='logo' name='tiktok' color='#ffffff'></box-icon>
+                            </a>
+                            <a href="#">
+                                <box-icon type='logo' name='linkedin' color='#ffffff'></box-icon>
+                            </a>
                         </div>
                     </div>
 

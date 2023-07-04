@@ -11,8 +11,11 @@
 </head>
 
 <body>
+    @if (Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register')
+    @else
+        <x-nav />
+    @endif
 
-    <x-nav />
 
 
     {{ $slot }}
@@ -20,4 +23,3 @@
 </body>
 
 </html>
-

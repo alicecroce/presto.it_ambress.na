@@ -2,9 +2,10 @@
 
     <div id="success-message">
         @if (session('success'))
-            <div class="m-2 p-2 d-flex justify-content-center">
-                <span class="fw-bold bg-successo p-2 text-successo bg-opacity-50 border border-successo rounded">
-                    {{ session('success') }}</span>
+            <div class="d-flex justify-content-center">
+                <div class="alert alert-warning w-75 align-items-center text-center" role="alert">
+                    {{ session('success') }}
+                </div>
             </div>
         @endif
     </div>
