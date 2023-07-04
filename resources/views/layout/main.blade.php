@@ -10,12 +10,12 @@
     @livewireStyles
 </head>
 
-<body>    
+<body>
     @if (Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register')
     @else
-    <x-nav />
+        <x-nav />
     @endif
-    
+
 
 
     {{ $slot }}
@@ -23,4 +23,3 @@
 </body>
 
 </html>
-
