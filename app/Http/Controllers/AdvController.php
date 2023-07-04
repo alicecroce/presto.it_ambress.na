@@ -60,7 +60,7 @@ class AdvController extends Controller
      */
     public function edit(Adv $adv)
     {
-        //
+        return view('adv.edit', compact('adv'));
     }
 
     /**

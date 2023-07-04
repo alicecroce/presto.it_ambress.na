@@ -63,6 +63,8 @@
                         <h2>Informazioni aggiuntive</h2>
                         <p>{{ $adv->description }}</p>
                     </div>
+
+                    <a href="{{route('adv.edit', $adv)}}" class="btn btn-dark">Modifica Annuncio</a>
                 </div>
 
             </div>

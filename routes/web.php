@@ -22,6 +22,7 @@ Route::get('/', [CategoryController::class, 'index'])->name('welcome');
 Route::get('/categoria/{category}', [CategoryController::class, 'categoryFilter'])->name('categoryshow');
 
 Route::resource('adv', AdvController::class);
+Route::get('adv/{adv}/edit', [AdvController::class, 'edit'] )->name('adv.edit');
 
 Route::get('/ricerca/adv', [FrontController::class, 'searchAdvs'])->name('advs.search');
 
