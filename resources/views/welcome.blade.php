@@ -11,6 +11,8 @@
         @endif
     </div>
 
+    
+
     <div class="container parent my-5">
         @foreach ($categories as $category)
             <a class="text-center category-box text-white d-flex flex-column justify-content-center align-items-center {{ $category->slug }}-color"
