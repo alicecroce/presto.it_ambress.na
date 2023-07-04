@@ -8,7 +8,7 @@
                         <div class="row">
                             <div class="d-flex align-items-center">
                                 <a href="/" class="text-center">
-                                    <img class="img-fluid w-50" src="{{ asset(Storage::url('public/img/prestoit-logo alpha.png')) }}"
+                                    <img class="img-fluid w-50" src="{{ asset(Storage::url('public/img/prestoit-logo_alpha.png')) }}"
                                     alt="logo presto.it">
                                 </a>
                             </div>
