@@ -5,7 +5,7 @@
 
             <div class="row gy-4">
 
-                <div class="col-lg-8">
+                <div class="col-lg-6">
                     <div class="portfolio-details-slider swiper">
                         <div class="swiper-wrapper align-items-center">
 
@@ -47,24 +47,28 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="portfolio-info">
-                        <h3 class="display-5 fw-bold" style="color: #6230A3 ">{{ $adv->title }}</h3>
+                        <h2 class="display-5 fw-bold" style="color: #6230A3 ">{{ $adv->title }}</h2>
                         <ul>
 
                             <li><strong>Prezzo</strong>: € {{ $adv->price }} </li>
-                            <li><strong>Breve descrizione:</strong>: {{ $adv->abstract }}</li>
                             <li><strong>Categorie</strong>: Categoria di esempio</li>
                             <hr>
+                            <li><strong>Breve descrizione:</strong> {{ $adv->abstract }}</li>
+                            <li>
+                            <li><strong>Informazioni aggiuntive:</strong> {{ $adv->description }}</li>
+                            </li>
+                            <hr>
                             <li><strong>Inserzionista</strong>: {{ $adv->user->name }} {{ $adv->user->surname }}</li>
+                            <li><strong>Provenienza</strong>: {{ $adv->user->city }}</li>
+
                         </ul>
-                    </div>
-                    <div class="portfolio-description">
-                        <h2>Informazioni aggiuntive</h2>
-                            <p>{{ $adv->description }}</p>
+
+
                     </div>
 
-                    <a href="{{ route('adv.edit', $adv) }}" class="btn btn-dark">Modifica Annuncio</a>
+
                 </div>
 
             </div>
