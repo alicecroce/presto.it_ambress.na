@@ -3,7 +3,7 @@
 
         <div class="row">
             @forelse ($advs as $adv)
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 mx-3">
                     <div class="card my-3" style="height: 36rem; width: 18rem;">
 
                         <img src="https://placehold.co/300/6230A3/FFFFFF/png" class="card-img-top" alt="img placeholder">
