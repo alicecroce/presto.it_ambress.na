@@ -69,7 +69,11 @@ h6 {
     color: #fec200;
 }
 
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
     background-color: #6230a3;
     color: #fec200;
 }
