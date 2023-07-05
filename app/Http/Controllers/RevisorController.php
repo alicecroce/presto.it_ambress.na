@@ -14,7 +14,8 @@ class RevisorController extends Controller
 {
     public function index()
     {
-        $adv_to_check = Adv::where('is_accepted', null)->first();
+        $adv_to_check = Adv::all()->where('is_accepted', null);
+        // @dd($adv_to_check);
         return view('revisor.index', compact('adv_to_check'));
     }
 
