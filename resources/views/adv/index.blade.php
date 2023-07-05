@@ -16,9 +16,9 @@
         <div class="row">
             <h1 id="categoryName">
                 @if (Route::currentRouteName() == 'categoryshow')
-                {{ucFirst($category->name)}}
+                    {{ ucFirst($category->name) }}
                 @else
-                Tutti gli annunci
+                    Tutti gli annunci
                 @endif
             </h1>
         </div>
@@ -32,7 +32,6 @@
                             <div class="h-50">
                                 <p class="card-text">{{ $adv->abstract }}</p>
                             </div>
-
                             <div class="row">
                                 <div class="col border-top">
                                     {{ $adv->getCategory() }}
@@ -41,19 +40,21 @@
                                     € {{ $adv->price }}
                                 </div>
                             </div>
-
                             <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}"
                                 class="btn btn-show position-absolute bottom-0 end-0 m-3">Vedi
                                 Annuncio
                             </a>
-
-
                         </div>
                     </div>
                 </div>
 
+
+        </div>
+        <div class="row">
             @empty
-                Nessun annuncio, sorry
+                <div>
+                    Nessun annuncio, sorry. :(
+                </div>
             @endforelse
         </div>
         {{ $advs->links() }}
