@@ -11,10 +11,10 @@
     </div>
 
     <div class="container">
-        <div class="row gy-4">
+        <div class="row justify-content-center my-2">
 
             @if ($adv_to_check)
-                <div class="col-12 mb-4">
+                <div class="col-6">
 
                     <div id="portfolio-details" class="portfolio-details">
                         <div class="card">
@@ -31,7 +31,7 @@
                                             <button type="button" data-bs-target="#carouselExampleIndicators"
                                                 data-bs-slide-to="2" aria-label="Slide 3"></button>
                                         </div>
-                                        <div class="carousel-inner">
+                                        <div class="carousel-inner ">
                                             <div class="carousel-item active">
                                                 <img src="https://picsum.photos/200/200" class="d-block w-100"
                                                     alt="...">
@@ -72,7 +72,8 @@
                                 <hr>
                                 <div><strong>Breve descrizione:</strong> {{ $adv_to_check->abstract }}</div>
                                 <br>
-                                <div><strong>Informazioni aggiuntive: </strong>
+                                <div class="text-justify about-text-justify">
+                                    <strong>Informazioni aggiuntive: </strong>
                                     <p>{{ $adv_to_check->description }}</p>
                                 </div>
                                 <hr>
@@ -87,23 +88,28 @@
                                 </ul>
 
                                 <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <form action="{{ route('revisor.accept_adv', ['adv' => $adv_to_check]) }}"
-                                            method="POST">
-                                            @csrf
-                                            @method('PATCH')
-                                            <button type="submit" class="btn btn-outline-success mx-5">Accetta</button>
-                                        </form>
+
+                                    <div class="col-6 ">
+                                        <div class="d-flex justify-content-center">
+                                            <form action="{{ route('revisor.accept_adv', ['adv' => $adv_to_check]) }}"
+                                                method="POST">
+                                                @csrf
+                                                @method('PATCH')
+                                                <button type="submit" class="btn btn-outline-success ">Accetta</button>
+                                            </form>
+                                        </div>
                                     </div>
 
 
-                                    <div class="col-12 col-md-6">
-                                        <form action="{{ route('revisor.reject_adv', ['adv' => $adv_to_check]) }}"
-                                            method="POST">
-                                            @csrf
-                                            @method('PATCH')
-                                            <button type="submit" class="btn btn-outline-danger mx-2 ">Rifiuta</button>
-                                        </form>
+                                    <div class="col-6 ">
+                                        <div class="d-flex justify-content-center">
+                                            <form action="{{ route('revisor.reject_adv', ['adv' => $adv_to_check]) }}"
+                                                method="POST">
+                                                @csrf
+                                                @method('PATCH')
+                                                <button type="submit" class="btn btn-outline-danger">Rifiuta</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
 
