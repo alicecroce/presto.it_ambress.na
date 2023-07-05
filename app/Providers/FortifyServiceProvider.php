@@ -20,7 +20,12 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // $this->app->instance(UpdateUserProfileInformation::class, new class implements UpdateUserProfileInformation {
+        //     public function toResponse($request)
+        //     {
+        //         return redirect('/');
+        //     }
+        // });
     }
 
     /**

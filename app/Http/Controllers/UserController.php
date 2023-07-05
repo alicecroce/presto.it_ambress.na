@@ -15,4 +15,10 @@ class UserController extends Controller
         return view('user_profile.index', compact('advs', 'categories'));
 
     }
+
+    public function edit(){
+        $advs = Adv::all();
+        $categories = Category::all();
+        return view('user_profile.edit', compact('advs', 'categories'));
+    }
 }
