@@ -69,6 +69,11 @@ h6 {
     color: #fec200;
 }
 
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+    background-color: #6230a3;
+    color: #fec200;
+}
+
 .btn-cerca {
     border: solid 1px;
     border-radius: 10px;
