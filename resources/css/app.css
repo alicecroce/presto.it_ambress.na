@@ -69,8 +69,8 @@ h6 {
     color: #fec200;
 }
 
-.btn-check:checked + .btn,
-:not(.btn-check) + .btn:active,
+.btn-check:checked+.btn,
+:not(.btn-check)+.btn:active,
 .btn:first-child:active,
 .btn.active,
 .btn.show {
@@ -107,8 +107,7 @@ h6 {
 #hero {
     width: 100%;
     height: 75vh;
-    background: url("https://img.freepik.com/premium-photo/shopping-online-home-concept-online-shopping-is-form-electronic-commerce-that-allows-consumers-directly-buy-goods-from-seller-internet_1205-6258.jpg?w=996")
-        top left;
+    background: url("https://img.freepik.com/premium-photo/shopping-online-home-concept-online-shopping-is-form-electronic-commerce-that-allows-consumers-directly-buy-goods-from-seller-internet_1205-6258.jpg?w=996") top left;
     background-size: cover;
     position: relative;
 }
@@ -246,134 +245,118 @@ h6 {
 
 .libri-color,
 .moda-e-accessori-color {
-    background-image: linear-gradient(
-        90deg,
-        hsl(270deg 57% 34%) 0%,
-        hsl(270deg 56% 34%) 11%,
-        hsl(270deg 55% 35%) 23%,
-        hsl(270deg 54% 36%) 34%,
-        hsl(270deg 53% 37%) 45%,
-        hsl(270deg 52% 38%) 57%,
-        hsl(270deg 51% 38%) 68%,
-        hsl(271deg 51% 39%) 79%,
-        hsl(271deg 50% 40%) 90%,
-        hsl(271deg 49% 41%) 100%
-    );
+    background-image: linear-gradient(90deg,
+            hsl(270deg 57% 34%) 0%,
+            hsl(270deg 56% 34%) 11%,
+            hsl(270deg 55% 35%) 23%,
+            hsl(270deg 54% 36%) 34%,
+            hsl(270deg 53% 37%) 45%,
+            hsl(270deg 52% 38%) 57%,
+            hsl(270deg 51% 38%) 68%,
+            hsl(271deg 51% 39%) 79%,
+            hsl(271deg 50% 40%) 90%,
+            hsl(271deg 49% 41%) 100%);
 }
 
 .cinema-e-musica-color,
 .elettrodomestici-color {
-    background-image: linear-gradient(
-        90deg,
-        hsl(271deg 49% 41%) 0%,
-        hsl(271deg 48% 42%) 11%,
-        hsl(271deg 46% 43%) 23%,
-        hsl(270deg 45% 44%) 34%,
-        hsl(270deg 44% 45%) 45%,
-        hsl(270deg 43% 46%) 57%,
-        hsl(270deg 42% 47%) 68%,
-        hsl(270deg 41% 48%) 79%,
-        hsl(270deg 40% 50%) 90%,
-        hsl(269deg 40% 51%) 100%
-    );
+    background-image: linear-gradient(90deg,
+            hsl(271deg 49% 41%) 0%,
+            hsl(271deg 48% 42%) 11%,
+            hsl(271deg 46% 43%) 23%,
+            hsl(270deg 45% 44%) 34%,
+            hsl(270deg 44% 45%) 45%,
+            hsl(270deg 43% 46%) 57%,
+            hsl(270deg 42% 47%) 68%,
+            hsl(270deg 41% 48%) 79%,
+            hsl(270deg 40% 50%) 90%,
+            hsl(269deg 40% 51%) 100%);
 }
 
 .telefonia-e-accessori-color,
 .attrezzature-da-lavoro-color {
-    background-image: linear-gradient(
-        90deg,
-        hsl(269deg 40% 51%) 0%,
-        hsl(270deg 40% 52%) 11%,
-        hsl(270deg 41% 53%) 23%,
-        hsl(270deg 41% 54%) 34%,
-        hsl(270deg 42% 55%) 45%,
-        hsl(270deg 43% 56%) 57%,
-        hsl(270deg 43% 57%) 68%,
-        hsl(270deg 44% 58%) 79%,
-        hsl(271deg 45% 59%) 90%,
-        hsl(271deg 46% 60%) 100%
-    );
+    background-image: linear-gradient(90deg,
+            hsl(269deg 40% 51%) 0%,
+            hsl(270deg 40% 52%) 11%,
+            hsl(270deg 41% 53%) 23%,
+            hsl(270deg 41% 54%) 34%,
+            hsl(270deg 42% 55%) 45%,
+            hsl(270deg 43% 56%) 57%,
+            hsl(270deg 43% 57%) 68%,
+            hsl(270deg 44% 58%) 79%,
+            hsl(271deg 45% 59%) 90%,
+            hsl(271deg 46% 60%) 100%);
 }
 
 .elettronica-color,
 .immobili-color {
-    background-image: linear-gradient(
-        90deg,
-        hsl(271deg 46% 60%) 0%,
-        hsl(271deg 46% 61%) 11%,
-        hsl(271deg 46% 62%) 23%,
-        hsl(272deg 46% 63%) 34%,
-        hsl(272deg 47% 64%) 45%,
-        hsl(273deg 47% 65%) 57%,
-        hsl(273deg 47% 66%) 68%,
-        hsl(274deg 48% 67%) 79%,
-        hsl(274deg 48% 68%) 90%,
-        hsl(274deg 48% 69%) 100%
-    );
+    background-image: linear-gradient(90deg,
+            hsl(271deg 46% 60%) 0%,
+            hsl(271deg 46% 61%) 11%,
+            hsl(271deg 46% 62%) 23%,
+            hsl(272deg 46% 63%) 34%,
+            hsl(272deg 47% 64%) 45%,
+            hsl(273deg 47% 65%) 57%,
+            hsl(273deg 47% 66%) 68%,
+            hsl(274deg 48% 67%) 79%,
+            hsl(274deg 48% 68%) 90%,
+            hsl(274deg 48% 69%) 100%);
 }
 
 .tv-e-fotocamere-color {
-    background-image: linear-gradient(
-        90deg,
-        hsl(274deg 48% 69%) 0%,
-        hsl(274deg 48% 68%) 11%,
-        hsl(274deg 48% 67%) 23%,
-        hsl(273deg 47% 66%) 34%,
-        hsl(273deg 47% 65%) 45%,
-        hsl(272deg 47% 64%) 57%,
-        hsl(272deg 46% 63%) 68%,
-        hsl(271deg 46% 62%) 79%,
-        hsl(271deg 46% 61%) 90%,
-        hsl(271deg 46% 60%) 100%
-    );
+    background-image: linear-gradient(90deg,
+            hsl(274deg 48% 69%) 0%,
+            hsl(274deg 48% 68%) 11%,
+            hsl(274deg 48% 67%) 23%,
+            hsl(273deg 47% 66%) 34%,
+            hsl(273deg 47% 65%) 45%,
+            hsl(272deg 47% 64%) 57%,
+            hsl(272deg 46% 63%) 68%,
+            hsl(271deg 46% 62%) 79%,
+            hsl(271deg 46% 61%) 90%,
+            hsl(271deg 46% 60%) 100%);
 }
 
 .sport-color {
-    background-image: linear-gradient(
-        90deg,
-        hsl(271deg 46% 60%) 0%,
-        hsl(271deg 45% 59%) 11%,
-        hsl(270deg 44% 58%) 23%,
-        hsl(270deg 43% 57%) 34%,
-        hsl(270deg 43% 56%) 45%,
-        hsl(270deg 42% 55%) 57%,
-        hsl(270deg 41% 54%) 68%,
-        hsl(270deg 41% 53%) 79%,
-        hsl(270deg 40% 52%) 90%,
-        hsl(269deg 40% 51%) 100%
-    );
+    background-image: linear-gradient(90deg,
+            hsl(271deg 46% 60%) 0%,
+            hsl(271deg 45% 59%) 11%,
+            hsl(270deg 44% 58%) 23%,
+            hsl(270deg 43% 57%) 34%,
+            hsl(270deg 43% 56%) 45%,
+            hsl(270deg 42% 55%) 57%,
+            hsl(270deg 41% 54%) 68%,
+            hsl(270deg 41% 53%) 79%,
+            hsl(270deg 40% 52%) 90%,
+            hsl(269deg 40% 51%) 100%);
 }
 
 .biciclette-color {
-    background-image: linear-gradient(
-        90deg,
-        hsl(269deg 40% 51%) 0%,
-        hsl(270deg 40% 50%) 11%,
-        hsl(270deg 41% 48%) 23%,
-        hsl(270deg 42% 47%) 34%,
-        hsl(270deg 43% 46%) 45%,
-        hsl(270deg 44% 45%) 57%,
-        hsl(270deg 45% 44%) 68%,
-        hsl(271deg 46% 43%) 79%,
-        hsl(271deg 48% 42%) 90%,
-        hsl(271deg 49% 41%) 100%
-    );
+    background-image: linear-gradient(90deg,
+            hsl(269deg 40% 51%) 0%,
+            hsl(270deg 40% 50%) 11%,
+            hsl(270deg 41% 48%) 23%,
+            hsl(270deg 42% 47%) 34%,
+            hsl(270deg 43% 46%) 45%,
+            hsl(270deg 44% 45%) 57%,
+            hsl(270deg 45% 44%) 68%,
+            hsl(271deg 46% 43%) 79%,
+            hsl(271deg 48% 42%) 90%,
+            hsl(271deg 49% 41%) 100%);
 }
 
 .moto-e-auto-color {
-    background-image: linear-gradient(
-        90deg,
-        hsl(271deg 49% 41%) 0%,
-        hsl(271deg 50% 40%) 11%,
-        hsl(271deg 51% 39%) 23%,
-        hsl(270deg 51% 38%) 34%,
-        hsl(270deg 52% 38%) 45%,
-        hsl(270deg 53% 37%) 57%,
-        hsl(270deg 54% 36%) 68%,
-        hsl(270deg 55% 35%) 79%,
-        hsl(270deg 56% 34%) 90%,
-        hsl(270deg 57% 34%) 100%
-    );
+    background-image: linear-gradient(90deg,
+            hsl(271deg 49% 41%) 0%,
+            hsl(271deg 50% 40%) 11%,
+            hsl(271deg 51% 39%) 23%,
+            hsl(270deg 51% 38%) 34%,
+            hsl(270deg 52% 38%) 45%,
+            hsl(270deg 53% 37%) 57%,
+            hsl(270deg 54% 36%) 68%,
+            hsl(270deg 55% 35%) 79%,
+            hsl(270deg 56% 34%) 90%,
+            hsl(270deg 57% 34%) 100%);
 }
 
 /*--------------------------------------------------------------
@@ -392,10 +375,7 @@ h6 {
     position: relative;
 }
 
-.portfolio-details
-    .portfolio-details-slider
-    .swiper-pagination
-    .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #fff;
@@ -403,10 +383,7 @@ h6 {
     border: 1px solid #fdc134;
 }
 
-.portfolio-details
-    .portfolio-details-slider
-    .swiper-pagination
-    .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #fdc134;
 }
 
@@ -429,7 +406,7 @@ h6 {
     font-size: 18px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
     margin-top: 10px;
 }
 
@@ -586,6 +563,7 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
     #footer .copyright,
     #footer .credits {
         float: none;
@@ -593,19 +571,69 @@ h6 {
         padding: 2px 0;
     }
 }
+
 /*--------------------------------------------------------------
   # Template E-mail
   --------------------------------------------------------------*/
 
-  #tem-email {
+#tem-email {
 
     font-family: "Poppins", sans-serif;
-    color:#6230a3;
+    color: #6230a3;
     font-weight: bold;
     text-align: center;
-  }
-
+}
 
 /*--------------------------------------------------------------
   # Card revisor home
   --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  h1 in adv.index
+  --------------------------------------------------------------*/
+#categoryName {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #6230a3;
+    font-family: "Junge", serif;
+}
+
+
+/*--------------------------------------------------------------
+  # PROFILE SECTION
+  --------------------------------------------------------------*/
+
+.bg-custom {
+    background-color: #552586bd;
+}
+
+.btn-form {
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: #fec200;
+    background-color: #fec200;
+    color: #6230a3;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn-form:hover {
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: #fec200;
+    background-color: #fec200;
+    color: #6230a3;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}

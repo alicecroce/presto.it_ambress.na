@@ -14,6 +14,15 @@
             <a class="btn btn-cerca mx-3" href="">Filtra ricerca</a>
         </div> --}}
         <div class="row">
+            <h1 id="categoryName">
+                @if (Route::currentRouteName() == 'categoryshow')
+                {{ucFirst($category->name)}}
+                @else
+                Tutti gli annunci
+                @endif
+            </h1>
+        </div>
+        <div class="row">
             @forelse ($advs as $adv)
                 <div class="col-12 col-md-3">
                     <div class="card my-3" style="height: 36rem;">
