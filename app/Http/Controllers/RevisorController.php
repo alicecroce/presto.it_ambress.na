@@ -45,7 +45,7 @@ class RevisorController extends Controller
 
     public function not_accepted()
     {
-        $advs = Adv::orderBy('created_at', 'desc')->where('is_accepted', false)->paginate(5);
+        $advs = Adv::orderBy('created_at', 'desc')->where('is_accepted', false)->paginate(8);
 
         return view('revisor.rejected', ['advs' => $advs]);
     }

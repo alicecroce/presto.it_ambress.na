@@ -22,7 +22,7 @@ class CategoryController extends Controller
     {
         // $advs = $category->advs()->get();
 
-        $advs = Adv::where('category_id', $category->id)->orderBy('created_at', 'desc')->paginate(5);
+        $advs = Adv::where('category_id', $category->id)->orderBy('created_at', 'desc')->paginate(8);
         
         return view('adv.index', compact('advs'));
     }
