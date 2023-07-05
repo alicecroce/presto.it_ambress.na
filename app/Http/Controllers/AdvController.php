@@ -16,11 +16,10 @@ class AdvController extends Controller
      */
     public function index()
     {
-        $advs = Adv::orderBy('created_at', 'desc')->where('is_accepted', true)->paginate(5);
+        $advs = Adv::orderBy('created_at', 'desc')->where('is_accepted', true)->paginate(8);
         $categories = Category::all();
 
         return view('adv.index', compact('advs', 'categories'));
-        
     }
 
 
@@ -30,7 +29,7 @@ class AdvController extends Controller
 
         //$categoriesFiltered = Adv::where('category_id')->get();
 
-       // return view('adv.index', ['categoriesFilt' => $categoriesFiltered, 'categories' => $categories]);
+        // return view('adv.index', ['categoriesFilt' => $categoriesFiltered, 'categories' => $categories]);
     }
 
     /**
