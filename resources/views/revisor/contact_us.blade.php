@@ -63,9 +63,9 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <textarea style="height: 8rem;" name="message" class="form-control"
+                                        <textarea style="height: 8rem;" name="description" class="form-control"
                                             placeholder="Scrivi un breve messaggio sul perchè vorrresti collaborare come revisore nel team di Ambress.na per Presto.it"
-                                            id="text">{{ old('message') }}</textarea>
+                                            id="description"></textarea>
                                     </div>
 
 

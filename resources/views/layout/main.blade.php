@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    @if (Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register')
+    @if (Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register' || Route::currentRouteName() == 'contactus.revisor')
     @else
         <x-nav />
     @endif

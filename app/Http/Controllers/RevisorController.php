@@ -43,8 +43,7 @@ class RevisorController extends Controller
 
     public function saveContact(Request $request)
     {
-        $user = $request->all();//questa cosa che non dichiaro user mi tormenta
-        Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));
+        Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user(), $request->description));
         return redirect()->back()->with('success', 'La tua richiesta è stata correttamente inviata!');
     }
 
