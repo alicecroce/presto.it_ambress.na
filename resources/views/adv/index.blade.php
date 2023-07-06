@@ -49,7 +49,7 @@
                 </div>
             @empty    
         </div>
-        <div class="row">        
+        <div class="row py-3">        
             <div>
                 Nessun annuncio, sorry. :(
             </div>
