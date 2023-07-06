@@ -47,16 +47,14 @@
                         </div>
                     </div>
                 </div>
-
-
+            @empty    
         </div>
-        <div class="row">
-            @empty
-                <div>
-                    Nessun annuncio, sorry. :(
-                </div>
-            @endforelse
+        <div class="row">        
+            <div>
+                Nessun annuncio, sorry. :(
+            </div>
         </div>
+        @endforelse
         {{ $advs->links() }}
     </div>
 
