@@ -18,8 +18,8 @@
                 <div class="col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body text-center">
-                            <img src=""
-                                alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                            <img src="{{ asset('/storage/img/placeholderlogin.png') }}" alt="avatar"
+                                class="rounded-circle img-fluid" style="width: 150px;">
                             <h5 class="my-3">{{ Auth::user()->name }} {{ Auth::user()->surname }}</h5>
                             <p class="text-muted mb-4">{{ Auth::user()->city }}</p>
                         </div>
@@ -33,35 +33,44 @@
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="name">Nome</label>
                             <input class="form-control w-75" type="text" name="name"
-                                value="{{ Auth::user()->name }}" id="name"/>
+                                value="{{ Auth::user()->name }}" id="name" />
                         </div>
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="surname">Cognome</label>
                             <input class="form-control w-75" type="text" name="surname"
-                                value="{{ Auth::user()->surname }}" id="surname"/>
+                                value="{{ Auth::user()->surname }}" id="surname" />
                         </div>
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="email">Email</label>
                             <input class="form-control w-75" type="mail" name="email"
-                                value="{{ Auth::user()->email }}" id="email"/>
+                                value="{{ Auth::user()->email }}" id="email" />
                         </div>
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="city">Città</label>
                             <input class="form-control w-75" type="text" name="city"
-                                value="{{ Auth::user()->city }}" id="city"/>
+                                value="{{ Auth::user()->city }}" id="city" />
                         </div>
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="phone">Telefono</label>
                             <input class="form-control w-75" type="text" name="phone"
-                                value="{{ Auth::user()->phone }}" id="phone"/>
+                                value="{{ Auth::user()->phone }}" id="phone" />
                         </div>
+
+
 
                         <button type="submit" class="btn btn-form m-3 float-end">Modifica profilo</button>
                     </fieldset>
-
-
                 </form>
 
+
+
+                <form action="{{ route('user_profile.destroy') }}" method="POST" class=""
+                    id="delete-{{ Auth::user()->id }}">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger float-end m-3">Elimina</button>
+
+                </form>
             </div>
         </div>
     </section>

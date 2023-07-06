@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('advs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
-            $table->foreignId('category_id')->constrained();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->string('title', 255);
             $table->string('price', 20);
             $table->string('abstract', 255);
