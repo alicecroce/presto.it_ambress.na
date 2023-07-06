@@ -47,25 +47,25 @@
                     </div>
                 </div>
 
-                <div class="col-6 d-flex ">
-                    <div class="portfolio-info align-self-stretch ">
-                        <h1 style="color: #6230A3 ">{{ $adv->title }}</h1>
+                <div class="col-6">
+                    <div class="portfolio-info ">
+                        <h1 style="color: #6230A3 ">{{ ucFirst($adv->title) }}</h1>
                         <ul>
 
                             <li>
                                 <h2><strong>€ {{ $adv->price }} </strong></h2>
                             </li>
 
-                            <li style="color: #778899"><i class="bi bi-tag"></i> {{ $adv->category->name }}</li>
+                            <li style="color: #778899"><i class="bi bi-tag"></i> {{ ucFirst($adv->category->name) }}</li>
 
-                            <li><strong>Breve descrizione:</strong> {{ $adv->abstract }}</li>
+                            <li><strong>Breve descrizione:</strong> {{ ucfirst($adv->abstract) }}</li>
                             <li>
-                            <li style="color: #778899"> {{ $adv->description }}</li>
+                            <li style="color: #778899"> {{ ucFirst($adv->description) }}</li>
                             </li>
                             <hr>
-                            <li><i class="bi bi-person-circle" style="color: #778899"></i> {{ $adv->user->name }}
+                            <li><i class="bi bi-person-circle" style="color: #778899"></i> {{ ucFirst($adv->user->name) }}
                                 {{ $adv->user->surname }}</li>
-                            <li><i class="bi bi-cursor" style="color: #778899"></i> {{ $adv->user->city }}</li>
+                            <li><i class="bi bi-cursor" style="color: #778899"></i> {{ ucFirst($adv->user->city) }}</li>
 
                         </ul>
                     </div>
