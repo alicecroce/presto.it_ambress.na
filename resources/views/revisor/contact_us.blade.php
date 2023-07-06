@@ -45,27 +45,27 @@
 
                                     <div class="d-flex d-inline">
                                         <div class="form-floating flex-grow-1 mb-3 me-2">
-                                            <input type="text" value="{{ old('name') }}" name="name"
-                                                class="form-control" id="name" placeholder="Gino">
+                                            <input readonly type="text" value="{{ Auth::user()->name }}"
+                                                name="name" class="form-control" id="name" placeholder="Gino">
                                             <label for="name">Nome</label>
                                         </div>
                                         <div class="form-floating flex-grow-1 mb-3 ">
-                                            <input type="text" value="{{ old('surname') }}" name="surname"
-                                                class="form-control" id="surname" placeholder="Gini">
+                                            <input readonly type="text" value="{{ Auth::user()->surname }}"
+                                                name="surname" class="form-control" id="surname" placeholder="Gini">
                                             <label for="surname">Cognome</label>
                                         </div>
                                     </div>
 
                                     <div class="form-floating mb-3">
-                                        <input type="email" value="{{ old('email') }}" name="email"
+                                        <input readonly type="email" value="{{ Auth::user()->email }}" name="email"
                                             class="form-control" id="email" placeholder="name@example.com">
                                         <label for="email">Indirizzo mail</label>
                                     </div>
 
-                                    <div class="form-floating mb-3">
-                                        <textarea name="message" class="form-control"
+                                    <div class="mb-3">
+                                        <textarea style="height: 8rem;" name="message" class="form-control"
                                             placeholder="Scrivi un breve messaggio sul perchè vorrresti collaborare come revisore nel team di Ambress.na per Presto.it"
-                                            id="" cols="30" rows="10">{{ old('message') }}</textarea>
+                                            id="text">{{ old('message') }}</textarea>
                                     </div>
 
 

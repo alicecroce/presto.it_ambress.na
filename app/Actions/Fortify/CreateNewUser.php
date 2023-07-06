@@ -31,6 +31,7 @@ class CreateNewUser implements CreatesNewUsers
             'surname' => ['required', 'string', 'max:255'],
             'city' => ['string', 'max:255'],
             'phone' => ['string', 'max:255'],
+            // 'message' => ['string'],
             'password' => $this->passwordRules(),
         ])->validate();
 
@@ -40,6 +41,7 @@ class CreateNewUser implements CreatesNewUsers
             'city' => $input['city'],
             'phone' => $input['phone'],
             'email' => $input['email'],
+            // 'message' => ['string'],
             'password' => Hash::make($input['password']),
         ]);
     }

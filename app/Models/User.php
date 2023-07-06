@@ -24,6 +24,7 @@ class User extends Authenticatable
         'city',
         'phone',
         'user_img',
+        'message',
         'password',
     ];
 
@@ -47,7 +48,8 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function advs(){
+    public function advs()
+    {
         return $this->hasMany(Adv::class);
     }
 }
