@@ -85,21 +85,25 @@
                                             class="btn btn-show position-absolute bottom-0 end-0 m-3">Vedi
                                             Annuncio
                                         </a>
+                                        <a href="{{ route('adv.edit', ['adv' => $adv['id']]) }}"
+                                            class="btn btn-show position-absolute bottom-0 end-0 m-3">modifica
+                                            Annuncio
+                                        </a>
                                     </div>
                                 </div>
                             </div>
 
 
                     </div>
-                
-                    @empty
-                        <div>
-                            Nessun annuncio, sorry. :(
-                        </div>
-                        @endforelse
+
+                @empty
+                    <div>
+                        Nessun annuncio, sorry. :(
                     </div>
+                    @endforelse
                 </div>
             </div>
+        </div>
         </div>
         {{-- {{$advs->link()}} --}}
     </section>
