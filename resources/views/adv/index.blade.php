@@ -41,9 +41,9 @@
                     <div class="card my-3" style="height: 36rem;">
                         <img src="https://placehold.co/300/6230A3/FFFFFF/png" class="card-img-top" alt="...">
                         <div class="card-body position-relative">
-                            <h5 class="card-title">{{ $adv->title }}</h5>
+                            <h5 class="card-title">{{ ucFirst($adv->title) }}</h5>
                             <div class="h-50">
-                                <p class="card-text">{{ $adv->abstract }}</p>
+                                <p class="card-text">{{ ucFirst($adv->abstract) }}</p>
                             </div>
                             <div class="row">
                                 <div class="col border-top">

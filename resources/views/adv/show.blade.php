@@ -3,9 +3,9 @@
     <section id="portfolio-details" class="portfolio-details">
         <div class="container">
 
-            <div class="row gy-4">
+            <div class="row gy-4 ">
 
-                <div class="col-lg-6">
+                <div class="col-6 ">
                     <div class="portfolio-details-slider swiper">
                         <div class="swiper-wrapper align-items-center">
 
@@ -47,25 +47,27 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="portfolio-info">
-                        <h2 class="display-5 fw-bold" style="color: #6230A3 ">{{ $adv->title }}</h2>
+                <div class="col-6">
+                    <div class="portfolio-info ">
+                        <h1 style="color: #6230A3 ">{{ ucFirst($adv->title) }}</h1>
                         <ul>
 
-                            <li><strong>Prezzo</strong>: € {{ $adv->price }} </li>
-                            <li><strong>Categorie</strong>: Categoria di esempio</li>
-                            <hr>
-                            <li><strong>Breve descrizione:</strong> {{ $adv->abstract }}</li>
                             <li>
-                            <li><strong>Informazioni aggiuntive:</strong> {{ $adv->description }}</li>
+                                <h2><strong>€ {{ $adv->price }} </strong></h2>
+                            </li>
+
+                            <li style="color: #778899"><i class="bi bi-tag"></i> {{ ucFirst($adv->category->name) }}</li>
+
+                            <li><strong>Breve descrizione:</strong> {{ ucfirst($adv->abstract) }}</li>
+                            <li>
+                            <li style="color: #778899"> {{ ucFirst($adv->description) }}</li>
                             </li>
                             <hr>
-                            <li><strong>Inserzionista</strong>: {{ $adv->user->name }} {{ $adv->user->surname }}</li>
-                            <li><strong>Provenienza</strong>: {{ $adv->user->city }}</li>
+                            <li><i class="bi bi-person-circle" style="color: #778899"></i> {{ ucFirst($adv->user->name) }}
+                                {{ $adv->user->surname }}</li>
+                            <li><i class="bi bi-cursor" style="color: #778899"></i> {{ ucFirst($adv->user->city) }}</li>
 
                         </ul>
-
-
                     </div>
 
 
