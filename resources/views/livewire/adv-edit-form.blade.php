@@ -40,7 +40,7 @@
                 <label class="form-label" for="description">Inserisci informazioni aggiuntive</label>
                 <textarea wire:model="description" id="description" class="form-control"></textarea>
             </div>
-            <button type="submit" class="btn btn-show">Crea annuncio</button>
+            <button type="submit" class="btn btn-show">Modifica annuncio</button>
         </form>
     </div>
 </div>

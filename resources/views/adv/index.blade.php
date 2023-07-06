@@ -1,4 +1,17 @@
 <x-main>
+
+    <div id="success-message">
+        @if (session('success'))
+            <div class="d-flex justify-content-center">
+                <div class="alert alert-success w-75 align-items-center text-center" role="alert">
+                    <span class="bi bi-check-circle m-2"></span>
+                    {{ session('success') }}
+                </div>
+            </div>
+        @endif
+    </div>
+
+
     <div class="container my-5">
         {{-- Ho provato ma va in confitto con un controller, non sto capendo perché --}}
         {{-- <div class="container my-2 d-inline d-flex">
@@ -47,9 +60,9 @@
                         </div>
                     </div>
                 </div>
-            @empty    
+            @empty
         </div>
-        <div class="row py-3">        
+        <div class="row py-3">
             <div>
                 Nessun annuncio, sorry. :(
             </div>

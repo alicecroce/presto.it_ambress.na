@@ -10,7 +10,8 @@ class AdvEditForm extends Component
 {
     public $title, $price, $abstract, $description, $img;
     public Adv $adv;
-    
+    public $category;
+    public $category_id;
 
     protected $rules = [
         'title' => 'required|string|min:3',
@@ -24,23 +25,24 @@ class AdvEditForm extends Component
     public function mount(){
         $this->title = $this->adv->title;
         $this->price = $this->adv->price;
+        $this->category = $this->adv->category->id;
         $this->abstract = $this->adv->abstract;
         $this->description = $this->adv->description;
         $this->img = $this->adv->img;
-
     }
 
     public function update(){
         $this->validate();
         $this->adv->update([
-            'title' => $this->adv->title,
-            'price' => $this->adv->price,
-            'abstract' => $this->adv->abstract,
-            'description' => $this->adv->description,
-            'img' => $this->adv->img,
+            'title' => $this->title,
+            'price' => $this->price,
+            'category_id' => $this->category,
+            'abstract' => $this->abstract,
+            'description' => $this->description,
+            'img' => $this->img,
         ]);
 
-        session()->flash('adv', 'Annuncio modificato con successo');
+        // session()->flash('adv', 'Annuncio modificato con successo');
         return redirect()->route('adv.index')->with('success', 'Annuncio modificato con successo!');
     }
 
