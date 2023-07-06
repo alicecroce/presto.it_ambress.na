@@ -31,7 +31,8 @@ Route::get('/ricerca/adv', [FrontController::class, 'searchAdvs'])->name('advs.s
 Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
 Route::patch('/accetta/annuncio/{adv}', [RevisorController::class, 'acceptAdv'])->middleware('isRevisor')->name('revisor.accept_adv');
 Route::patch('/rifiuta/annuncio/{adv}', [RevisorController::class, 'rejectAdv'])->middleware('isRevisor')->name('revisor.reject_adv');
-Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
+Route::get('/contattaci', [RevisorController::class, 'contactUs'])->middleware('auth')->name('contactus.revisor');
+Route::post('/salva/contatto', [RevisorController::class, 'saveContact'])->name('savecontact.revisor');
 Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 Route::get('/richiesta/revisore/rifiutati', [RevisorController::class, 'not_accepted'])->name('rejected');
 

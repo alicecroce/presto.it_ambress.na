@@ -17,6 +17,7 @@
         <p style="">Nome: <em>{{ $user->name }}</em></p>
         <p>Cognome: <em>{{ $user->surname }}</em></p>
         <p>Email:<em>{{ $user->email }}</em></p>
+        <p>Messaggio:<em>{{ $user->message }}</em></p>
         <p><b>Se vuoi autorizzare l'utente clicca qui:</b></p>
         <a href="{{ route('make.revisor', compact('user')) }}">Rendi revisore</a>
     </div>

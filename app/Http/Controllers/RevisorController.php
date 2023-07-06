@@ -30,10 +30,22 @@ class RevisorController extends Controller
         return redirect()->route('revisor.index')->with('success', 'Annuncio rifiutato');
     }
 
-    public function becomeRevisor()
+    // public function becomeRevisor()
+    // {
+    //     Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));
+    //     return redirect()->route('welcome')->with('success', 'Complimenti! Hai correttamente richiesto di diventare revisore');
+    // }
+
+    public function contactUs()
     {
+        return view('revisor.contact_us');
+    }
+
+    public function saveContact(Request $request)
+    {
+        $user = $request->all();
         Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));
-        return redirect()->route('welcome')->with('success', 'Complimenti! Hai correttamente richiesto di diventare revisore');
+        return redirect()->back()->with('success', 'La tua richiesta è stata correttamente inviata!');
     }
 
     public function makeRevisor(User $user)

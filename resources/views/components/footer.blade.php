@@ -39,7 +39,7 @@
                         <ul>
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
-                                <a href="{{ route('become.revisor') }}">Diventa revisore </a>
+                                <a href="{{ route('contactus.revisor') }}">Diventa revisore </a>
                             </li>
 
                         </ul>
@@ -76,7 +76,8 @@
                 &copy; Copyright <strong><span>Presto.it</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                </a> Designed by <strong><span>Giulia Volpe, Giuseppe Maria Arnone, Alice Croce e Maria Fallacara</span></strong> per
+                </a> Designed by <strong><span>Giulia Volpe, Giuseppe Maria Arnone, Alice Croce e Maria
+                        Fallacara</span></strong> per
                 Aulab srl</a>
             </div>
         </div>
