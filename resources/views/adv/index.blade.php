@@ -34,7 +34,7 @@
                             </div>
                             <div class="row">
                                 <div class="col border-top">
-                                    {{ $adv->getCategory() }}
+                                    {{ ucfirst($adv->getCategory()) }}
                                 </div>
                                 <div class="col">
                                     € {{ $adv->price }}
