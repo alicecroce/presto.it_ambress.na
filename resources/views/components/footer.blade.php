@@ -41,10 +41,11 @@
                         </ul>
                     </div>
 
+                    @auth
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Lavora con noi</h4>
                         <ul>
-                            @if (Auth::user()->is_revisor == true)
+                            @if (Auth::user()->is_revisor)
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
                                 <a href="{{ route('revisor.index') }}">Annunci da revisionare</a>
@@ -57,8 +58,9 @@
                             @endif
                         </ul>
                     </div>
+                    @endauth
 
-                    <div class="col-lg-3 col-md-6 footer-links">
+                    <div class="col-lg-3 col-md-6 footer-links ms-auto">
                         <h4>Our Social Networks</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                         <div class="social-links mt-3">
