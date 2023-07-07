@@ -56,16 +56,29 @@
                                 <h2><strong>€ {{ $adv->price }} </strong></h2>
                             </li>
 
-                            <li style="color: #778899"><i class="bi bi-tag"></i> {{ ucFirst($adv->category->name) }}</li>
+                            <li style="color: #778899"><i class="bi bi-tag"></i> {{ ucFirst($adv->category->name) }}
+                            </li>
 
                             <li><strong>Breve descrizione:</strong> {{ ucfirst($adv->abstract) }}</li>
                             <li>
                             <li style="color: #778899"> {{ ucFirst($adv->description) }}</li>
                             </li>
                             <hr>
-                            <li><i class="bi bi-person-circle" style="color: #778899"></i> {{ ucFirst($adv->user->name) }}
-                                {{ $adv->user->surname }}</li>
                             <li><i class="bi bi-cursor" style="color: #778899"></i> {{ ucFirst($adv->user->city) }}</li>
+
+                            <li>
+                                <div class="row">
+                                    <div class="col-6"> <i class="bi bi-person-circle" style="color: #778899"></i>
+                                        {{ ucFirst($adv->user->name) }} {{ $adv->user->surname }}</div>
+
+                                    <a class="col-6 btn btn-sm btn-accedi" href="tel:{{ $adv->user->phone }}"> <i
+                                            class="bi bi-telephone"></i> Contatta
+                                    </a>
+                                </div>
+                            </li>
+
+
+
 
                         </ul>
                     </div>
