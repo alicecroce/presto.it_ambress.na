@@ -71,8 +71,8 @@
                                     <div class="col-6"> <i class="bi bi-person-circle" style="color: #778899"></i>
                                         {{ ucFirst($adv->user->name) }} {{ $adv->user->surname }}</div>
 
-                                    <a class="col-6 btn btn-sm btn-accedi" href="tel:{{ $adv->user->phone }}"> <i
-                                            class="bi bi-telephone"></i> Contatta
+                                    <a class="col-6 btn btn-sm btn-accedi" href="tel:{{ $adv->user->phone }}">
+                                        <i class="bi bi-telephone m-1"></i>Contatta
                                     </a>
                                 </div>
                             </li>
