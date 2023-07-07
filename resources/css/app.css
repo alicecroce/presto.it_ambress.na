@@ -12,6 +12,10 @@ body {
     color: #444444;
 }
 
+.text-violet {
+    color: #6230a3;
+}
+
 a {
     color: #6230a3;
     text-decoration: none;
@@ -29,6 +33,10 @@ h4,
 h5,
 h6 {
     font-family: "Roboto", sans-serif;
+}
+
+.no-pointer {
+    cursor: default;
 }
 
 /*--------------------------------------------------------------
@@ -69,8 +77,8 @@ h6 {
     color: #fec200;
 }
 
-.btn-check:checked+.btn,
-:not(.btn-check)+.btn:active,
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
 .btn:first-child:active,
 .btn.active,
 .btn.show {
@@ -107,7 +115,8 @@ h6 {
 #hero {
     width: 100%;
     height: 75vh;
-    background: url("https://img.freepik.com/premium-photo/shopping-online-home-concept-online-shopping-is-form-electronic-commerce-that-allows-consumers-directly-buy-goods-from-seller-internet_1205-6258.jpg?w=996") top left;
+    background: url("https://img.freepik.com/premium-photo/shopping-online-home-concept-online-shopping-is-form-electronic-commerce-that-allows-consumers-directly-buy-goods-from-seller-internet_1205-6258.jpg?w=996")
+        top left;
     background-size: cover;
     position: relative;
 }
@@ -245,305 +254,328 @@ h6 {
 
 .libri-color,
 .moda-e-accessori-color {
-    background-image: linear-gradient(90deg,
-            hsl(270deg 57% 34%) 0%,
-            hsl(270deg 56% 34%) 11%,
-            hsl(270deg 55% 35%) 23%,
-            hsl(270deg 54% 36%) 34%,
-            hsl(270deg 53% 37%) 45%,
-            hsl(270deg 52% 38%) 57%,
-            hsl(270deg 51% 38%) 68%,
-            hsl(271deg 51% 39%) 79%,
-            hsl(271deg 50% 40%) 90%,
-            hsl(271deg 49% 41%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(270deg 57% 34%) 0%,
+        hsl(270deg 56% 34%) 11%,
+        hsl(270deg 55% 35%) 23%,
+        hsl(270deg 54% 36%) 34%,
+        hsl(270deg 53% 37%) 45%,
+        hsl(270deg 52% 38%) 57%,
+        hsl(270deg 51% 38%) 68%,
+        hsl(271deg 51% 39%) 79%,
+        hsl(271deg 50% 40%) 90%,
+        hsl(271deg 49% 41%) 100%
+    );
 }
 
 .cinema-e-musica-color,
 .elettrodomestici-color {
-    background-image: linear-gradient(90deg,
-            hsl(271deg 49% 41%) 0%,
-            hsl(271deg 48% 42%) 11%,
-            hsl(271deg 46% 43%) 23%,
-            hsl(270deg 45% 44%) 34%,
-            hsl(270deg 44% 45%) 45%,
-            hsl(270deg 43% 46%) 57%,
-            hsl(270deg 42% 47%) 68%,
-            hsl(270deg 41% 48%) 79%,
-            hsl(270deg 40% 50%) 90%,
-            hsl(269deg 40% 51%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(271deg 49% 41%) 0%,
+        hsl(271deg 48% 42%) 11%,
+        hsl(271deg 46% 43%) 23%,
+        hsl(270deg 45% 44%) 34%,
+        hsl(270deg 44% 45%) 45%,
+        hsl(270deg 43% 46%) 57%,
+        hsl(270deg 42% 47%) 68%,
+        hsl(270deg 41% 48%) 79%,
+        hsl(270deg 40% 50%) 90%,
+        hsl(269deg 40% 51%) 100%
+    );
 }
 
 .telefonia-e-accessori-color,
 .attrezzature-da-lavoro-color {
-    background-image: linear-gradient(90deg,
-            hsl(269deg 40% 51%) 0%,
-            hsl(270deg 40% 52%) 11%,
-            hsl(270deg 41% 53%) 23%,
-            hsl(270deg 41% 54%) 34%,
-            hsl(270deg 42% 55%) 45%,
-            hsl(270deg 43% 56%) 57%,
-            hsl(270deg 43% 57%) 68%,
-            hsl(270deg 44% 58%) 79%,
-            hsl(271deg 45% 59%) 90%,
-            hsl(271deg 46% 60%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(269deg 40% 51%) 0%,
+        hsl(270deg 40% 52%) 11%,
+        hsl(270deg 41% 53%) 23%,
+        hsl(270deg 41% 54%) 34%,
+        hsl(270deg 42% 55%) 45%,
+        hsl(270deg 43% 56%) 57%,
+        hsl(270deg 43% 57%) 68%,
+        hsl(270deg 44% 58%) 79%,
+        hsl(271deg 45% 59%) 90%,
+        hsl(271deg 46% 60%) 100%
+    );
 }
 
 .elettronica-color,
 .immobili-color {
-    background-image: linear-gradient(90deg,
-            hsl(271deg 46% 60%) 0%,
-            hsl(271deg 46% 61%) 11%,
-            hsl(271deg 46% 62%) 23%,
-            hsl(272deg 46% 63%) 34%,
-            hsl(272deg 47% 64%) 45%,
-            hsl(273deg 47% 65%) 57%,
-            hsl(273deg 47% 66%) 68%,
-            hsl(274deg 48% 67%) 79%,
-            hsl(274deg 48% 68%) 90%,
-            hsl(274deg 48% 69%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(271deg 46% 60%) 0%,
+        hsl(271deg 46% 61%) 11%,
+        hsl(271deg 46% 62%) 23%,
+        hsl(272deg 46% 63%) 34%,
+        hsl(272deg 47% 64%) 45%,
+        hsl(273deg 47% 65%) 57%,
+        hsl(273deg 47% 66%) 68%,
+        hsl(274deg 48% 67%) 79%,
+        hsl(274deg 48% 68%) 90%,
+        hsl(274deg 48% 69%) 100%
+    );
 }
 
 .tv-e-fotocamere-color {
-    background-image: linear-gradient(90deg,
-            hsl(274deg 48% 69%) 0%,
-            hsl(274deg 48% 68%) 11%,
-            hsl(274deg 48% 67%) 23%,
-            hsl(273deg 47% 66%) 34%,
-            hsl(273deg 47% 65%) 45%,
-            hsl(272deg 47% 64%) 57%,
-            hsl(272deg 46% 63%) 68%,
-            hsl(271deg 46% 62%) 79%,
-            hsl(271deg 46% 61%) 90%,
-            hsl(271deg 46% 60%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(274deg 48% 69%) 0%,
+        hsl(274deg 48% 68%) 11%,
+        hsl(274deg 48% 67%) 23%,
+        hsl(273deg 47% 66%) 34%,
+        hsl(273deg 47% 65%) 45%,
+        hsl(272deg 47% 64%) 57%,
+        hsl(272deg 46% 63%) 68%,
+        hsl(271deg 46% 62%) 79%,
+        hsl(271deg 46% 61%) 90%,
+        hsl(271deg 46% 60%) 100%
+    );
 }
 
 .sport-color {
-    background-image: linear-gradient(90deg,
-            hsl(271deg 46% 60%) 0%,
-            hsl(271deg 45% 59%) 11%,
-            hsl(270deg 44% 58%) 23%,
-            hsl(270deg 43% 57%) 34%,
-            hsl(270deg 43% 56%) 45%,
-            hsl(270deg 42% 55%) 57%,
-            hsl(270deg 41% 54%) 68%,
-            hsl(270deg 41% 53%) 79%,
-            hsl(270deg 40% 52%) 90%,
-            hsl(269deg 40% 51%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(271deg 46% 60%) 0%,
+        hsl(271deg 45% 59%) 11%,
+        hsl(270deg 44% 58%) 23%,
+        hsl(270deg 43% 57%) 34%,
+        hsl(270deg 43% 56%) 45%,
+        hsl(270deg 42% 55%) 57%,
+        hsl(270deg 41% 54%) 68%,
+        hsl(270deg 41% 53%) 79%,
+        hsl(270deg 40% 52%) 90%,
+        hsl(269deg 40% 51%) 100%
+    );
 }
 
 .biciclette-color {
-    background-image: linear-gradient(90deg,
-            hsl(269deg 40% 51%) 0%,
-            hsl(270deg 40% 50%) 11%,
-            hsl(270deg 41% 48%) 23%,
-            hsl(270deg 42% 47%) 34%,
-            hsl(270deg 43% 46%) 45%,
-            hsl(270deg 44% 45%) 57%,
-            hsl(270deg 45% 44%) 68%,
-            hsl(271deg 46% 43%) 79%,
-            hsl(271deg 48% 42%) 90%,
-            hsl(271deg 49% 41%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(269deg 40% 51%) 0%,
+        hsl(270deg 40% 50%) 11%,
+        hsl(270deg 41% 48%) 23%,
+        hsl(270deg 42% 47%) 34%,
+        hsl(270deg 43% 46%) 45%,
+        hsl(270deg 44% 45%) 57%,
+        hsl(270deg 45% 44%) 68%,
+        hsl(271deg 46% 43%) 79%,
+        hsl(271deg 48% 42%) 90%,
+        hsl(271deg 49% 41%) 100%
+    );
 }
 
 .moto-e-auto-color {
-    background-image: linear-gradient(90deg,
-            hsl(271deg 49% 41%) 0%,
-            hsl(271deg 50% 40%) 11%,
-            hsl(271deg 51% 39%) 23%,
-            hsl(270deg 51% 38%) 34%,
-            hsl(270deg 52% 38%) 45%,
-            hsl(270deg 53% 37%) 57%,
-            hsl(270deg 54% 36%) 68%,
-            hsl(270deg 55% 35%) 79%,
-            hsl(270deg 56% 34%) 90%,
-            hsl(270deg 57% 34%) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(271deg 49% 41%) 0%,
+        hsl(271deg 50% 40%) 11%,
+        hsl(271deg 51% 39%) 23%,
+        hsl(270deg 51% 38%) 34%,
+        hsl(270deg 52% 38%) 45%,
+        hsl(270deg 53% 37%) 57%,
+        hsl(270deg 54% 36%) 68%,
+        hsl(270deg 55% 35%) 79%,
+        hsl(270deg 56% 34%) 90%,
+        hsl(270deg 57% 34%) 100%
+    );
 }
 
 ---------------------------------------------
-Single Product Page
---------------------------------------------- 
-*/
-
-#product {
-  margin-top: 80px;
+    Single
+    Product
+    Page
+    ---------------------------------------------
+    */
+    #product {
+    margin-top: 80px;
 }
 
 #product .left-images img {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 
 #product .right-content {
-  position: relative;
-  z-index: 3;
-  background-color: #fff;
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
 }
 
 #product .right-content h4 {
-  font-size: 22px;
-  color: #2a2a2a;
-  font-weight: 700;
-  margin-bottom: 0px;
+    font-size: 22px;
+    color: #2a2a2a;
+    font-weight: 700;
+    margin-bottom: 0px;
 }
 
 #product .right-content span.price {
-  font-size: 18px;
-  color: #a1a1a1;
-  font-weight: 500;
-  display: block;
-  margin-top: 5px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
+    font-size: 18px;
+    color: #a1a1a1;
+    font-weight: 500;
+    display: block;
+    margin-top: 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
 }
 
 #product .right-content ul.stars {
-  position: absolute;
-  right: 0;
-  top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 #product .right-content ul.stars li {
-  display: inline;
-  font-size: 13px;
+    display: inline;
+    font-size: 13px;
 }
 
 #product .right-content span {
-  font-size: 14px;
-  color: #aaaaaa;
-  font-weight: 500;
-  display: block;
-  margin-top: 25px;
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 500;
+    display: block;
+    margin-top: 25px;
 }
 
 #product .right-content .quote {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 #product .right-content .quote i {
-  float: left;
-  font-size: 32px;
-  margin-right: 15px;
-  margin-top: 10px;
+    float: left;
+    font-size: 32px;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
 #product .right-content .quote p {
-  font-style: italic;
-  color: #2a2a2a;
-  font-weight: 500;
+    font-style: italic;
+    color: #2a2a2a;
+    font-weight: 500;
 }
 
 #product .right-content p {
-  font-size: 14px;
-  color: #aaaaaa;
-  font-weight: 500;
-  display: block;
-  margin-top: 25px;
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 500;
+    display: block;
+    margin-top: 25px;
 }
 
 .quantity-content {
-  margin-top: 30px;
-  padding-top: 30px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  width: 100%;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .quantity-content .left-content {
-  float: left;
-  margin-right: 30px;
+    float: left;
+    margin-right: 30px;
 }
 
 .quantity-content .right-content {
-  text-align: right;
+    text-align: right;
 }
 
 .quantity-content .left-content h6 {
-  padding-top: 7px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #aaa;
-  position: relative;
-  z-index: 11;
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #aaa;
+    position: relative;
+    z-index: 11;
 }
 
 .total h4 {
-  float: left;
-  font-size: 20px;
-  margin-top: 10px;
-  color: #aaa!important;
+    float: left;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #aaa !important;
 }
 
 .total .main-border-button {
-  text-align: right;
+    text-align: right;
 }
 
 .total .main-border-button a {
-  border-color: #2a2a2a;
-  color: #2a2a2a;
+    border-color: #2a2a2a;
+    color: #2a2a2a;
 }
 
 .total .main-border-button a:hover {
-  color: #fff;
-  background-color: #2a2a2a;
+    color: #fff;
+    background-color: #2a2a2a;
 }
 
 .quantity {
-  display: inline-block; }
- 
- .quantity .input-text.qty {
-  width: 35px;
-  height: 39px;
-  padding: 0 5px;
-  text-align: center;
-  background-color: transparent;
-  border: 1px solid #efefef;
- }
- 
- .quantity.buttons_added {
-  text-align: left;
-  position: relative;
-  white-space: nowrap;
-  vertical-align: top; }
- 
- .quantity.buttons_added input {
-  display: inline-block;
-  margin: 0;
-  vertical-align: top;
-  box-shadow: none;
- }
- 
- .quantity.buttons_added .minus,
- .quantity.buttons_added .plus {
-  padding: 7px 10px 8px;
-  height: 39px;
-  background-color: #ffffff;
-  border: 1px solid #efefef;
-  cursor:pointer;}
- 
- .quantity.buttons_added .minus {
-  border-right: 0; }
- 
- .quantity.buttons_added .plus {
-  border-left: 0; }
- 
- .quantity.buttons_added .minus:hover,
- .quantity.buttons_added .plus:hover {
-  background: #eeeeee; }
- 
- .quantity input::-webkit-outer-spin-button,
- .quantity input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  margin: 0; }
-  
-  .quantity.buttons_added .minus:focus,
- .quantity.buttons_added .plus:focus {
-  outline: none; }
+    display: inline-block;
+}
 
+.quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+}
 
+.quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 39px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+    border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+    border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+    background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none;
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -561,7 +593,10 @@ Single Product Page
     position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+    .portfolio-details-slider
+    .swiper-pagination
+    .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #fff;
@@ -569,7 +604,10 @@ Single Product Page
     border: 1px solid #fdc134;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+    .portfolio-details-slider
+    .swiper-pagination
+    .swiper-pagination-bullet-active {
     background-color: #fdc134;
 }
 
@@ -592,7 +630,7 @@ Single Product Page
     font-size: 18px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
     margin-top: 10px;
 }
 
@@ -749,7 +787,6 @@ Single Product Page
 }
 
 @media (max-width: 768px) {
-
     #footer .copyright,
     #footer .credits {
         float: none;
@@ -763,7 +800,6 @@ Single Product Page
   --------------------------------------------------------------*/
 
 #tem-email {
-
     font-family: "Poppins", sans-serif;
     color: #6230a3;
     font-weight: bold;
@@ -774,7 +810,7 @@ Single Product Page
   # Card revisor home
   --------------------------------------------------------------*/
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   h1 in adv.index
   --------------------------------------------------------------*/
 #categoryName {
@@ -785,7 +821,6 @@ Single Product Page
     color: #6230a3;
     font-family: "Junge", serif;
 }
-
 
 /*--------------------------------------------------------------
   # PROFILE SECTION
