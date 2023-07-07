@@ -1,14 +1,13 @@
 <x-main>
 
-    <div id="success-message">
+ 
         @if (session('success'))
-            <div class="d-flex justify-content-center">
-                <div class="alert alert-warning w-75 align-items-center text-center" role="alert">
-                    {{ session('success') }}
-                </div>
+        <div class="alert alert-success alert-dismissible w-75" role="alert">
+               <div> {{ session('success') }}</div>
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
-    </div>
+ 
 
     <div class="container">
         <div class="row justify-content-center my-2">
