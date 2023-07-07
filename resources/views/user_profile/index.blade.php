@@ -70,9 +70,6 @@
                                     <div class="card-body position-relative">
                                         <h5 class="card-title">{{ $adv->title }}</h5>
                                         <hr>
-                                        <div class="h-25">
-                                            <p class="card-text">{{ $adv->abstract }}</p>
-                                        </div>
                                         <div class="row">
                                             <div class="col mt-2">
                                                 {{ ucfirst($adv->getCategory()) }}
