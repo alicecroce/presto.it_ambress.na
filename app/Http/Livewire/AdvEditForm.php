@@ -15,7 +15,7 @@ class AdvEditForm extends Component
 
     protected $rules = [
         'title' => 'required|string|min:3',
-        'price' => 'required|integer',
+        'price' => 'required',
         'abstract' => 'required|string|max:200',
         'description' => 'required|string|max:500',
         'img' => 'string',

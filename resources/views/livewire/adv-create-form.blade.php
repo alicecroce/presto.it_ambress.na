@@ -10,23 +10,23 @@
             </div>
         @endif
 
-        <form wire:submit.prevent="store" class="w-75">
+        <form wire:submit.prevent="store" class="w-75"> 
             <div class="mb-3">
                 <label for="title" class="form-label">Inserisci il titolo del tuo articolo</label>
-                <input type="text" class="form-control" id="title" wire:model="title">
+                <input type="text" class="form-control" id="title" wire:model="title" required>
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Inserisci il prezzo del tuo articolo</label>
                 <input type="number" step="0.01" value="0.00" placeholder="€ 0.00" class="form-control"
-                    id="price" wire:model="price">
+                    id="price" wire:model="price" required>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="abstract">Inserisci una breve descrizione</label>
-                <input type="text" class="form-control" id="abstract" wire:model="abstract">
+                <input type="text" class="form-control" id="abstract" wire:model="abstract" required>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="category_id">Inserisci una categoria</label>
-                <select wire:model="category_id" id="category_id" class="form-control">
+                <select wire:model="category_id" id="category_id" class="form-control" required>
                     <option selected>Scegli una categoria</option>
                     @forelse ($categories as $category)
                         <option value="{{ $category->id }}">{{ ucFirst($category->name) }}
