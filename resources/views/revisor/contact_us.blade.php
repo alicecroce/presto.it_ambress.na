@@ -57,7 +57,7 @@
                                     </div>
 
                                     <div class="form-floating mb-3">
-                                        <input readonly type="email" value="{{ Auth::user()->email }}" name="email"
+                                        <input type="email" value="{{ Auth::user()->email }}" name="email"
                                             class="form-control" id="email" placeholder="name@example.com">
                                         <label for="email">Indirizzo mail</label>
                                     </div>

@@ -39,8 +39,12 @@
             <div class="mb-3">
                 <label class="form-label" for="description">Inserisci informazioni aggiuntive</label>
                 <textarea wire:model="description" id="description" class="form-control"></textarea>
-            </div>
+            </div>   
+            
             <button type="submit" class="btn btn-show">Modifica annuncio</button>
+            <button wire:click="destroy({{$adv}})" class="btn btn-danger">Elimina annuncio</button>
+        
         </form>
     </div>
+
 </div>

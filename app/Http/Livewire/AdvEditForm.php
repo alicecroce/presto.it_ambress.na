@@ -46,6 +46,15 @@ class AdvEditForm extends Component
         return redirect()->route('adv.index')->with('success', 'Annuncio modificato con successo!');
     }
 
+
+    public function destroy(Adv $adv)
+    {
+        $adv->delete();
+
+        session()->flash('adv', 'Annuncio eliminata correttamente.');
+        return redirect()->route('adv.index')->with('success', 'Annuncio eliminato con successo.');
+    }
+
     public function render()
     {
         return view('livewire.adv-edit-form');
