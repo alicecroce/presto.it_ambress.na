@@ -23,6 +23,12 @@
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a href="/">
                                     Home</a>
                             </li>
+                            @auth
+                            <li>
+                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
+                                    href="{{ route('adv.create') }}">Inserisci un annuncio</a>
+                            </li>
+                            @else
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
                                     href="{{ route('register') }}">Registrati</a>
@@ -31,17 +37,24 @@
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
                                     href="{{ route('login') }}">Accedi</a>
                             </li>
+                            @endauth
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Lavora con noi</h4>
                         <ul>
+                            @if (Auth::user()->is_revisor == true)
+                            <li>
+                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
+                                <a href="{{ route('revisor.index') }}">Annunci da revisionare</a>
+                            </li> 
+                            @else
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
                                 <a href="{{ route('contactus.revisor') }}">Diventa revisore </a>
-                            </li>
-
+                            </li> 
+                            @endif
                         </ul>
                     </div>
 
