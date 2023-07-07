@@ -25,7 +25,7 @@
 
                             <div class="row mt-2 g-0">
                                 <div class="col-6 g-0">
-                                    <form action="{{ route('revisor.accept_adv', ['adv' => $adv]) }}" method="POST">
+                                    <form action="{{ route('revisor.acceptRejected_adv', ['adv' => $adv]) }}" method="POST">
                                         @csrf
                                         @method('PATCH')
                                         <button type="submit" class="btn btn-cerca ">Accetta</button>

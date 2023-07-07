@@ -30,6 +30,12 @@ class RevisorController extends Controller
         return redirect()->route('revisor.index')->with('success', 'Annuncio rifiutato');
     }
 
+    public function acceptRejectedAdv(Adv $adv)
+    {
+        $adv->setAccepted(true);
+        return redirect()->route('rejected')->with('success', 'Annuncio accettato');
+    }
+
     // public function becomeRevisor()
     // {
     //     Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));

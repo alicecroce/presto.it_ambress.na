@@ -17,8 +17,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse me-4" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto d-flex flex-row justify-content-end">
                 <li class="nav-item dropdown p-1">
                     @auth
                         <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
