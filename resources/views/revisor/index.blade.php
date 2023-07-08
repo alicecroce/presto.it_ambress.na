@@ -1,13 +1,13 @@
 <x-main>
 
- 
-        @if (session('success'))
+
+    @if (session('success'))
         <div class="alert alert-success alert-dismissible w-75" role="alert">
-               <div> {{ session('success') }}</div>
-               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        @endif
- 
+            <div> {{ session('success') }}</div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
 
     <div class="container">
         <div class="row justify-content-center my-2">
@@ -21,29 +21,42 @@
                                 <div class="swiper-wrapper align-items-center">
 
                                     <div id="carouselExampleIndicators" class="carousel slide">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleIndicators"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        </div>
-                                        <div class="carousel-inner ">
-                                            <div class="carousel-item active">
-                                                <img src="https://picsum.photos/200/200" class="d-block w-100"
-                                                    alt="...">
+                                        @if ($adv_to_check->images)
+                                            <div class="carousel-inner">
+                                                @foreach ($adv_to_check->images as $image)
+                                                    <div
+                                                        class="carousel-item @if ($loop->first) active @endif">
+                                                        <img src="{{ Storage::url($image->path) }}"
+                                                            class="img-fluid p-3 rounded" alt="...">
+                                                    </div>
+                                                @endforeach
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="https://picsum.photos/200/200" class="d-block w-100"
-                                                    alt="...">
+                                        @else
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="https://picsum.photos/200/200" class="d-block w-100"
-                                                    alt="...">
+                                            <div class="carousel-inner ">
+                                                <div class="carousel-item active">
+                                                    <img src="https://picsum.photos/200/200" class="d-block w-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="https://picsum.photos/200/200" class="d-block w-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="https://picsum.photos/200/200" class="d-block w-100"
+                                                        alt="...">
+                                                </div>
                                             </div>
-                                        </div>
+                                        @endif
+
                                         <button class="carousel-control-prev" type="button"
                                             data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -120,8 +133,6 @@
             @else
                 Non ci sono annunci da revisionare
             @endif
-
-            {{-- {{ $advs->links() }} --}}
         </div>
     </div>
 </x-main>

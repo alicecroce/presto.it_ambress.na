@@ -39,6 +39,15 @@ h6 {
 .no-pointer {
     cursor: default;
 }
+/*--------------------------------------------------------------
+# preview immagini
+--------------------------------------------------------------*/
+.img-preview {
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
 
 /*--------------------------------------------------------------
 # succes message

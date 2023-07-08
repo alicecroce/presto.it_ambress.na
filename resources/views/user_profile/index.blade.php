@@ -65,8 +65,8 @@
                         @forelse ($advs as $adv)
                             <div class="col-12 col-md-6">
                                 <div class="card my-3" style="height: 38rem;">
-                                    <img src="https://placehold.co/300/6230A3/FFFFFF/png" class="card-img-top"
-                                        alt="...">
+                                    <img src="{{ !$adv->images()->get()->isEmpty()? Storage::url($adv->images()->first()->path): 'https://placehold.co/300/6230A3/FFFFFF/png' }}"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body position-relative">
                                         <h5 class="card-title">{{ $adv->title }}</h5>
                                         <hr>
@@ -85,7 +85,7 @@
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="{{ route('adv.edit', ['adv' => $adv->id])}}"
+                                            <a href="{{ route('adv.edit', ['adv' => $adv->id]) }}"
                                                 class="btn btn-show float-start mt-2">modifica
                                                 Annuncio
                                             </a>

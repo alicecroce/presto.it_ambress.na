@@ -31,7 +31,7 @@
                 @if (Route::currentRouteName() == 'categoryshow')
                     {{ ucFirst($category->name) }}
                 @else
-                    {{__('ui.allAdvs')}}
+                    {{ __('ui.allAdvs') }}
                 @endif
             </h1>
         </div>
@@ -42,7 +42,8 @@
                         <a class="btn btn-warning no-pointer btn-sm text-violet text-capitalize position-absolute mt-3 ms-3 "
                             href="{{ route('categoryshow', ['category' => $adv->category_id]) }}">
                             {{ $adv->category->name }}</a>
-                        <img src="https://placehold.co/300/6230A3/FFFFFF/png" class="card-img-top" alt="...">
+                        <img src="{{ !$adv->images()->get()->isEmpty()? Storage::url($adv->images()->first()->path): 'https://placehold.co/300/6230A3/FFFFFF/png' }}"
+                            class="card-img-top" alt="...">
                         <div class="card-body position-relative">
                             <h5 class="card-title">{{ ucFirst($adv->title) }}</h5>
                             <div class="h-50">
@@ -67,7 +68,7 @@
         </div>
         <div class="row py-3">
             <div>
-                Nessun annuncio, sorry. :(
+                Nessun annuncio, sorry. :\
             </div>
         </div>
         @endforelse
