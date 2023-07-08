@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\Image;
 use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Adv extends Model
 {
@@ -50,5 +51,10 @@ class Adv extends Model
     public static function toBeRevisionedCount()
     {
         return Adv::where('is_accepted', null)->count();
+    }
+
+    public function images()
+    {
+        return $this->hasMany(Image::class);
     }
 }
