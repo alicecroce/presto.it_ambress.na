@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
 
-            $table->unsignedBigInteger(('adv_id'))->nullable();
-            $table->foreign(('adv_id'))->references('id')->on('advs')->onDelete('cascade'); //cascade mi dice che quando si cancellano le immagini, "a cascata" verrà cancellato anche l'annuncio
+            $table->unsignedBigInteger('adv_id')->nullable();
+            $table->foreign('adv_id')->references('id')->on('advs')->onDelete('cascade'); //cascade mi dice che quando si cancellano le immagini, "a cascata" verrà cancellato anche l'annuncio
             $table->string('path')->nullable();
             $table->timestamps();
         });
