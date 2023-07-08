@@ -5,10 +5,21 @@
                 alt="logo presto.it">
         </a>
 
+        {{-- SELEZIONE MULTILINGUA --}}
+        <ul class="navbar-nav d-flex d-inline">
+            <li class="nav-item m-1">
+                <x-locale locale lang="it" nation="it"/>
+            </li>
+            <li class="nav-item m-1">
+                <x-locale locale lang="en" nation="gb"/>
+            </li>
+        </ul>
+        {{-- FINE SELEZIONE MULTILINGUA --}}
+
         <form class="d-flex flex-grow-1" action="{{ route('advs.search') }}" method="GET" role="search">
-            <input class="form-control flex-grow me-2" name="searched" type="search" placeholder="Cerca su Presto.it"
+            <input class="form-control flex-grow me-2" name="searched" type="search" placeholder="{{__('ui.searchBar')}}"
                 aria-label="Search">
-            <button class="btn btn-cerca" type="submit">Cerca</button>
+            <button class="btn btn-cerca" type="submit">{{__('ui.btn-search')}}</button>
         </form>
 
         <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
@@ -17,16 +28,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
+
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto d-flex flex-row justify-content-end">
                 <li class="nav-item dropdown p-1">
                     @auth
                         <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Profilo
+                            {{__('ui.profile')}}
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{route('user_profile.index')}}">Profilo</a></li>
+                            <li><a class="dropdown-item" href="{{ route('user_profile.index') }}">{{__('ui.profile')}}</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -40,42 +53,43 @@
                     @else
                         <a class="btn btn-accedi mx-3" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Accedi | Registrati
+                            {{__('ui.login')}} | {{__('ui.register')}}
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ route('login') }}">Accedi</a></li>
-                            <li><a class="dropdown-item" href="{{ route('register') }}">Registrati</a></li>
+                            <li><a class="dropdown-item" href="{{ route('login') }}"> {{__('ui.login')}}</a></li>
+                            <li><a class="dropdown-item" href="{{ route('register') }}">{{__('ui.register')}}</a></li>
                         </ul>
                     @endauth
                 </li>
                 @auth
                     <li class="nav-item p-1">
-                        <a class="btn btn-accedi" role="button" href="{{ route('adv.create') }}">Inserisci un annuncio</a>
+                        <a class="btn btn-accedi" role="button" href="{{ route('adv.create') }}">{{__('ui.addAdv')}}</a>
                     </li>
                     @if (Auth::user()->is_revisor)
                         <li class="nav-item dropdown p-1">
                             <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Area revisore
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ route('revisor.index') }}">Da revisionare
-                                <span class="position-absolute top-25 start-75 badge rounded-pill bg-danger">
-                                    {{ App\Models\Adv::toBeRevisionedCount() }}
-                                    <span class="visually-hidden">
-                                        Messaggi non letti
-                                    </span>
-                                </span>
-                            </a></li>
-                            <li><a class="dropdown-item" href="{{ route('rejected') }}">Rifiutati</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="{{ route('adv.index') }}">Tutti gli annunci</a></li>
-                        </ul>
+                                aria-expanded="false">
+                              {{__('ui.revArea')}}
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{ route('revisor.index') }}">{{__('ui.toRev')}}
+                                        <span class="position-absolute top-25 start-75 badge rounded-pill bg-danger">
+                                            {{ App\Models\Adv::toBeRevisionedCount() }}
+                                            <span class="visually-hidden">
+                                                Messaggi non letti
+                                            </span>
+                                        </span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="{{ route('rejected') }}">{{__('ui.toRevRej')}}</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="{{ route('adv.index') }}">{{__('ui.allAdvs')}}</a></li>
+                            </ul>
                         </li>
                     @endif
                 @endauth
+
             </ul>
         </div>
     </div>

@@ -12,4 +12,9 @@ class FrontController extends Controller
         $advs = Adv::search($request->searched)->where('is_accepted', true)->paginate(8);
         return view('adv.index', compact('advs'));
     }
+
+    public function setLanguage($lang){
+        session()->put('locale', $lang);
+        return redirect()->back();
+    }
 }

@@ -42,3 +42,7 @@ Route::get('/richiesta/revisore/rifiutati', [RevisorController::class, 'not_acce
 Route::get('/profilo', [UserController::class, 'index'])->name('user_profile.index');
 Route::get('/profilo/edit', [UserController::class, 'edit'])->name('user_profile.edit');
 Route::delete('/profilo/elimina', [UserController::class, 'destroy'])->name('user_profile.destroy');
+
+//SELEZIONE MULTILINGUA
+
+Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('set_language_locale');

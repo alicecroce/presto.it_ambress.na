@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "bootstrap-icons";
+@import "flag-icon-css/css/flag-icons";
 @import "./auth.css";
 @import url("https://fonts.googleapis.com/css2?family=Junge&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Junge&family=Poppins&display=swap");

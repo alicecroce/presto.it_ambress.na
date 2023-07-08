@@ -31,7 +31,7 @@
                 @if (Route::currentRouteName() == 'categoryshow')
                     {{ ucFirst($category->name) }}
                 @else
-                    Tutti gli annunci
+                    {{__('ui.allAdvs')}}
                 @endif
             </h1>
         </div>
