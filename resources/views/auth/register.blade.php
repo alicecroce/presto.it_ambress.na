@@ -5,6 +5,15 @@
             <div class="col-md-8 col-lg-6">
                 <div class="login d-flex align-items-center py-4">
                     <div class="container">
+                        <div >
+                            <ul class="navbar-nav d-flex d-inline">
+                                <li class="nav-item m-1">
+                                    <x-locale locale lang="it" nation="it" />
+                                </li>
+                                <li class="nav-item m-1">
+                                    <x-locale locale lang="en" nation="gb" />
+                                </li>
+                            </ul>
                         <div class="row">
                             <div class="d-flex align-items-center">
                                 <a href="/" class="text-center">
@@ -15,7 +24,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4">Benvenutə!</h3>
+                                <h3 class="login-heading mb-4">{{__('ui.1welc')}}!</h3>
 
                                 <!-- Sign In Form -->
                                 <form action="{{ route('register') }}" method="POST">
@@ -35,30 +44,30 @@
                                         <div class="form-floating flex-grow-1 mb-3 me-2">
                                             <input type="text" name="name" class="form-control" id="name"
                                                 placeholder="Gino">
-                                            <label for="name">Nome</label>
+                                            <label for="name">{{__('ui.name')}}</label>
                                         </div>
                                         <div class="form-floating flex-grow-1 mb-3 ">
                                             <input type="text" name="surname" class="form-control" id="surname"
                                                 placeholder="Gini">
-                                            <label for="surname">Cognome</label>
+                                            <label for="surname">{{__('ui.surname')}}</label>
                                         </div>
                                     </div>
 
                                     <div class="form-floating mb-3">
                                         <input type="email" name="email" class="form-control" id="email"
                                             placeholder="name@example.com">
-                                        <label for="email">Indirizzo mail</label>
+                                        <label for="email">{{__('ui.emailAdd')}}</label>
                                     </div>
                                     <div class="d-flex d-inline">
                                         <div class="form-floating flex-grow-1 mb-3 me-2">
                                             <input type="text" name="phone" class="form-control" id="phone"
                                                 placeholder="081 555 6667">
-                                            <label for="phone">Telefono</label>
+                                            <label for="phone">{{__('ui.telephone')}}</label>
                                         </div>
                                         <div class="form-floating flex-grow-1 mb-3">
                                             <input type="text" name="city" class="form-control" id="city"
                                                 placeholder="Napoli (NA)">
-                                            <label for="city">Città</label>
+                                            <label for="city">{{__('ui.city')}}</label>
                                         </div>
                                     </div>
 
@@ -69,7 +78,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="password" name="password_confirmation" class="form-control"
                                             id="password_confirmation">
-                                        <label for="password_confirmation">Conferma password</label>
+                                        <label for="password_confirmation">{{__('ui.pwdConfirm')}}</label>
                                     </div>
 
                                     {{-- <div class="form-check mb-3">
@@ -87,8 +96,8 @@
                                             <a class="small" href="#">Forgot password?</a>
                                         </div> --}}
                                         <div class="text-center">
-                                            Sei già registratə?
-                                            <a href="{{ route('login') }}">Accedi!</a>
+                                            {{__('ui.alreadySign')}}?
+                                            <a href="{{ route('login') }}">{{__('ui.login')}}!</a>
                                         </div>
                                     </div>
 

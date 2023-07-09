@@ -6,8 +6,7 @@
                 <div class="col">
                     <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
                         <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">User</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('welcome')}}">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">User Profile</li>
                         </ol>
                     </nav>
@@ -23,8 +22,7 @@
                             <h5 class="my-3">{{ Auth::user()->name }} {{ Auth::user()->surname }}</h5>
                             <p class="text-muted mb-4">{{ Auth::user()->city }}</p>
                             <div class="d-flex justify-content-center mb-2">
-                                <a href="{{ route('user_profile.edit') }}" class="btn btn-accedi ms-1">Modifica
-                                    profilo</a>
+                                <a href="{{ route('user_profile.edit') }}" class="btn btn-accedi ms-1">{{__('ui.editProfile')}}</a>
                             </div>
                         </div>
                     </div>
@@ -34,7 +32,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <p class="mb-0">Nome</p>
+                                    <p class="mb-0">{{__('ui.name')}}</p>
                                 </div>
                                 <div class="col-sm-9">
                                     <p class="text-muted mb-0">{{ Auth::user()->name }} {{ Auth::user()->surname }}</p>
@@ -53,7 +51,7 @@
                             <hr>
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <p class="mb-0">Telefono</p>
+                                    <p class="mb-0">{{__('ui.phone')}}</p>
                                 </div>
                                 <div class="col-sm-9">
                                     <p class="text-muted mb-0">{{ Auth::user()->phone }}</p>
@@ -80,14 +78,12 @@
                                         </div>
                                         <div>
                                             <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}"
-                                                class="btn btn-show float-end mt-2">Vedi
-                                                Annuncio
+                                                class="btn btn-show float-end mt-2">{{__('ui.btnInfo')}}
                                             </a>
                                         </div>
                                         <div>
                                             <a href="{{ route('adv.edit', ['adv' => $adv->id]) }}"
-                                                class="btn btn-show float-start mt-2">modifica
-                                                Annuncio
+                                                class="btn btn-show float-start mt-2">{{__('ui.btnEdit')}}
                                             </a>
                                         </div>
 

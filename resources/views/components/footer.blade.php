@@ -11,13 +11,13 @@
                             Lorem ipsum dolor sit amet. <br>
                             Napoli, NA 90123<br>
                             Torino <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>{{__('ui.phone')}}</strong> +1 5589 55488 55<br>
                             <strong>Email:</strong> info@presto.it<br>
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Link utili</h4>
+                        <h4>{{__('ui.links')}}</h4>
                         <ul>
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a href="/">
@@ -26,16 +26,16 @@
                             @auth
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
-                                    href="{{ route('adv.create') }}">Inserisci un annuncio</a>
+                                    href="{{ route('adv.create') }}">{{__('ui.addAdv')}}</a>
                             </li>
                             @else
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
-                                    href="{{ route('register') }}">Registrati</a>
+                                    href="{{ route('register') }}">{{__('ui.register')}}</a>
                             </li>
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
-                                    href="{{ route('login') }}">Accedi</a>
+                                    href="{{ route('login') }}">{{__('ui.login')}}</a>
                             </li>
                             @endauth
                         </ul>
@@ -43,17 +43,17 @@
 
                     @auth
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Lavora con noi</h4>
+                        <h4>{{__('ui.workWithUS')}}</h4>
                         <ul>
                             @if (Auth::user()->is_revisor)
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
-                                <a href="{{ route('revisor.index') }}">Annunci da revisionare</a>
+                                <a href="{{ route('revisor.index') }}">{{__('ui.toRev')}}</a>
                             </li> 
                             @else
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
-                                <a href="{{ route('contactus.revisor') }}">Diventa revisore </a>
+                                <a href="{{ route('contactus.revisor') }}">{{__('ui.becomRev')}}</a>
                             </li> 
                             @endif
                         </ul>
@@ -61,7 +61,7 @@
                     @endauth
 
                     <div class="col-lg-3 col-md-6 footer-links ms-auto">
-                        <h4>Our Social Networks</h4>
+                        <h4>{{__('ui.ourSocial')}}</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                         <div class="social-links mt-3">
                             <a href="#">

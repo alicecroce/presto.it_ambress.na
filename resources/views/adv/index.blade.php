@@ -58,8 +58,7 @@
                                 </div>
                             </div>
                             <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}"
-                                class="btn btn-show position-absolute bottom-0 end-0 m-3">Vedi
-                                Annuncio
+                                class="btn btn-show position-absolute bottom-0 end-0 m-3">{{__('ui.btnInfo')}}
                             </a>
                         </div>
                     </div>
@@ -68,7 +67,7 @@
         </div>
         <div class="row py-3">
             <div>
-                Nessun annuncio, sorry. :\
+              {{__('ui.noPost')}}
             </div>
         </div>
         @endforelse

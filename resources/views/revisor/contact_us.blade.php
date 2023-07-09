@@ -10,11 +10,21 @@
     </div>
 
     <div class="container-fluid ps-md-0">
+        
         <div class="row g-0">
             <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image opacity-75 "></div>
             <div class="col-md-8 col-lg-6">
                 <div class="login d-flex align-items-center py-4">
                     <div class="container">
+                        <div class="">
+                            <ul class="navbar-nav d-flex d-inline">
+                                <li class="nav-item m-1">
+                                    <x-locale locale lang="it" nation="it" />
+                                </li>
+                                <li class="nav-item m-1">
+                                    <x-locale locale lang="en" nation="gb" />
+                                </li>
+                            </ul>
                         <div class="row">
                             <div class="d-flex align-items-center">
                                 <a href="/" class="text-center">
@@ -26,7 +36,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4">Contattaci! Entra nel team di Presto.it</h3>
+                                <h3 class="login-heading mb-4">{{__('ui.revForm')}}</h3>
 
                                 <!-- Sign In Form -->
                                 <form action="{{ route('savecontact.revisor') }}" method="POST">
@@ -47,24 +57,24 @@
                                         <div class="form-floating flex-grow-1 mb-3 me-2">
                                             <input readonly type="text" value="{{ Auth::user()->name }}"
                                                 name="name" class="form-control" id="name" placeholder="Gino">
-                                            <label for="name">Nome</label>
+                                            <label for="name">{{__('ui.name')}}</label>
                                         </div>
                                         <div class="form-floating flex-grow-1 mb-3 ">
                                             <input readonly type="text" value="{{ Auth::user()->surname }}"
                                                 name="surname" class="form-control" id="surname" placeholder="Gini">
-                                            <label for="surname">Cognome</label>
+                                            <label for="surname">{{__('ui.surname')}}</label>
                                         </div>
                                     </div>
 
                                     <div class="form-floating mb-3">
                                         <input type="email" value="{{ Auth::user()->email }}" name="email"
                                             class="form-control" id="email" placeholder="name@example.com">
-                                        <label for="email">Indirizzo mail</label>
+                                        <label for="email">{{__('ui.emailAdd')}}</label>
                                     </div>
 
                                     <div class="mb-3">
                                         <textarea style="height: 8rem;" name="description" class="form-control"
-                                            placeholder="Scrivi un breve messaggio sul perchè vorrresti collaborare come revisore nel team di Ambress.na per Presto.it"
+                                            placeholder="{{__('ui.whyRev')}}"
                                             id="description"></textarea>
                                     </div>
 
@@ -73,7 +83,7 @@
 
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
-                                            type="submit">Invia la tua candidatura</button>
+                                            type="submit">{{__('ui.apply')}}</button>
                                     </div>
 
                                 </form>

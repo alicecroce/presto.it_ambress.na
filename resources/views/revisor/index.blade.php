@@ -78,23 +78,23 @@
                                 </h4>
                                 <hr>
                                 <ul>
-                                    <li><strong>Prezzo</strong>: € {{ $adv_to_check->price }} </li>
-                                    <li><strong>Provenienza</strong>: {{ $adv_to_check->user->city }} </li>
+                                    <li><strong>{{__('ui.revPrice')}}</strong>: € {{ $adv_to_check->price }} </li>
+                                    <li><strong>{{__('ui.from')}}</strong>: {{ $adv_to_check->user->city }} </li>
                                 </ul>
                                 <hr>
-                                <div><strong>Breve descrizione:</strong> {{ $adv_to_check->abstract }}</div>
+                                <div><strong>{{__('ui.shortDesc')}}:</strong> {{ $adv_to_check->abstract }}</div>
                                 <br>
                                 <div class="text-justify about-text-justify">
-                                    <strong>Informazioni aggiuntive: </strong>
+                                    <strong>{{__('ui.moreInfo')}}: </strong>
                                     <p>{{ $adv_to_check->description }}</p>
                                 </div>
                                 <hr>
 
                                 <ul>
-                                    <li><strong>Categorie</strong>: {{ $adv_to_check->category->name }} </li>
-                                    <li><strong>Inserzionista</strong>: {{ $adv_to_check->user->name }}
+                                    <li><strong>{{__('ui.categ')}}</strong>: {{ $adv_to_check->category->name }} </li>
+                                    <li><strong>{{__('ui.Advertiser')}}</strong>: {{ $adv_to_check->user->name }}
                                         {{ $adv_to_check->user->surname }}</li>
-                                    <li><strong>Pubblicato il</strong>:
+                                    <li><strong>{{__('ui.pubDate')}}</strong>:
                                         {{ $adv_to_check->created_at->format('d/m/Y') }}</a>
                                     </li>
                                 </ul>
@@ -107,7 +107,7 @@
                                                 method="POST">
                                                 @csrf
                                                 @method('PATCH')
-                                                <button type="submit" class="btn btn-outline-success ">Accetta</button>
+                                                <button type="submit" class="btn btn-outline-success ">{{__('ui.accept')}}</button>
                                             </form>
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@
                                                 method="POST">
                                                 @csrf
                                                 @method('PATCH')
-                                                <button type="submit" class="btn btn-outline-danger">Rifiuta</button>
+                                                <button type="submit" class="btn btn-outline-danger">{{__('ui.reject')}}</button>
                                             </form>
                                         </div>
                                     </div>
@@ -131,7 +131,7 @@
                     </div>
                 </div>
             @else
-                Non ci sono annunci da revisionare
+             {{__('ui.noPostRev')}}
             @endif
         </div>
     </div>

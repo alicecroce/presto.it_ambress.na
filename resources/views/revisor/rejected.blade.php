@@ -28,14 +28,13 @@
                                     <form action="{{ route('revisor.acceptRejected_adv', ['adv' => $adv]) }}" method="POST">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="submit" class="btn btn-cerca ">Accetta</button>
+                                        <button type="submit" class="btn btn-cerca ">{{__('ui.accept')}}</button>
                                     </form>
                                 </div>
 
                                 <div class="col-6 g-0">
                                     <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}"
-                                        class="btn btn-accedi text-nowrap">Vedi
-                                        Annuncio</a>
+                                        class="btn btn-accedi text-nowrap">{{__('ui.btnInfo')}}</a>
                                 </div>
                             </div>
 
@@ -45,7 +44,7 @@
                 </div>
 
             @empty
-                Nessun annuncio, sorry
+              {{__('ui.noPost')}}
             @endforelse
         </div>
         {{ $advs->links() }}

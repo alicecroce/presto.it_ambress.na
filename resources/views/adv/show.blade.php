@@ -73,7 +73,7 @@
                             <li style="color: #778899"><i class="bi bi-tag"></i> {{ ucFirst($adv->category->name) }}
                             </li>
 
-                            <li><strong>Breve descrizione:</strong> {{ ucfirst($adv->abstract) }}</li>
+                            <li><strong>{{__('ui.shortDesc')}}:</strong> {{ ucfirst($adv->abstract) }}</li>
                             <li>
                             <li style="color: #778899"> {{ ucFirst($adv->description) }}</li>
                             </li>
@@ -86,7 +86,7 @@
                                         {{ ucFirst($adv->user->name) }} {{ $adv->user->surname }}</div>
 
                                     <a class="col-6 btn btn-sm btn-accedi" href="tel:{{ $adv->user->phone }}">
-                                        <i class="bi bi-telephone m-1"></i>Contatta
+                                        <i class="bi bi-telephone m-1"></i>{{__('ui.contact')}}
                                     </a>
                                 </div>
                             </li>
