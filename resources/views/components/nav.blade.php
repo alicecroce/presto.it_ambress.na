@@ -5,17 +5,6 @@
                 alt="logo presto.it">
         </a>
 
-        {{-- SELEZIONE MULTILINGUA --}}
-        <ul class="navbar-nav d-flex d-inline">
-            <li class="nav-item m-1">
-                <x-locale locale lang="it" nation="it" />
-            </li>
-            <li class="nav-item m-1">
-                <x-locale locale lang="en" nation="gb" />
-            </li>
-        </ul>
-        {{-- FINE SELEZIONE MULTILINGUA --}}
-
         <form class="d-flex flex-grow-1" action="{{ route('advs.search') }}" method="GET" role="search">
             <input class="form-control flex-grow me-2" name="searched" type="search"
                 placeholder="{{ __('ui.searchBar') }}" aria-label="Search">
@@ -27,8 +16,6 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-
 
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto d-flex flex-row justify-content-end">
@@ -93,7 +80,16 @@
                         </li>
                     @endif
                 @endauth
-
+                {{-- SELEZIONE MULTILINGUA --}}
+                <ul class="navbar-nav d-flex d-inline">
+                    <li class="nav-item m-1">
+                        <x-locale locale lang="it" nation="it" />
+                    </li>
+                    <li class="nav-item m-1">
+                        <x-locale locale lang="en" nation="gb" />
+                    </li>
+                </ul>
+                {{-- FINE SELEZIONE MULTILINGUA --}}
             </ul>
         </div>
     </div>
