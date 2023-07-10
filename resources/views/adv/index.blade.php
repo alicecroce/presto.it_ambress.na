@@ -42,7 +42,7 @@
                         <a class="btn btn-warning no-pointer btn-sm text-violet text-capitalize position-absolute mt-3 ms-3 "
                             href="{{ route('categoryshow', ['category' => $adv->category_id]) }}">
                             {{ $adv->category->name }}</a>
-                        <img src="{{ !$adv->images()->get()->isEmpty()? $adv->images()->first()->getUrl(300, 300): 'https://placehold.co/300/6230A3/FFFFFF/png' }}"
+                        <img src="{{ !$adv->images()->get()->isEmpty()? asset($adv->images()->first()->getUrl(300, 300)): 'https://placehold.co/300/6230A3/FFFFFF/png' }}"
                             class="card-img-top" alt="...">
                         <div class="card-body position-relative">
                             <h5 class="card-title">{{ ucFirst($adv->title) }}</h5>
