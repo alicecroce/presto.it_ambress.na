@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Image;
 use Laravel\Scout\Searchable;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -50,7 +51,7 @@ class Adv extends Model
 
     public static function toBeRevisionedCount()
     {
-        return Adv::where('is_accepted', null)->count();
+        return Adv::where('is_accepted', null)->where('user_id', '!=', Auth::user()->id )->count();
     }
 
     public function images()
