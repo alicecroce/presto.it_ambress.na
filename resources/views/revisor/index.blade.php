@@ -26,7 +26,7 @@
                                                 @foreach ($adv_to_check->images as $image)
                                                     <div
                                                         class="carousel-item @if ($loop->first) active @endif">
-                                                        <img src="{{ Storage::url($image->path) }}"
+                                                        <img src="{{ $image->getUrl(300, 300) }}"
                                                             class="img-fluid p-3 rounded" alt="...">
                                                     </div>
                                                 @endforeach
@@ -78,23 +78,24 @@
                                 </h4>
                                 <hr>
                                 <ul>
-                                    <li><strong>{{__('ui.revPrice')}}</strong>: € {{ $adv_to_check->price }} </li>
-                                    <li><strong>{{__('ui.from')}}</strong>: {{ $adv_to_check->user->city }} </li>
+                                    <li><strong>{{ __('ui.revPrice') }}</strong>: € {{ $adv_to_check->price }} </li>
+                                    <li><strong>{{ __('ui.from') }}</strong>: {{ $adv_to_check->user->city }} </li>
                                 </ul>
                                 <hr>
-                                <div><strong>{{__('ui.shortDesc')}}:</strong> {{ $adv_to_check->abstract }}</div>
+                                <div><strong>{{ __('ui.shortDesc') }}:</strong> {{ $adv_to_check->abstract }}</div>
                                 <br>
                                 <div class="text-justify about-text-justify">
-                                    <strong>{{__('ui.moreInfo')}}: </strong>
+                                    <strong>{{ __('ui.moreInfo') }}: </strong>
                                     <p>{{ $adv_to_check->description }}</p>
                                 </div>
                                 <hr>
 
                                 <ul>
-                                    <li><strong>{{__('ui.categ')}}</strong>: {{ $adv_to_check->category->name }} </li>
-                                    <li><strong>{{__('ui.Advertiser')}}</strong>: {{ $adv_to_check->user->name }}
+                                    <li><strong>{{ __('ui.categ') }}</strong>: {{ $adv_to_check->category->name }}
+                                    </li>
+                                    <li><strong>{{ __('ui.Advertiser') }}</strong>: {{ $adv_to_check->user->name }}
                                         {{ $adv_to_check->user->surname }}</li>
-                                    <li><strong>{{__('ui.pubDate')}}</strong>:
+                                    <li><strong>{{ __('ui.pubDate') }}</strong>:
                                         {{ $adv_to_check->created_at->format('d/m/Y') }}</a>
                                     </li>
                                 </ul>
@@ -107,7 +108,8 @@
                                                 method="POST">
                                                 @csrf
                                                 @method('PATCH')
-                                                <button type="submit" class="btn btn-outline-success ">{{__('ui.accept')}}</button>
+                                                <button type="submit"
+                                                    class="btn btn-outline-success ">{{ __('ui.accept') }}</button>
                                             </form>
                                         </div>
                                     </div>
@@ -119,7 +121,8 @@
                                                 method="POST">
                                                 @csrf
                                                 @method('PATCH')
-                                                <button type="submit" class="btn btn-outline-danger">{{__('ui.reject')}}</button>
+                                                <button type="submit"
+                                                    class="btn btn-outline-danger">{{ __('ui.reject') }}</button>
                                             </form>
                                         </div>
                                     </div>
@@ -131,7 +134,7 @@
                     </div>
                 </div>
             @else
-             {{__('ui.noPostRev')}}
+                {{ __('ui.noPostRev') }}
             @endif
         </div>
     </div>
