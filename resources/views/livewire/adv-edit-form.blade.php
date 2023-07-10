@@ -1,4 +1,13 @@
 <div class="container m-5 text-center ">
+    <div id="confirm" class="d-none">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Attenzione</h4>
+            <p>Stai per modificare questo annuncio, sei sicuro?</p>
+            <hr>
+           <button type="submit" id="btn-yes" class="btn btn-success">Si</button>
+           <button type="submit" id="btn-no" class="btn btn-danger">No</button>
+          </div>
+    </div>
     <div class="d-flex justify-content-center">
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -41,7 +50,7 @@
                 <textarea wire:model="description" id="description" class="form-control"></textarea>
             </div>   
             
-            <button type="submit" class="btn btn-show">{{__('ui.btnEdit')}}</button>
+            <button type="submit" class="btn btn-show" id="edit-btn">{{__('ui.btnEdit')}}</button>
             <button wire:click="destroy({{$adv}})" class="btn btn-danger">{{__('ui.btnDelete')}}</button>
         
         </form>
