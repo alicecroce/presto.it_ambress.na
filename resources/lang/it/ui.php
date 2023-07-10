@@ -29,7 +29,7 @@ return [
     'btnInfo' => 'Vedi annuncio',
     'noPost' => "Nessun annuncio, sorry. :(",
     'shortDesc' => 'Breve descrizione',
-    'contact' => 'Conattata',
+    'contact' => 'Contatta',
     //REVISOR
     'revArea' => 'Area revisore',
     'toRev' => 'Da revisionare',
