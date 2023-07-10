@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Adv;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class FrontController extends Controller
 {
@@ -14,6 +15,7 @@ class FrontController extends Controller
     }
 
     public function setLanguage($lang){
+        App::setLocale($lang);
         session()->put('locale', $lang);
         return redirect()->back();
     }

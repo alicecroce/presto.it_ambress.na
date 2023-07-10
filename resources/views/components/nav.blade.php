@@ -18,7 +18,7 @@
         </button>
 
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto d-flex flex-row justify-content-end">
+            <ul class="navbar-nav ms-auto d-flex align-content-center flex-row justify-content-end">
                 <li class="nav-item dropdown p-1">
                     @auth
                         <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
@@ -80,15 +80,29 @@
                         </li>
                     @endif
                 @endauth
+                
                 {{-- SELEZIONE MULTILINGUA --}}
-                <ul class="navbar-nav d-flex d-inline">
-                    <li class="nav-item m-1">
-                        <x-locale locale lang="it" nation="it" />
-                    </li>
-                    <li class="nav-item m-1">
-                        <x-locale locale lang="en" nation="gb" />
-                    </li>
-                </ul>
+                <li class="nav-item dropdown p-1">
+                    <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        @if (App::isLocale('it'))
+                            <x-locale locale lang="it" nation="it" />
+                        @elseif (App::isLocale('en'))
+                            <x-locale locale lang="en" nation="gb" />
+                        @endif
+                    </a>
+                    <ul class="dropdown-menu">
+                        @if (App::isLocale('it'))
+                        <li class="dropdown-item"><a href="">
+                            <x-locale locale lang="en" nation="gb" />
+                        </a></li>
+                        @elseif (App::isLocale('en'))
+                        <li class="dropdown-item"><a href="">
+                            <x-locale locale lang="it" nation="it" />
+                        </a></li>                        
+                        @endif
+                    </ul>
+                </li>
                 {{-- FINE SELEZIONE MULTILINGUA --}}
             </ul>
         </div>
