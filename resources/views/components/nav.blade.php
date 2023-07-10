@@ -82,7 +82,7 @@
                 @endauth
                 
                 {{-- SELEZIONE MULTILINGUA --}}
-                <li class="nav-item dropdown dropstart p-1">
+                <li class="nav-item dropdown p-1">
                     <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         @if (App::isLocale('it'))
@@ -91,7 +91,7 @@
                             <x-locale locale lang="en" nation="gb" />
                         @endif
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" id="flags-dropdown">
                         @if (App::isLocale('it'))
                         <li class="dropdown-item"><a href="">
                             <x-locale locale lang="en" nation="gb" />
