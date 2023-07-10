@@ -9,13 +9,13 @@
                     <div class="portfolio-details-slider swiper">
                         <div class="swiper-wrapper align-items-center">
 
-                            <div id="carouselExampleIndicators" class="carousel slide">
+                            <div id="carouselExampleIndica\tors" class="carousel slide">
                                 @if ($adv->images)
                                     <div class="carousel-inner">
                                         @foreach ($adv->images as $image)
                                             <div class="carousel-item @if ($loop->first) active @endif">
-                                                <img src="{{ Storage::url($image->path) }}"
-                                                    class="img-fluid p-3 rounded" alt="...">
+                                                <img src="{{ $image->getUrl(300, 300) }}" class="img-fluid p-3 rounded"
+                                                    alt="...">
                                             </div>
                                         @endforeach
                                     </div>
@@ -73,7 +73,7 @@
                             <li style="color: #778899"><i class="bi bi-tag"></i> {{ ucFirst($adv->category->name) }}
                             </li>
 
-                            <li><strong>{{__('ui.shortDesc')}}:</strong> {{ ucfirst($adv->abstract) }}</li>
+                            <li><strong>{{ __('ui.shortDesc') }}:</strong> {{ ucfirst($adv->abstract) }}</li>
                             <li>
                             <li style="color: #778899"> {{ ucFirst($adv->description) }}</li>
                             </li>
@@ -86,7 +86,7 @@
                                         {{ ucFirst($adv->user->name) }} {{ $adv->user->surname }}</div>
 
                                     <a class="col-6 btn btn-sm btn-accedi" href="tel:{{ $adv->user->phone }}">
-                                        <i class="bi bi-telephone m-1"></i>{{__('ui.contact')}}
+                                        <i class="bi bi-telephone m-1"></i>{{ __('ui.contact') }}
                                     </a>
                                 </div>
                             </li>
