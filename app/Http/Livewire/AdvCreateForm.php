@@ -2,12 +2,14 @@
 
 namespace App\Http\Livewire;
 
-use App\Http\Requests\StoreAdvRequest;
 use App\Models\Adv;
-use App\Models\Category;
-use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
+use App\Models\Category;
+use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
+use App\Http\Requests\StoreAdvRequest;
 
 class AdvCreateForm extends Component
 {
@@ -67,10 +69,14 @@ class AdvCreateForm extends Component
 
         if (count($this->images)) {
             foreach ($this->images as $image) {
-                $this->adv->images()->create(['path' => $image->store('images', 'public')]);
-                // $newFileName = "advs/{$this->adv->id}";
-                // $newImage = $this->adv->images()->create(['path' => $image->store($newFileName, 'public')]);
+                // $this->adv->images()->create(['path' => $image->store('images', 'public')]);
+                $newFileName = "advs/{$this->adv->id}";
+                $newImage = $this->adv->images()->create(['path' => $image->store($newFileName, 'public')]);
+
+                dispatch(new ResizeImage($newImage->path, 300, 300));
             }
+
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 
         // Adv::create([
@@ -87,7 +93,7 @@ class AdvCreateForm extends Component
         // ]);
 
         session()->flash('tasks', 'Adv successfully updated.');
-        $this->reset(['title',  'price', 'category_id', 'abstract', 'description']);
+        $this->reset(['title',  'price', 'category_id', 'abstract', 'description', 'images', 'temporary_images', 'image']);
 
         return redirect()->route('welcome')->with('success', 'Annuncio aggiunto con successo, sarà visibile dopo l\'approvazione di un nostro revisore!');
     }

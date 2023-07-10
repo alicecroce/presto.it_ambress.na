@@ -65,7 +65,7 @@
                 </div>
             @endif
 
-            <button type="submit" class="btn btn-show">{{__('ui.btnMake')}}</button>
+            <button type="submit" class="btn btn-show m-2">{{__('ui.btnMake')}}</button>
         </form>
     </div>
 </div>
