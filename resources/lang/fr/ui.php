@@ -46,10 +46,10 @@ return [
     'reject' => 'Rejette',
     'revForm' => "Contactez-nous! Rejoindre l'equipe de Presto.it",
     'whyRev' => 'Scrivi un breve messaggio sul perchè vorrresti collaborare come revisore nel team di Ambress.na per Presto.it',
-    'apply' => 'Invia la tua candidatura',
+    'apply' => 'Envoyer votre candidature',
     //CONTACTS
-    'phone' => 'Telefono',
-    'workWithUS' => 'Lavora con noi',
+    'phone' => 'Téléfone',
+    'workWithUS' => 'Travalliez avec nous',
     'links' => 'Link utili',
     'ourSocial' => 'I nostri Social',
     //LOGIN-REGISTER

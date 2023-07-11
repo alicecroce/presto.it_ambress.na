@@ -11,60 +11,60 @@
                             Lorem ipsum dolor sit amet. <br>
                             Napoli, NA 90123<br>
                             Torino <br><br>
-                            <strong>{{__('ui.phone')}}</strong> +1 5589 55488 55<br>
+                            <strong>{{ __('ui.phone') }}</strong> +1 5589 55488 55<br>
                             <strong>Email:</strong> info@presto.it<br>
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>{{__('ui.links')}}</h4>
+                        <h4>{{ __('ui.links') }}</h4>
                         <ul>
                             <li>
                                 <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a href="/">
                                     Home</a>
                             </li>
                             @auth
-                            <li>
-                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
-                                    href="{{ route('adv.create') }}">{{__('ui.addAdv')}}</a>
-                            </li>
+                                <li>
+                                    <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
+                                        href="{{ route('adv.create') }}">{{ __('ui.addAdv') }}</a>
+                                </li>
                             @else
-                            <li>
-                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
-                                    href="{{ route('register') }}">{{__('ui.register')}}</a>
-                            </li>
-                            <li>
-                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
-                                    href="{{ route('login') }}">{{__('ui.login')}}</a>
-                            </li>
+                                <li>
+                                    <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
+                                        href="{{ route('register') }}">{{ __('ui.register') }}</a>
+                                </li>
+                                <li>
+                                    <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon><a
+                                        href="{{ route('login') }}">{{ __('ui.login') }}</a>
+                                </li>
                             @endauth
                         </ul>
                     </div>
 
                     @auth
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>{{__('ui.workWithUS')}}</h4>
-                        <ul>
-                            @if (Auth::user()->is_revisor)
-                            <li>
-                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
-                                <a href="{{ route('revisor.index') }}">{{__('ui.toRev')}}</a>
-                            </li> 
-                            @else
-                            <li>
-                                <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
-                                <a href="{{ route('contactus.revisor') }}">{{__('ui.becomRev')}}</a>
-                            </li> 
-                            @endif
-                        </ul>
-                    </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>{{ __('ui.workWithUS') }}</h4>
+                            <ul>
+                                @if (Auth::user()->is_revisor)
+                                    <li>
+                                        <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
+                                        <a href="{{ route('revisor.index') }}">{{ __('ui.toRev') }}</a>
+                                    </li>
+                                @else
+                                    <li>
+                                        <box-icon name='chevron-right' type='solid' color='#fec200'></box-icon>
+                                        <a href="{{ route('contactus.revisor') }}">{{ __('ui.becomRev') }}</a>
+                                    </li>
+                                @endif
+                            </ul>
+                        </div>
                     @endauth
 
                     <div class="col-lg-3 col-md-6 footer-links ms-auto">
-                        <h4>{{__('ui.ourSocial')}}</h4>
+                        <h4>{{ __('ui.ourSocial') }}</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                         <div class="social-links mt-3">
-                            <a href="#">
+                            <a href="{{ route('error.error_lostinspace') }}">
                                 <box-icon type='logo' name='twitter' color='#ffffff'></box-icon>
                             </a>
                             <a href="#">

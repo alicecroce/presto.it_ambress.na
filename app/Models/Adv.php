@@ -58,4 +58,9 @@ class Adv extends Model
     {
         return $this->hasMany(Image::class);
     }
+
+    // public function getRouteKeyName(): string
+    // {
+    //     return 'title';
+    // }
 }

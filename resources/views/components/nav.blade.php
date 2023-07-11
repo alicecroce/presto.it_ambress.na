@@ -80,7 +80,7 @@
                         </li>
                     @endif
                 @endauth
-                
+
                 {{-- SELEZIONE MULTILINGUA --}}
                 <li class="nav-item dropdown p-1">
                     <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
@@ -89,17 +89,32 @@
                             <x-locale locale lang="it" nation="it" />
                         @elseif (App::isLocale('en'))
                             <x-locale locale lang="en" nation="gb" />
+                        @elseif (App::isLocale('fr'))
+                            <x-locale locale lang="fr" nation="fr" />
                         @endif
                     </a>
                     <ul class="dropdown-menu" id="flags-dropdown">
                         @if (App::isLocale('it'))
-                        <li class="dropdown-item"><a href="">
-                            <x-locale locale lang="en" nation="gb" />
-                        </a></li>
+                            <li class="dropdown-item"><a href="">
+                                    <x-locale locale lang="en" nation="gb" />
+                                </a></li>
+                            <li class="dropdown-item"><a href="">
+                                    <x-locale locale lang="fr" nation="fr" />
+                                </a></li>
                         @elseif (App::isLocale('en'))
-                        <li class="dropdown-item"><a href="">
-                            <x-locale locale lang="it" nation="it" />
-                        </a></li>                        
+                            <li class="dropdown-item"><a href="">
+                                    <x-locale locale lang="it" nation="it" />
+                                </a></li>
+                            <li class="dropdown-item"><a href="">
+                                    <x-locale locale lang="fr" nation="fr" />
+                                </a></li>
+                        @elseif(App::isLocale('fr'))
+                            <li class="dropdown-item"><a href="">
+                                    <x-locale locale lang="en" nation="gb" />
+                                </a></li>
+                            <li class="dropdown-item"><a href="">
+                                    <x-locale locale lang="it" nation="it" />
+                                </a></li>
                         @endif
                     </ul>
                 </li>

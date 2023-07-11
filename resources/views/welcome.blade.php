@@ -23,7 +23,8 @@
             <a class="text-center category-box text-white d-flex flex-column justify-content-center align-items-center {{ $category->slug }}-color"
                 href="{{ route('categoryshow', compact('category')) }}">
                 <i class="{{ $category->icons }} fs-1"></i>
-                <span>{{ ucFirst($category->name) }}</span>
+                <span>{{ __('ui.' . $category->slug) }}</span>
+                {{-- {{__('ui.'.$category->slug)}} --}}
             </a>
         @endforeach
     </div>
