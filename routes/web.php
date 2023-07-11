@@ -54,3 +54,5 @@ Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('se
 Route::get('/404_mancave', function () {
     return view('error.error_mancave');
 })->name('mancave');
+
+
