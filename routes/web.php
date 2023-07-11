@@ -51,6 +51,6 @@ Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('se
 
 
 //ERRORS 404
-Route::get('/404_lostinspace', function () {
-    return view('error.error_lostinspace');
-})->name('lostinspace');;
+Route::get('/404_mancave', function () {
+    return view('error.error_mancave');
+})->name('mancave');
