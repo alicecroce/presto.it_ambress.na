@@ -49,3 +49,8 @@ Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('se
 
 //SOCIALITE
 
+
+//ERRORS 404
+Route::get('/404_lostinspace', function () {
+    return view('error.error_lostinspace');
+})->name('lostinspace');;
