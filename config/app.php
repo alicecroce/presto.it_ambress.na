@@ -169,6 +169,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         TeamTNT\Scout\TNTSearchScoutServiceProvider::class,
+        \SocialiteProviders\Manager\ServiceProvider::class,
     ])->toArray(),
 
     /*

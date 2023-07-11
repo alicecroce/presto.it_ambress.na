@@ -14,6 +14,7 @@
         "laravel/socialite": "^5.7",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^2.12",
+        "socialiteproviders/apple": "^5.5",
         "spatie/image": "*",
         "spatie/laravel-enum": "^3.0",
         "teamtnt/laravel-scout-tntsearch-driver": "^12.4",
