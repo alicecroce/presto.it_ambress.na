@@ -39,7 +39,7 @@
                             </form>
                         </ul>
                     @else
-                        <a class="btn btn-accedi mx-3" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             {{ __('ui.login') }} | {{ __('ui.register') }}
                         </a>

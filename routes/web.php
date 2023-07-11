@@ -46,3 +46,6 @@ Route::delete('/profilo/elimina', [UserController::class, 'destroy'])->name('use
 //SELEZIONE MULTILINGUA
 
 Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('set_language_locale');
+
+//SOCIALITE
+
