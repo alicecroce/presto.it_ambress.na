@@ -49,10 +49,6 @@ return [
     'revForm' => 'Contattaci! Entra nel team di Presto.it',
     'whyRev' => 'Scrivi un breve messaggio sul perchè vorrresti collaborare come revisore nel team di Ambress.na per Presto.it',
     'apply' => 'Invia la tua candidatura',
-
-
-
-
     //CONTACTS
     'phone' => 'Telefono',
     'workWithUS' => 'Lavora con noi',
@@ -69,6 +65,21 @@ return [
     'pwdConfirm' => 'Conferma password',
     'alreadySign' => 'Sei già registratə',
     'noAccount' => 'Non hai un account',
-
+    //CATEGORY
+    'console_e_videogiochi' => 'Console e Videogiochi',
+    'libri' => 'Libri',
+    'cinema-e-musica' => 'Cinema e Musica',
+    'telefonia-e-accessori' => 'Telefonia e Accessori',
+    'elettronica' => 'Elettronica',
+    'tv-e-fotocamere' => 'Tv e Fotocamere',
+    'sport' => 'Sport',
+    'biciclette' => 'Biciclette',
+    'moto-e-auto' => 'Moto e auto',
+    'hobby-e-collezionismo' => 'Hobby e Collezionismo',
+    'bambini' => 'Bambini',
+    'moda-e-accessori' => 'Moda e Accessori',
+    'elettrodomestici' => 'Elettrodomestici',
+    'attrezzature-da-lavoro' => 'Attrezzature da lavoro',
+    'immobili' => 'Immobili',
 
 ];

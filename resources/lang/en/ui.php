@@ -25,7 +25,7 @@ return [
     'addAdv' => 'Add post',
     'editAdv' => 'Edit your post',
     'title' => "Enter your article's title",
-    'price' => "Enter your article's price", 
+    'price' => "Enter your article's price",
     'abstract' => 'Briefly describe your article',
     'category' => 'Choose a category',
     'noCateg' => 'No categories',
@@ -54,19 +54,6 @@ return [
     'revForm' => 'Contact us to become part of our Team',
     'whyRev' => "Tell us why you want to become a revisor and be part of Ammbress.na's team, at Presto.it",
     'apply' => 'Apply',
-
-
-
-
-
-
-
-
-
-
-
-
-
     //CONTACTS
     'phone' => 'Phone',
     'workWithUS' => 'Work with us',
@@ -83,12 +70,21 @@ return [
     'pwdConfirm' => 'Confirm password',
     'alreadySign' => 'Already signed up',
     'noAccount' => "No account yet",
-
-
-
-
-
-
-
+    //CATEGORY
+    'console_e_videogiochi' => 'Console and Videogames',
+    'libri' => 'Books',
+    'cinema-e-musica' => 'Film and Music',
+    'telefonia-e-accessori' => 'Phones and Accessories',
+    'elettronica' => 'Electronics',
+    'tv-e-fotocamere' => 'TVs and Cameras',
+    'sport' => 'Sport',
+    'biciclette' => 'Bicycle',
+    'moto-e-auto' => 'Bikes and Cars',
+    'hobby-e-collezionismo' => 'Hobbies e Collectibles',
+    'bambini' => 'Kids',
+    'moda-e-accessori' => 'Fashion',
+    'elettrodomestici' => 'Household Appliances',
+    'attrezzature-da-lavoro' => 'Work Tools',
+    'immobili' => 'Real Estate',
 
 ];
