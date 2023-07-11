@@ -18,7 +18,7 @@ return [
     'addAdv' => 'Inserisci un annuncio',
     'editAdv' => 'Modifica il tuo annuncio',
     'title' => 'Inserisci il titolo del tuo articolo',
-    'price' => 'Inserisci il prezzo del tuo articolo', 
+    'price' => 'Inserisci il prezzo del tuo articolo',
     'abstract' => 'Inserisci una breve descrizione',
     'category' => 'Scegli una categoria',
     'noCateg' => 'Nessuna categoria',
@@ -30,6 +30,8 @@ return [
     'noPost' => "Nessun annuncio, sorry. :(",
     'shortDesc' => 'Breve descrizione',
     'contact' => 'Contatta',
+    'call-me' => 'Chiamami',
+    'write-me' => 'Scrivimi',
     //REVISOR
     'revArea' => 'Area revisore',
     'toRev' => 'Da revisionare',
@@ -68,5 +70,5 @@ return [
     'alreadySign' => 'Sei già registratə',
     'noAccount' => 'Non hai un account',
 
-    
+
 ];

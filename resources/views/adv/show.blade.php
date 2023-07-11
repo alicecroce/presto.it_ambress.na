@@ -14,8 +14,8 @@
                                     <div class="carousel-inner">
                                         @foreach ($adv->images as $image)
                                             <div class="carousel-item @if ($loop->first) active @endif">
-                                                <img src="{{ $image->getUrl(300, 300) }}" class="img-fluid p-3 rounded"
-                                                    alt="...">
+                                                <img src="{{ asset( $image->getUrl(300, 300)) }}" class="img-fluid p-3 rounded"
+                                                    alt="{{$adv->title}}">
                                             </div>
                                         @endforeach
                                     </div>
@@ -82,20 +82,20 @@
 
                             <li>
                                 <div class="row">
-                                    <div class="col-6"> <i class="bi bi-person-circle" style="color: #778899"></i>
+                                    <div class="col-4"> <i class="bi bi-person-circle" style="color: #778899"></i>
                                         {{ ucFirst($adv->user->name) }} {{ $adv->user->surname }}</div>
 
                                     <a class="col-3 btn btn-sm btn-accedi m-2" href="tel:{{ $adv->user->phone }}">
-                                        <i class="bi bi-telephone m-1"></i>{{ __('ui.contact') }}
+                                        <i class="bi bi-telephone m-1"></i>{{ __('ui.call-me') }}
                                     </a>
                                     <a class="col-3 btn btn-sm btn-accedi m-2" href="email:{{ $adv->user->email }}">
-                                        <i class="bi bi-envelope m-1"></i>{{ __('ui.contact') }}
+                                        <i class="bi bi-envelope m-1"></i>{{ __('ui.write-me') }}
                                     </a>
 
                                 </div>
                             </li>
 
-                           
+
 
 
                         </ul>
