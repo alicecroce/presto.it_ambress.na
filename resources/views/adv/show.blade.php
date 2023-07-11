@@ -85,13 +85,17 @@
                                     <div class="col-6"> <i class="bi bi-person-circle" style="color: #778899"></i>
                                         {{ ucFirst($adv->user->name) }} {{ $adv->user->surname }}</div>
 
-                                    <a class="col-6 btn btn-sm btn-accedi" href="tel:{{ $adv->user->phone }}">
+                                    <a class="col-3 btn btn-sm btn-accedi m-2" href="tel:{{ $adv->user->phone }}">
                                         <i class="bi bi-telephone m-1"></i>{{ __('ui.contact') }}
                                     </a>
+                                    <a class="col-3 btn btn-sm btn-accedi m-2" href="email:{{ $adv->user->email }}">
+                                        <i class="bi bi-envelope m-1"></i>{{ __('ui.contact') }}
+                                    </a>
+
                                 </div>
                             </li>
 
-
+                           
 
 
                         </ul>
