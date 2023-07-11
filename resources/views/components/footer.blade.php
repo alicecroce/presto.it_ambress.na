@@ -64,7 +64,7 @@
                         <h4>{{ __('ui.ourSocial') }}</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                         <div class="social-links mt-3">
-                            <a href="{{ route('lostinspace') }}">
+                            <a href="{{ route('mancave') }}">
                                 <box-icon type='logo' name='twitter' color='#ffffff'></box-icon>
                             </a>
                             <a href="#">
