@@ -37,6 +37,8 @@ return [
     'noPost' => "There are no post here, sorry. :(",
     'shortDesc' => 'Short description',
     'contact' => 'Contact',
+    'call-me' => 'Call Me',
+    'write-me' => 'Text Me',
     //REVISOR
     'revArea' => 'Revisor',
     'toRev' => 'To be revised',
