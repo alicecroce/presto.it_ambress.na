@@ -64,7 +64,7 @@
                         @forelse ($advs as $adv)
                             <div class="col-12 col-md-6">
                                 <div class="card my-3" style="height: 38rem;">
-                                    <img src="{{ !$adv->images()->get()->isEmpty()? $adv->images()->first()->getUrl(300, 300): 'https://placehold.co/300/6230A3/FFFFFF/png' }}"
+                                    <img src="{{ !$adv->images()->get()->isEmpty()? asset($adv->images()->first()->getUrl(300, 300)): 'https://placehold.co/300/6230A3/FFFFFF/png' }}"
                                         class="card-img-top" alt="...">
                                     <div class="card-body position-relative">
                                         <h5 class="card-title">{{ $adv->title }}</h5>

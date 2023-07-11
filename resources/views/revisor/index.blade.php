@@ -26,7 +26,7 @@
                                                 @foreach ($adv_to_check->images as $image)
                                                     <div
                                                         class="carousel-item @if ($loop->first) active @endif">
-                                                        <img src="{{ $image->getUrl(300, 300) }}"
+                                                        <img src="{{ asset($image->getUrl(300, 300)) }}"
                                                             class="img-fluid p-3 rounded" alt="...">
                                                     </div>
                                                 @endforeach
