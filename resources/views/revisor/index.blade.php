@@ -1,12 +1,14 @@
 <x-main>
 
 
-    @if (session('success'))
+    <div class="d-flex justify-content-center">
+        @if (session('success'))
         <div class="alert alert-success alert-dismissible w-75" role="alert">
             <div> {{ session('success') }}</div>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     @endif
+    </div>
 
 
     <div class="container">

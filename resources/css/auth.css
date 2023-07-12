@@ -21,3 +21,14 @@
 #flag-button {
     list-style: none !important;
 }
+
+.flags-dropdown {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate3d(44px, 88px, 0px) !important;
+    -webkit-transform: translate3d(44px, 88px, 0px) !important;
+    -moz-transform: translate3d(44px, 88px, 0px) !important;
+    -ms-transform: translate3d(44px, 88px, 0px) !important;
+    -o-transform: translate3d(44px, 88px, 0px) !important;
+}

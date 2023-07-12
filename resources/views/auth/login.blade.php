@@ -16,7 +16,7 @@
                                 <x-locale locale lang="fr" nation="fr" />
                             @endif
                         </a>
-                        <ul class="dropdown-menu" id="flags-dropdown">
+                        <ul class="dropdown-menu flags-dropdown" id="flags-dropdown">
                             @if (App::isLocale('it'))
                                 <li class="dropdown-item"><a href="">
                                         <x-locale locale lang="en" nation="gb" />
