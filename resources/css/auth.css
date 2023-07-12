@@ -17,3 +17,7 @@
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
 }
+
+#flag-button {
+    list-style: none !important;
+}

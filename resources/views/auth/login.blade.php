@@ -2,21 +2,46 @@
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
             <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image opacity-75">
-
             </div>
             <div class="col-md-8 col-lg-6">
-                <div class="login d-flex align-items-center py-4">
+                <div class="login d-flex align-items-center position-relative py-4">
+                    <li class="nav-item dropdown p-5 position-absolute top-0 end-0" id="flag-button">
+                        <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            @if (App::isLocale('it'))
+                                <x-locale locale lang="it" nation="it" />
+                            @elseif (App::isLocale('en'))
+                                <x-locale locale lang="en" nation="gb" />
+                            @elseif (App::isLocale('fr'))
+                                <x-locale locale lang="fr" nation="fr" />
+                            @endif
+                        </a>
+                        <ul class="dropdown-menu" id="flags-dropdown">
+                            @if (App::isLocale('it'))
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="en" nation="gb" />
+                                    </a></li>
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="fr" nation="fr" />
+                                    </a></li>
+                            @elseif (App::isLocale('en'))
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="it" nation="it" />
+                                    </a></li>
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="fr" nation="fr" />
+                                    </a></li>
+                            @elseif(App::isLocale('fr'))
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="en" nation="gb" />
+                                    </a></li>
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="it" nation="it" />
+                                    </a></li>
+                            @endif
+                        </ul>
+                    </li>
                     <div class="container">
-                        <div class="d-flex d-inline">
-                            <ul class="navbar-nav d-flex d-inline">
-                                <li class="nav-item m-1">
-                                    <x-locale locale lang="it" nation="it" />
-                                </li>
-                                <li class="nav-item m-1">
-                                    <x-locale locale lang="en" nation="gb" />
-                                </li>
-                            </ul>
-                        </div>
                         <div class="row">
                             <div class="d-flex align-items-center">
                                 <a href="/" class="text-center">
@@ -29,7 +54,7 @@
 
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4">{{__('ui.welcBack')}}!</h3>
+                                <h3 class="login-heading mb-4">{{ __('ui.welcBack') }}!</h3>
 
                                 <!-- Sign In Form -->
                                 <form action="{{ route('login') }}" method="POST">
@@ -49,7 +74,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="email" name="email" class="form-control" id="email"
                                             placeholder="name@example.com">
-                                        <label for="email">{{__('ui.emailAdd')}}</label>
+                                        <label for="email">{{ __('ui.emailAdd') }}</label>
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="password" name="password" class="form-control" id="password">
@@ -66,13 +91,13 @@
 
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
-                                            type="submit">{{__('ui.login')}}</button>
+                                            type="submit">{{ __('ui.login') }}</button>
                                         {{-- <div class="text-center">
                                             <a class="small" href="#">Forgot password?</a>
                                         </div> --}}
                                         <div class="text-center">
-                                          {{__('ui.noAccount')}}?
-                                            <a href="{{ route('register') }}">{{__('ui.register')}}!</a>
+                                            {{ __('ui.noAccount') }}?
+                                            <a href="{{ route('register') }}">{{ __('ui.register') }}!</a>
                                         </div>
                                     </div>
 
