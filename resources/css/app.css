@@ -883,6 +883,13 @@ Single Product Page
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.page-link:hover {
+    z-index: 2;
+    color: #6230a3;
+    background-color: var(--bs-pagination-hover-bg);
+    border-color: var(--bs-pagination-hover-border-color);
+}
+
 .page-link.active, .active > .page-link {
     z-index: 3;
     color: #fec200;
