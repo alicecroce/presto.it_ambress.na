@@ -7,19 +7,16 @@ function hideDiv() {
 }
 setTimeout(hideDiv, 3000);
 
-// let btn = document.getElementById('edit-btn');
-// let confirm = document.getElementById('confirm');
-// let btnYes = document.getElementById('btn-yes');
-// let btnNo = document.getElementById('btn-no');
+let btn = document.getElementById('edit-btn');
+let confirm = document.getElementById('confirm');
 
-// function check() {
-// btn.addEventListener('click', function (event) {
-//     event.preventDefault();
-//     confirm.classList.remove('d-none');
-//     if(event.target === btnYes){
-//     }
-// })
 
-// }
+function check() {
+btn.addEventListener('click', function (event) {
+    event.preventDefault();
+    confirm.classList.remove('d-none');
+})
 
-// check();
+}
+
+check();

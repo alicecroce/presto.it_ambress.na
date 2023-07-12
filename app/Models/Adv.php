@@ -7,6 +7,7 @@ use Laravel\Scout\Searchable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Str;
 
 class Adv extends Model
 {
@@ -60,7 +61,9 @@ class Adv extends Model
     }
 
     // public function getRouteKeyName(): string
-    // {
-    //     return 'title';
+    // {   
+    
+    //     $title = Str::slug($this->$title);
+    //     return $title;
     // }
 }
