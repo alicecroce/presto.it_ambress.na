@@ -870,3 +870,22 @@ Single Product Page
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+    font-size: var(--bs-pagination-font-size);
+    color: #6230a3;
+    text-decoration: none;
+    background-color: var(--bs-pagination-bg);
+    border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.page-link.active, .active > .page-link {
+    z-index: 3;
+    color: #fec200;
+    background-color: #6230a3;
+    border-color: #6230a3;
+}
