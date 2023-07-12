@@ -21,6 +21,8 @@
         <p><b>Se vuoi autorizzare l'utente clicca qui:</b></p>
         <a href="{{ route('make.revisor', compact('user')) }}">Rendi revisore</a>
     </div>
+
 </body>
 
 </html>
+
