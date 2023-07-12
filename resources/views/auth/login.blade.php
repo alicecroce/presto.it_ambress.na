@@ -14,6 +14,8 @@
                                 <x-locale locale lang="en" nation="gb" />
                             @elseif (App::isLocale('fr'))
                                 <x-locale locale lang="fr" nation="fr" />
+                            @elseif (App::isLocale('es'))
+                                <x-locale locale lang="es" nation="es" />
                             @endif
                         </a>
                         <ul class="dropdown-menu flags-dropdown" id="flags-dropdown">
@@ -24,6 +26,9 @@
                                 <li class="dropdown-item"><a href="">
                                         <x-locale locale lang="fr" nation="fr" />
                                     </a></li>
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="es" nation="es" />
+                                    </a></li>
                             @elseif (App::isLocale('en'))
                                 <li class="dropdown-item"><a href="">
                                         <x-locale locale lang="it" nation="it" />
@@ -31,12 +36,28 @@
                                 <li class="dropdown-item"><a href="">
                                         <x-locale locale lang="fr" nation="fr" />
                                     </a></li>
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="es" nation="es" />
+                                    </a></li>
                             @elseif(App::isLocale('fr'))
                                 <li class="dropdown-item"><a href="">
                                         <x-locale locale lang="en" nation="gb" />
                                     </a></li>
                                 <li class="dropdown-item"><a href="">
                                         <x-locale locale lang="it" nation="it" />
+                                    </a></li>
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="es" nation="es" />
+                                    </a></li>
+                            @elseif(App::isLocale('es'))
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="en" nation="gb" />
+                                    </a></li>
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="it" nation="it" />
+                                    </a></li>
+                                <li class="dropdown-item"><a href="">
+                                        <x-locale locale lang="fr" nation="fr" />
                                     </a></li>
                             @endif
                         </ul>
