@@ -50,9 +50,16 @@ Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('se
 //SOCIALITE
 
 
-//ERRORS 404
+//ERRORS 
 Route::get('/404_mancave', function () {
-    return view('error.error_mancave');
+    return view('errors.error404_mancave');
 })->name('mancave');
 
+Route::get('/403_lotr', function () {
+    return view('errors.error403_lotr');
+})->name('lotr');
+
+Route::get('/500_mrpotato', function () {
+    return view('errors.error500_mrpotato');
+})->name('mrpotato');
 

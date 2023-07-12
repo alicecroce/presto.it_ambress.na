@@ -14,7 +14,9 @@
     @if (Route::currentRouteName() == 'login' ||
             Route::currentRouteName() == 'register' ||
             Route::currentRouteName() == 'contactus.revisor' ||
-            Route::currentRouteName() == 'mancave')
+            Route::currentRouteName() == 'mancave' ||
+            Route::currentRouteName() == 'lotr' ||
+            Route::currentRouteName() == 'mrpotato')
     @else
         <x-nav />
     @endif
