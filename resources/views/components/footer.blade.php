@@ -67,16 +67,16 @@
                             <a href="{{ route('mancave') }}">
                                 <box-icon type='logo' name='twitter' color='#ffffff'></box-icon>
                             </a>
-                            <a href="#">
+                            <a href="{{ route('mancave') }}">
                                 <box-icon name='facebook' type='logo' color='#ffffff'></box-icon>
                             </a>
-                            <a href="#">
+                            <a href="{{ route('mancave') }}">
                                 <box-icon name='instagram' type='logo' color='#ffffff'></box-icon>
                             </a>
-                            <a href="#">
+                            <a href="{{ route('mancave') }}">
                                 <box-icon type='logo' name='tiktok' color='#ffffff'></box-icon>
                             </a>
-                            <a href="#">
+                            <a href="{{ route('mancave') }}">
                                 <box-icon type='logo' name='linkedin' color='#ffffff'></box-icon>
                             </a>
                         </div>
