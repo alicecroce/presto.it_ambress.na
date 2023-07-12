@@ -1,4 +1,4 @@
-<div class="container m-5 text-center ">
+<div class="container my-5">
     <div id="confirm" class="d-none">
         <div class="alert alert-success" role="alert">
             <h4 class="alert-heading">Attenzione</h4>

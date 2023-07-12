@@ -1,4 +1,4 @@
-<div class="container m-5">
+<div class="container my-5">
     <div class="d-flex justify-content-center">
         @if ($errors->any())
             <div class="alert alert-danger">
