@@ -1,5 +1,5 @@
 <x-main>
-    <div class="gandalfbody">
+    <div class="gandalfbody" style="">
 
         <div class="gandalf">
             <div class="fireball"></div>

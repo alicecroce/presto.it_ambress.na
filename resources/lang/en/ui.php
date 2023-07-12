@@ -2,7 +2,7 @@
 
 return [
     //GENERAL
-    'welcome' => 'Welcome on',
+    'welcome' => 'Welcome to',
     'shop' => 'Your favorite online shop',
     'heroAdv' => 'See all advs',
     'btn-search' => 'Search',
@@ -13,13 +13,6 @@ return [
     'register' => 'Sign Up',
     'editProfile' => 'Edit profile',
     'editInfo' => 'Edit personal informations',
-
-
-
-
-
-
-
     //ADVS
     'allAdvs' => 'All announcement',
     'addAdv' => 'Add post',
@@ -88,5 +81,9 @@ return [
     'elettrodomestici' => 'Household Appliances',
     'attrezzature-da-lavoro' => 'Work Tools',
     'immobili' => 'Real Estate',
-
+    //CHECK MESSAGGE
+    'attention' => 'Attention',
+    'confMessage' => "You're about to edit this post, are you sure?",
+    'yes' => 'Yes',
+    'no' => 'No',
 ];

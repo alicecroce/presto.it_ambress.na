@@ -1,14 +1,14 @@
 <div class="container m-5 text-center ">
     <div id="confirm" class="d-none">
         <div class="alert alert-success" role="alert">
-            <h4 class="alert-heading">Attenzione</h4>
-            <p>Stai per modificare questo annuncio, sei sicuro?</p>
+            <h4 class="alert-heading">{{__('ui.attention')}}!</h4>
+            <p>{{__('ui.confMessage')}}</p>
             <hr>
             <div class="d-flex justify-content-center">
                 <form wire:submit.prevent="update">
-                    <button type="submit" id="btn-yes" class="btn btn-success m-3">Si</button>
+                    <button type="submit" id="btn-yes" class="btn btn-success m-3">{{__('ui.yes')}}</button>
                 </form>
-                <button type="submit" data-bs-dismiss="alert" class="btn btn-danger m-3">No</button>
+                <button type="submit" data-bs-dismiss="alert" class="btn btn-danger m-3">{{__('ui.no')}}</button>
 
             </div>
 

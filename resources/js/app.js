@@ -7,6 +7,9 @@ function hideDiv() {
 }
 setTimeout(hideDiv, 3000);
 
+
+
+
 let btn = document.getElementById('edit-btn');
 let confirm = document.getElementById('confirm');
 
@@ -16,7 +19,5 @@ btn.addEventListener('click', function (event) {
     event.preventDefault();
     confirm.classList.remove('d-none');
 })
-
 }
-
 check();

@@ -61,9 +61,10 @@ class Adv extends Model
     }
 
     // public function getRouteKeyName(): string
-    // {   
-    
-    //     $title = Str::slug($this->$title);
-    //     return $title;
+    // {       
+    //     $title = Str::slug("title", '-');
+    //     dd($title);
+
+    //     return 'title';
     // }
 }

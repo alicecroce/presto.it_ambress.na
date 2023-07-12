@@ -81,5 +81,9 @@ return [
     'elettrodomestici' => 'Elettrodomestici',
     'attrezzature-da-lavoro' => 'Attrezzature da lavoro',
     'immobili' => 'Immobili',
-
+    //CHECK MESSAGGE
+    'attention' => 'Attenzione',
+    'confMessage' => 'Stai per modificare questo annuncio, sei sicurə?',
+    'yes' => 'si',
+    'no' => 'no',
 ];

@@ -82,5 +82,9 @@ return [
     'elettrodomestici' => 'Appareils Ménagers',
     'attrezzature-da-lavoro' => 'Outils de Travail',
     'immobili' => 'Immeubles',
-    
+    //CHECK MESSAGGE
+    'attention' => 'Attention!',
+    'confMessage' => "Tu est en train de modifier cette announce, t'est sûre?",
+    'yes' => 'Oui',
+    'no' => 'No',  
 ];

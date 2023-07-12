@@ -49,10 +49,12 @@ lotr 403 error page
 }
 .gandalfbody {
     background-color: #000;
+    background-size: auto ;
     color: #fff;
     text-align: center;
     font-family: "Poppins";
     font-size: 1.3rem;
+
 }
 .gandalfbody h1 {
     font-family: "Poppins";
