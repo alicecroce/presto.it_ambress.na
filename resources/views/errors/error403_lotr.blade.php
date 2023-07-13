@@ -1,6 +1,6 @@
 <x-main>
-    <div class="gandalfbody" style="">
-
+    
+    <div class="gandalfbody">
         <div class="gandalf">
             <div class="fireball"></div>
             <div class="skirt"></div>
@@ -20,7 +20,6 @@
                 different
                 location? Like...Hobbiton?</p>
         </div>
-
     </div>
 
 </x-main>
