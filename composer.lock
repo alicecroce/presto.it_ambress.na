@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29560c0285b31fb78ddad157f3cb0a1d",
+    "content-hash": "cee89a3cdb7e38bc832c3ad8cbe803d1",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -671,6 +671,426 @@
             "time": "2022-02-20T15:07:15+00:00"
         },
         {
+            "name": "google/auth",
+            "version": "v1.28.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/google-auth-library-php.git",
+                "reference": "07f7f6305f1b7df32b2acf6e101c1225c839c7ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/07f7f6305f1b7df32b2acf6e101c1225c839c7ac",
+                "reference": "07f7f6305f1b7df32b2acf6e101c1225c839c7ac",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "^6.0",
+                "guzzlehttp/guzzle": "^6.2.1|^7.0",
+                "guzzlehttp/psr7": "^2.4.5",
+                "php": "^7.4||^8.0",
+                "psr/cache": "^1.0||^2.0||^3.0",
+                "psr/http-message": "^1.1||^2.0"
+            },
+            "require-dev": {
+                "guzzlehttp/promises": "^1.3",
+                "kelvinmo/simplejwt": "0.7.0",
+                "phpseclib/phpseclib": "^3.0",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.0.0",
+                "sebastian/comparator": ">=1.2.3",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "phpseclib/phpseclib": "May be used in place of OpenSSL for signing strings or for token management. Please require version ^2."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\Auth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Google Auth Library for PHP",
+            "homepage": "http://github.com/google/google-auth-library-php",
+            "keywords": [
+                "Authentication",
+                "google",
+                "oauth2"
+            ],
+            "support": {
+                "docs": "https://googleapis.github.io/google-auth-library-php/main/",
+                "issues": "https://github.com/googleapis/google-auth-library-php/issues",
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.28.0"
+            },
+            "time": "2023-05-11T21:58:18+00:00"
+        },
+        {
+            "name": "google/cloud-core",
+            "version": "v1.52.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/google-cloud-php-core.git",
+                "reference": "8214910f79b5508d4cd1cd48f39d7970443071d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-core/zipball/8214910f79b5508d4cd1cd48f39d7970443071d5",
+                "reference": "8214910f79b5508d4cd1cd48f39d7970443071d5",
+                "shasum": ""
+            },
+            "require": {
+                "google/auth": "^1.18",
+                "guzzlehttp/guzzle": "^5.3|^6.5.7|^7.4.4",
+                "guzzlehttp/promises": "^1.4||^2.0",
+                "guzzlehttp/psr7": "^1.7|^2.0",
+                "monolog/monolog": "^1.1|^2.0|^3.0",
+                "php": ">=7.4",
+                "psr/http-message": "^1.0|^2.0",
+                "rize/uri-template": "~0.3"
+            },
+            "require-dev": {
+                "erusev/parsedown": "^1.6",
+                "google/cloud-common-protos": "^0.4",
+                "google/gax": "^1.19.1",
+                "opis/closure": "^3",
+                "phpdocumentor/reflection": "^5.0",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.0",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "suggest": {
+                "opis/closure": "May be used to serialize closures to process jobs in the batch daemon. Please require version ^3.",
+                "symfony/lock": "Required for the Spanner cached based session pool. Please require the following commit: 3.3.x-dev#1ba6ac9"
+            },
+            "bin": [
+                "bin/google-cloud-batch"
+            ],
+            "type": "library",
+            "extra": {
+                "component": {
+                    "id": "cloud-core",
+                    "target": "googleapis/google-cloud-php-core.git",
+                    "path": "Core",
+                    "entry": "src/ServiceBuilder.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Google\\Cloud\\Core\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Google Cloud PHP shared dependency, providing functionality useful to all components.",
+            "support": {
+                "source": "https://github.com/googleapis/google-cloud-php-core/tree/v1.52.1"
+            },
+            "time": "2023-07-07T20:46:38+00:00"
+        },
+        {
+            "name": "google/cloud-vision",
+            "version": "v1.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/google-cloud-php-vision.git",
+                "reference": "b95006425a2b8d137e4bcfa328eb7a95af7bdf73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-vision/zipball/b95006425a2b8d137e4bcfa328eb7a95af7bdf73",
+                "reference": "b95006425a2b8d137e4bcfa328eb7a95af7bdf73",
+                "shasum": ""
+            },
+            "require": {
+                "google/cloud-core": "^1.43",
+                "google/gax": "^1.19.1",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "erusev/parsedown": "^1.6",
+                "google/cloud-storage": "^1.12",
+                "phpdocumentor/reflection": "^5.0",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.0",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "suggest": {
+                "ext-grpc": "The gRPC extension enables use of the performant gRPC transport",
+                "ext-protobuf": "Provides a significant increase in throughput over the pure PHP protobuf implementation. See https://cloud.google.com/php/grpc for installation instructions.",
+                "google/cloud-storage": "Annotate images stored in Google Cloud Storage"
+            },
+            "type": "library",
+            "extra": {
+                "component": {
+                    "id": "cloud-vision",
+                    "target": "googleapis/google-cloud-php-vision.git",
+                    "path": "Vision",
+                    "entry": "src/VisionClient.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Google\\Cloud\\Vision\\": "src",
+                    "GPBMetadata\\Google\\Cloud\\Vision\\": "metadata"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Cloud Vision Client for PHP",
+            "support": {
+                "source": "https://github.com/googleapis/google-cloud-php-vision/tree/v1.7.2"
+            },
+            "time": "2023-07-07T20:46:38+00:00"
+        },
+        {
+            "name": "google/common-protos",
+            "version": "v4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/common-protos-php.git",
+                "reference": "4c74dd56310b835115b939a561f7c1f0e3b36364"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/common-protos-php/zipball/4c74dd56310b835115b939a561f7c1f0e3b36364",
+                "reference": "4c74dd56310b835115b939a561f7c1f0e3b36364",
+                "shasum": ""
+            },
+            "require": {
+                "google/protobuf": "^3.6.1",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\Api\\": "src/Api",
+                    "Google\\Iam\\": "src/Iam",
+                    "Google\\Rpc\\": "src/Rpc",
+                    "Google\\Type\\": "src/Type",
+                    "Google\\Cloud\\": "src/Cloud",
+                    "GPBMetadata\\Google\\Api\\": "metadata/Api",
+                    "GPBMetadata\\Google\\Iam\\": "metadata/Iam",
+                    "GPBMetadata\\Google\\Rpc\\": "metadata/Rpc",
+                    "GPBMetadata\\Google\\Type\\": "metadata/Type",
+                    "GPBMetadata\\Google\\Cloud\\": "metadata/Cloud",
+                    "GPBMetadata\\Google\\Logging\\": "metadata/Logging"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Google API Common Protos for PHP",
+            "homepage": "https://github.com/googleapis/common-protos-php",
+            "keywords": [
+                "google"
+            ],
+            "support": {
+                "issues": "https://github.com/googleapis/common-protos-php/issues",
+                "source": "https://github.com/googleapis/common-protos-php/tree/v4.1.0"
+            },
+            "time": "2023-05-09T17:34:00+00:00"
+        },
+        {
+            "name": "google/gax",
+            "version": "v1.21.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/gax-php.git",
+                "reference": "a1497cc4d210848c12901f4e7bc66c0c2947a2bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/gax-php/zipball/a1497cc4d210848c12901f4e7bc66c0c2947a2bd",
+                "reference": "a1497cc4d210848c12901f4e7bc66c0c2947a2bd",
+                "shasum": ""
+            },
+            "require": {
+                "google/auth": "^1.25.0",
+                "google/common-protos": "^3.0||^4.0",
+                "google/grpc-gcp": "^0.2||^0.3",
+                "google/longrunning": "^0.2",
+                "google/protobuf": "^3.21.4",
+                "grpc/grpc": "^1.13",
+                "guzzlehttp/promises": "^1.4||^2.0",
+                "guzzlehttp/psr7": "^2.0",
+                "php": ">=7.4"
+            },
+            "conflict": {
+                "ext-protobuf": "<3.7.0"
+            },
+            "require-dev": {
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.0",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\ApiCore\\": "src",
+                    "GPBMetadata\\ApiCore\\": "metadata/ApiCore"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Google API Core for PHP",
+            "homepage": "https://github.com/googleapis/gax-php",
+            "keywords": [
+                "google"
+            ],
+            "support": {
+                "issues": "https://github.com/googleapis/gax-php/issues",
+                "source": "https://github.com/googleapis/gax-php/tree/v1.21.1"
+            },
+            "time": "2023-06-28T16:30:33+00:00"
+        },
+        {
+            "name": "google/grpc-gcp",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GoogleCloudPlatform/grpc-gcp-php.git",
+                "reference": "4d8b455a45a89f57e1552cadc41a43bc34c40456"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GoogleCloudPlatform/grpc-gcp-php/zipball/4d8b455a45a89f57e1552cadc41a43bc34c40456",
+                "reference": "4d8b455a45a89f57e1552cadc41a43bc34c40456",
+                "shasum": ""
+            },
+            "require": {
+                "google/auth": "^1.3",
+                "google/protobuf": "^v3.3.0",
+                "grpc/grpc": "^v1.13.0",
+                "php": "^7.4||^8.0",
+                "psr/cache": "^1.0.1||^2.0.0||^3.0.0"
+            },
+            "require-dev": {
+                "google/cloud-spanner": "^1.7",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Grpc\\Gcp\\": "src/"
+                },
+                "classmap": [
+                    "src/generated/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "gRPC GCP library for channel management",
+            "support": {
+                "issues": "https://github.com/GoogleCloudPlatform/grpc-gcp-php/issues",
+                "source": "https://github.com/GoogleCloudPlatform/grpc-gcp-php/tree/v0.3.0"
+            },
+            "time": "2023-04-24T14:37:29+00:00"
+        },
+        {
+            "name": "google/longrunning",
+            "version": "v0.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/php-longrunning.git",
+                "reference": "9689b4db54cf4cf8186118d9d59aa9ba35bb5842"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/php-longrunning/zipball/9689b4db54cf4cf8186118d9d59aa9ba35bb5842",
+                "reference": "9689b4db54cf4cf8186118d9d59aa9ba35bb5842",
+                "shasum": ""
+            },
+            "require-dev": {
+                "google/gax": "^1.13.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "component": {
+                    "id": "longrunning",
+                    "path": "LongRunning",
+                    "entry": null,
+                    "target": "googleapis/php-longrunning"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Google\\LongRunning\\": "src/LongRunning",
+                    "Google\\ApiCore\\LongRunning\\": "src/ApiCore/LongRunning",
+                    "GPBMetadata\\Google\\Longrunning\\": "metadata/Longrunning"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Google LongRunning Client for PHP",
+            "support": {
+                "source": "https://github.com/googleapis/php-longrunning/tree/v0.2.6"
+            },
+            "time": "2023-04-21T14:12:59+00:00"
+        },
+        {
+            "name": "google/protobuf",
+            "version": "v3.23.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/protocolbuffers/protobuf-php.git",
+                "reference": "fa784054760eec532fe8dd1919d3a0a11f5cef1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/fa784054760eec532fe8dd1919d3a0a11f5cef1f",
+                "reference": "fa784054760eec532fe8dd1919d3a0a11f5cef1f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.0.0"
+            },
+            "suggest": {
+                "ext-bcmath": "Need to support JSON deserialization"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\Protobuf\\": "src/Google/Protobuf",
+                    "GPBMetadata\\Google\\Protobuf\\": "src/GPBMetadata/Google/Protobuf"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "proto library for PHP",
+            "homepage": "https://developers.google.com/protocol-buffers/",
+            "keywords": [
+                "proto"
+            ],
+            "support": {
+                "source": "https://github.com/protocolbuffers/protobuf-php/tree/v3.23.4"
+            },
+            "time": "2023-07-06T18:51:48+00:00"
+        },
+        {
             "name": "graham-campbell/result-type",
             "version": "v1.1.1",
             "source": {
@@ -731,6 +1151,50 @@
                 }
             ],
             "time": "2023-02-25T20:23:15+00:00"
+        },
+        {
+            "name": "grpc/grpc",
+            "version": "1.52.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grpc/grpc-php.git",
+                "reference": "98394cd601a587ca68294e6209bd713856969105"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grpc/grpc-php/zipball/98394cd601a587ca68294e6209bd713856969105",
+                "reference": "98394cd601a587ca68294e6209bd713856969105",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "google/auth": "^v1.3.0"
+            },
+            "suggest": {
+                "ext-protobuf": "For better performance, install the protobuf C extension.",
+                "google/protobuf": "To get started using grpc quickly, install the native protobuf library."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Grpc\\": "src/lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "gRPC library for PHP",
+            "homepage": "https://grpc.io",
+            "keywords": [
+                "rpc"
+            ],
+            "support": {
+                "source": "https://github.com/grpc/grpc-php/tree/v1.52.0"
+            },
+            "time": "2023-02-25T05:20:08+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1291,16 +1755,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.14.1",
+            "version": "v10.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "6f89a2b74b232d8bf2e1d9ed87e311841263dfcb"
+                "reference": "c7599dc92e04532824bafbd226c2936ce6a905b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6f89a2b74b232d8bf2e1d9ed87e311841263dfcb",
-                "reference": "6f89a2b74b232d8bf2e1d9ed87e311841263dfcb",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c7599dc92e04532824bafbd226c2936ce6a905b8",
+                "reference": "c7599dc92e04532824bafbd226c2936ce6a905b8",
                 "shasum": ""
             },
             "require": {
@@ -1487,7 +1951,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-06-28T14:25:16+00:00"
+            "time": "2023-07-11T13:43:52+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -1557,16 +2021,16 @@
         },
         {
             "name": "laravel/scout",
-            "version": "v10.2.2",
+            "version": "v10.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/scout.git",
-                "reference": "0ec3c900bd26f0ab69105bf5b72beef3852d78a8"
+                "reference": "51d662fb00728dcf726a9e53a234a05896da888a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/scout/zipball/0ec3c900bd26f0ab69105bf5b72beef3852d78a8",
-                "reference": "0ec3c900bd26f0ab69105bf5b72beef3852d78a8",
+                "url": "https://api.github.com/repos/laravel/scout/zipball/51d662fb00728dcf726a9e53a234a05896da888a",
+                "reference": "51d662fb00728dcf726a9e53a234a05896da888a",
                 "shasum": ""
             },
             "require": {
@@ -1628,7 +2092,7 @@
                 "issues": "https://github.com/laravel/scout/issues",
                 "source": "https://github.com/laravel/scout"
             },
-            "time": "2023-05-24T13:30:35+00:00"
+            "time": "2023-07-11T15:04:19+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1757,145 +2221,6 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.8.1"
             },
             "time": "2023-02-15T16:40:09+00:00"
-        },
-        {
-            "name": "lcobucci/clock",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lcobucci/clock.git",
-                "reference": "30a854ceb22bd87d83a7a4563b3f6312453945fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/clock/zipball/30a854ceb22bd87d83a7a4563b3f6312453945fc",
-                "reference": "30a854ceb22bd87d83a7a4563b3f6312453945fc",
-                "shasum": ""
-            },
-            "require": {
-                "php": "~8.2.0",
-                "psr/clock": "^1.0"
-            },
-            "provide": {
-                "psr/clock-implementation": "1.0"
-            },
-            "require-dev": {
-                "infection/infection": "^0.26",
-                "lcobucci/coding-standard": "^10.0.0",
-                "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan": "^1.10.7",
-                "phpstan/phpstan-deprecation-rules": "^1.1.3",
-                "phpstan/phpstan-phpunit": "^1.3.10",
-                "phpstan/phpstan-strict-rules": "^1.5.0",
-                "phpunit/phpunit": "^10.0.17"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Lcobucci\\Clock\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Luís Cobucci",
-                    "email": "lcobucci@gmail.com"
-                }
-            ],
-            "description": "Yet another clock abstraction",
-            "support": {
-                "issues": "https://github.com/lcobucci/clock/issues",
-                "source": "https://github.com/lcobucci/clock/tree/3.1.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/lcobucci",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/lcobucci",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2023-03-20T19:12:25+00:00"
-        },
-        {
-            "name": "lcobucci/jwt",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "47bdb0e0b5d00c2f89ebe33e7e384c77e84e7c34"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/47bdb0e0b5d00c2f89ebe33e7e384c77e84e7c34",
-                "reference": "47bdb0e0b5d00c2f89ebe33e7e384c77e84e7c34",
-                "shasum": ""
-            },
-            "require": {
-                "ext-hash": "*",
-                "ext-json": "*",
-                "ext-openssl": "*",
-                "ext-sodium": "*",
-                "php": "~8.1.0 || ~8.2.0",
-                "psr/clock": "^1.0"
-            },
-            "require-dev": {
-                "infection/infection": "^0.26.19",
-                "lcobucci/clock": "^3.0",
-                "lcobucci/coding-standard": "^9.0",
-                "phpbench/phpbench": "^1.2.8",
-                "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan": "^1.10.3",
-                "phpstan/phpstan-deprecation-rules": "^1.1.2",
-                "phpstan/phpstan-phpunit": "^1.3.8",
-                "phpstan/phpstan-strict-rules": "^1.5.0",
-                "phpunit/phpunit": "^10.0.12"
-            },
-            "suggest": {
-                "lcobucci/clock": ">= 3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Lcobucci\\JWT\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Luís Cobucci",
-                    "email": "lcobucci@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
-            "keywords": [
-                "JWS",
-                "jwt"
-            ],
-            "support": {
-                "issues": "https://github.com/lcobucci/jwt/issues",
-                "source": "https://github.com/lcobucci/jwt/tree/5.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/lcobucci",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/lcobucci",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2023-02-25T21:35:16+00:00"
         },
         {
             "name": "league/commonmark",
@@ -2353,82 +2678,6 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
-        },
-        {
-            "name": "league/oauth1-client",
-            "version": "v1.10.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/oauth1-client.git",
-                "reference": "d6365b901b5c287dd41f143033315e2f777e1167"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/d6365b901b5c287dd41f143033315e2f777e1167",
-                "reference": "d6365b901b5c287dd41f143033315e2f777e1167",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-openssl": "*",
-                "guzzlehttp/guzzle": "^6.0|^7.0",
-                "guzzlehttp/psr7": "^1.7|^2.0",
-                "php": ">=7.1||>=8.0"
-            },
-            "require-dev": {
-                "ext-simplexml": "*",
-                "friendsofphp/php-cs-fixer": "^2.17",
-                "mockery/mockery": "^1.3.3",
-                "phpstan/phpstan": "^0.12.42",
-                "phpunit/phpunit": "^7.5||9.5"
-            },
-            "suggest": {
-                "ext-simplexml": "For decoding XML-based responses."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev",
-                    "dev-develop": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\OAuth1\\Client\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ben Corlett",
-                    "email": "bencorlett@me.com",
-                    "homepage": "http://www.webcomm.com.au",
-                    "role": "Developer"
-                }
-            ],
-            "description": "OAuth 1.0 Client Library",
-            "keywords": [
-                "Authentication",
-                "SSO",
-                "authorization",
-                "bitbucket",
-                "identity",
-                "idp",
-                "oauth",
-                "oauth1",
-                "single sign on",
-                "trello",
-                "tumblr",
-                "twitter"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/oauth1-client/issues",
-                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.10.1"
-            },
-            "time": "2022-04-15T14:02:14+00:00"
         },
         {
             "name": "livewire/livewire",
@@ -3192,26 +3441,31 @@
             "time": "2022-06-13T21:57:56+00:00"
         },
         {
-            "name": "psr/clock",
-            "version": "1.0.0",
+            "name": "psr/cache",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-fig/clock.git",
-                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d"
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/clock/zipball/e41a24703d4560fd0acb709162f73b8adfc3aa0d",
-                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0 || ^8.0"
+                "php": ">=8.0.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "Psr\\Clock\\": "src/"
+                    "Psr\\Cache\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3224,20 +3478,16 @@
                     "homepage": "https://www.php-fig.org/"
                 }
             ],
-            "description": "Common interface for reading the clock.",
-            "homepage": "https://github.com/php-fig/clock",
+            "description": "Common interface for caching libraries",
             "keywords": [
-                "clock",
-                "now",
+                "cache",
                 "psr",
-                "psr-20",
-                "time"
+                "psr-6"
             ],
             "support": {
-                "issues": "https://github.com/php-fig/clock/issues",
-                "source": "https://github.com/php-fig/clock/tree/1.0.0"
+                "source": "https://github.com/php-fig/cache/tree/3.0.0"
             },
-            "time": "2022-11-25T14:36:26+00:00"
+            "time": "2021-02-03T23:26:27+00:00"
         },
         {
             "name": "psr/container",
@@ -3903,6 +4153,68 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "rize/uri-template",
+            "version": "0.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rize/UriTemplate.git",
+                "reference": "5ed4ba8ea34af84485dea815d4b6b620794d1168"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rize/UriTemplate/zipball/5ed4ba8ea34af84485dea815d4b6b620794d1168",
+                "reference": "5ed4ba8ea34af84485dea815d4b6b620794d1168",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rize\\": "src/Rize"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marut K",
+                    "homepage": "http://twitter.com/rezigned"
+                }
+            ],
+            "description": "PHP URI Template (RFC 6570) supports both expansion & extraction",
+            "keywords": [
+                "RFC 6570",
+                "template",
+                "uri"
+            ],
+            "support": {
+                "issues": "https://github.com/rize/UriTemplate/issues",
+                "source": "https://github.com/rize/UriTemplate/tree/0.3.5"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/rezigned",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/rezigned",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/rize-uri-template",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-10-12T17:22:51+00:00"
         },
         {
             "name": "spatie/enum",
@@ -7150,16 +7462,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.10.3",
+            "version": "v1.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "c472786bca01e4812a9bb7933b23edfc5b6877b7"
+                "reference": "f56798088068af8bd75a8f2c4ecae022990fdf75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/c472786bca01e4812a9bb7933b23edfc5b6877b7",
-                "reference": "c472786bca01e4812a9bb7933b23edfc5b6877b7",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/f56798088068af8bd75a8f2c4ecae022990fdf75",
+                "reference": "f56798088068af8bd75a8f2c4ecae022990fdf75",
                 "shasum": ""
             },
             "require": {
@@ -7170,7 +7482,7 @@
                 "php": "^8.1.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.18.0",
+                "friendsofphp/php-cs-fixer": "^3.21.1",
                 "illuminate/view": "^10.5.1",
                 "laravel-zero/framework": "^10.0.2",
                 "mockery/mockery": "^1.5.1",
@@ -7212,20 +7524,20 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2023-06-20T15:55:03+00:00"
+            "time": "2023-07-11T15:18:27+00:00"
         },
         {
             "name": "laravel/sail",
-            "version": "v1.23.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "a2e046f748e87d3ef8b2b381e0e5c5a11f34e46b"
+                "reference": "62582606f80466aa81fba40b193b289106902853"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/a2e046f748e87d3ef8b2b381e0e5c5a11f34e46b",
-                "reference": "a2e046f748e87d3ef8b2b381e0e5c5a11f34e46b",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/62582606f80466aa81fba40b193b289106902853",
+                "reference": "62582606f80466aa81fba40b193b289106902853",
                 "shasum": ""
             },
             "require": {
@@ -7277,7 +7589,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2023-06-16T21:20:12+00:00"
+            "time": "2023-06-28T18:31:28+00:00"
         },
         {
             "name": "mockery/mockery",
