@@ -1,11 +1,15 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdvController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\UserController;
+use Laravel\Socialite\Facades\Socialite;
+
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\RevisorController;
-use App\Http\Controllers\UserController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,3 +67,24 @@ Route::get('/500_mrpotato', function () {
     return view('errors.error500_mrpotato');
 })->name('mrpotato');
 
+//SOCIALITE
+Route::get('/auth/redirect', function () {
+    return Socialite::driver('github')->redirect();
+})->name('socialite.login');
+
+Route::get('/login/github/callback', function () {
+    $git_user = Socialite::driver('github')->stateless()->user();
+    if ($git_user) {
+        $user = User::create([
+            'email' => $git_user->email,
+            'name' => explode(" ", $git_user->name)[0],
+            'surname' => explode(" ", $git_user->name)[1],
+            'password' => bcrypt(''), //cripta la pass
+        ]);
+        Auth::login($user);
+        return redirect('/');
+    } else {
+        return redirect('/404_mancave');
+    };
+    // $user->token
+});

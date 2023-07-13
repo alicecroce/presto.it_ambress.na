@@ -123,6 +123,8 @@
                                     </div>
 
                                 </form>
+                                <a href="{{route('socialite.login')}}" class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
+                                    >Accedi con Github</a>
                             </div>
                         </div>
                     </div>
