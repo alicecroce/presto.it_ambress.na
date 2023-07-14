@@ -14,7 +14,7 @@ use App\Http\Requests\StoreAdvRequest;
 class AdvCreateForm extends Component
 {
     use WithFileUploads;
-    public $title, $category_id, $price, $abstract, $description, $validated, $image, $temporary_images, $images = [], $adv;
+    public $title, $category_id, $price, $abstract, $description, $validated, $temporary_images, $images = [], $adv;
 
     protected $rules = [
         'title' => 'required',

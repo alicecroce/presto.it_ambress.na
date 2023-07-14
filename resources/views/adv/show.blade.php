@@ -9,13 +9,13 @@
                     <div class="portfolio-details-slider swiper">
                         <div class="swiper-wrapper align-items-center">
 
-                            <div id="carouselExampleIndica\tors" class="carousel slide">
+                            <div id="carouselExampleIndicators" class="carousel slide">
                                 @if ($adv->images)
                                     <div class="carousel-inner">
                                         @foreach ($adv->images as $image)
                                             <div class="carousel-item @if ($loop->first) active @endif">
-                                                <img src="{{ asset( $image->getUrl(300, 300)) }}" class="img-fluid p-3 rounded"
-                                                    alt="{{$adv->title}}">
+                                                <img src="{{ asset($image->getUrl(300, 300)) }}"
+                                                    class="img-fluid p-3 rounded" alt="{{ $adv->title }}">
                                             </div>
                                         @endforeach
                                     </div>
