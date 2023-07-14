@@ -10,6 +10,7 @@ use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use App\Http\Requests\StoreAdvRequest;
+use Illuminate\Contracts\Session\Session;
 
 class AdvCreateForm extends Component
 {
@@ -94,8 +95,27 @@ class AdvCreateForm extends Component
 
         session()->flash('tasks', 'Adv successfully updated.');
         $this->reset(['title',  'price', 'category_id', 'abstract', 'description', 'images', 'temporary_images', 'image']);
+        
+        $message = '';
 
-        return redirect()->route('welcome')->with('success', 'Annuncio aggiunto con successo, sarà visibile dopo l\'approvazione di un nostro revisore!');
+            switch (session('locale')) {
+                case 'en':
+                $message = "Announcement successfully add! It'll be visible after the revisor's review!";
+                    break;
+                case 'fr':
+                $message = "Announce chargé avec succès! Serais visible après de la revisiòn du reviseur";
+                    break;
+                case 'es':
+                $message = "Anuncio añadido satifactoriamente, estarà visible prévia aprovación de un revisór";
+                    break;
+                
+                default:
+                $message = 'Annuncio aggiunto con successo, sarà visibile dopo l\'approvazione di un nostro revisore!';
+                    break;
+            }
+
+
+        return redirect()->route('welcome')->with('success', $message);
     }
     public function render()
     {

@@ -43,7 +43,27 @@ class AdvEditForm extends Component
         ]);
 
         // session()->flash('adv', 'Annuncio modificato con successo');
-        return redirect()->route('adv.index')->with('success', 'Annuncio modificato con successo!');
+
+
+        $message = '';
+
+        switch (session('locale')) {
+            case 'en':
+            $message = "Announcement successfully modified!";
+                break;
+            case 'fr':
+            $message = "Announce modifié avec succès!";
+                break;
+            case 'es':
+            $message = "Anuncio modificado satifactoriamente!";
+                break;
+            
+            default:
+            $message = 'Annuncio modificato con successo!';
+                break;
+        }
+
+        return redirect()->route('adv.index')->with('success', $message);
     }
 
 
@@ -51,8 +71,27 @@ class AdvEditForm extends Component
     {
         $adv->delete();
 
-        session()->flash('adv', 'Annuncio eliminata correttamente.');
-        return redirect()->route('adv.index')->with('success', 'Annuncio eliminato con successo.');
+        session()->flash('adv', 'Annuncio eliminato correttamente.');
+
+        $message = '';
+        switch (session('locale')) {
+            case 'en':
+            $message = "Announcement successfully deleted!";
+                break;
+            case 'fr':
+            $message = "Announce annullé avec succès!";
+                break;
+            case 'es':
+            $message = "Anuncio eliminado satifactoriamente!";
+                break;
+            
+            default:
+            $message = 'Annuncio eliminato con successo!';
+                break;
+        }
+
+
+        return redirect()->route('adv.index')->with('success', $message);
     }
 
     public function render()
