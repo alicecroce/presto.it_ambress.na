@@ -1,6 +1,5 @@
 <x-main>
 
-
     <div id="success-message">
         @if (session('success'))
             <div class="d-flex justify-content-center">

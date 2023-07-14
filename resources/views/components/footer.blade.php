@@ -64,19 +64,19 @@
                         <h4>{{ __('ui.ourSocial') }}</h4>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                         <div class="social-links mt-3">
-                            <a href="{{ route('mancave') }}">
+                            <a href="46489948">
                                 <box-icon type='logo' name='twitter' color='#ffffff'></box-icon>
                             </a>
-                            <a href="{{ route('mancave') }}">
+                            <a href="/985416516">
                                 <box-icon name='facebook' type='logo' color='#ffffff'></box-icon>
                             </a>
-                            <a href="{{ route('mancave') }}">
+                            <a href="/941919">
                                 <box-icon name='instagram' type='logo' color='#ffffff'></box-icon>
                             </a>
-                            <a href="{{ route('mancave') }}">
+                            <a href="/94995416">
                                 <box-icon type='logo' name='tiktok' color='#ffffff'></box-icon>
                             </a>
-                            <a href="{{ route('mancave') }}">
+                            <a href="/954915665">
                                 <box-icon type='logo' name='linkedin' color='#ffffff'></box-icon>
                             </a>
                         </div>

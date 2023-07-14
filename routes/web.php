@@ -56,15 +56,15 @@ Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('se
 
 //ERRORS 
 Route::get('/404_mancave', function () {
-    return view('errors.error404_mancave');
+    return view('errors.404');
 })->name('mancave');
 
 Route::get('/403_lotr', function () {
-    return view('errors.error403_lotr');
+    return view('errors.403');
 })->name('lotr');
 
 Route::get('/500_mrpotato', function () {
-    return view('errors.error500_mrpotato');
+    return view('errors.500');
 })->name('mrpotato');
 
 //SOCIALITE
