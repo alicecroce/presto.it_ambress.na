@@ -1,14 +1,14 @@
 <div class="container my-5">
     <div id="confirm" class="d-none">
         <div class="alert alert-success" role="alert">
-            <h4 class="alert-heading">{{__('ui.attention')}}!</h4>
-            <p>{{__('ui.confMessage')}}</p>
+            <h4 class="alert-heading">{{ __('ui.attention') }}!</h4>
+            <p>{{ __('ui.confMessage') }}</p>
             <hr>
             <div class="d-flex justify-content-center">
                 <form wire:submit.prevent="update">
-                    <button type="submit" id="btn-yes" class="btn btn-success m-3">{{__('ui.yes')}}</button>
+                    <button type="submit" id="btn-yes" class="btn btn-success m-3">{{ __('ui.yes') }}</button>
                 </form>
-                <button type="submit" data-bs-dismiss="alert" class="btn btn-danger m-3">{{__('ui.no')}}</button>
+                <button type="submit" data-bs-dismiss="alert" class="btn btn-danger m-3">{{ __('ui.no') }}</button>
 
             </div>
 
@@ -56,7 +56,47 @@
                 <textarea wire:model="description" id="description" class="form-control"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-show" id="edit-btn">{{ __('ui.btnEdit') }}</button>
+            <!-- Edit Immagini  -->
+            <div class="mb-3">
+                <input wire:model="temporary_images" type="file" name="images" multiple
+                    class="form-control shadow @error('temporay_images.*') is-invalid"@enderror placeholder="img" />
+
+            </div>
+
+            @if (!empty($images) || !empty($imagesFromDb))
+                <div class="row">
+                    <div class="col-12">
+                        <p>Anteprima</p>
+                        <div class="row border border-4 border-info rounded py-4">
+                            @foreach ($images as $key => $image)
+                                <div class="col my-3">
+                                    <div class="img-preview mx-auto rounded"
+                                        style="background-image: url({{ $image->temporaryUrl() }});"></div>
+                                        <button type="button" class="btn btn-danger d-block text-center mt-2 mx-auto"
+                                        wire:click="removeImage({{ $key }})">Cancella</button>
+                                </div>
+                            @endforeach
+                            @if (!empty($imagesFromDb))
+                                @foreach ($imagesFromDb as $key => $image)
+                                    <div class="col my-3">
+                                        <div class="img-preview mx-auto rounded"
+                                            style="background-image: url({{ $image->getUrl() }});"></div>
+                                        <button type="button" class="btn btn-danger d-block text-center mt-2 mx-auto"
+                                            wire:click="removeImageFromDb({{ $key }})">Cancella
+                                    </div>
+                                @endforeach
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            @endif
+
+
+
+
+
+
+            <button type="submit" class="btn btn-show m-2" id="edit-btn">{{ __('ui.btnEdit') }}</button>
             <button wire:click="destroy({{ $adv }})" class="btn btn-danger">{{ __('ui.btnDelete') }}</button>
 
         </form>

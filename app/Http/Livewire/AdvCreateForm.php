@@ -67,11 +67,11 @@ class AdvCreateForm extends Component
             'user_id' => Auth::id(),
             'abstract' => $this->abstract,
             'description' => $this->description,
- 
         ]);
 
 
         if (count($this->images)) {
+            
             foreach ($this->images as $image) {
                 // $this->adv->images()->create(['path' => $image->store('images', 'public')]);
                 $newFileName = "advs/{$this->adv->id}";
