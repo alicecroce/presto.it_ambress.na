@@ -48,7 +48,7 @@
                     <div class="fist"></div>
                 </div>
             </div></a>
-        <h1 class="message">Something isn't quite right.</h1>
+        <h1 class="message">{{__('ui.notRight')}}</h1>
 
 
     </div>

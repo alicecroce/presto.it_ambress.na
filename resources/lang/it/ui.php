@@ -86,6 +86,15 @@ return [
     'confMessage' => 'Stai per modificare questo annuncio, sei sicurə?',
     'yes' => 'si',
     'no' => 'no',
-
-    
+    // ERRORS
+    //->lotr
+    '403' => '403 - Tu... Non puoi passare',
+    'gandalf' => 'Oh-oh, Gandalf ti sta sbarrando la strada!',
+    'gandalf2' => "Magari c'è un errore di battitura nell'URL? O forse volevi andare da un'altra parte? Tipo... la Contea?",
+    // ->mancave
+    'lost' => "Sembra che ti sia persə",
+    'pageUnavailable' => "La pagina che stai cercando non è disponibile!",
+    'backHome' => 'Torna alla Home',
+    //->mrPotato
+    'notRight' => "C'è qualcosa che non quadra",
 ];

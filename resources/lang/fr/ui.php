@@ -18,7 +18,7 @@ return [
     'addAdv' => 'Entrez une announce',
     'editAdv' => 'Modifier votre announce',
     'title' => 'Entrez le titre de votre article',
-    'price' => 'Entrez le prix de votre article', 
+    'price' => 'Entrez le prix de votre article',
     'abstract' => 'Entrez une petite aperçu',
     'category' => 'Choissez une catégorie',
     'noCateg' => 'Pas des catégories',
@@ -86,5 +86,16 @@ return [
     'attention' => 'Attention!',
     'confMessage' => "Tu est en train de modifier cette announce, t'est sûre?",
     'yes' => 'Oui',
-    'no' => 'No',  
+    'no' => 'No',
+    // ERRORS
+    // ->lotr
+    '403' => '403 - Vous ne passerez pas!',
+    'gandalf' => 'Uh oh, Gandalf  bloque la voie!',
+    'gandalf2' => "Peut-être avez-vous fait une faute de frappe? Ou aller ailleurs? Comme .. Hobbitebourg?",
+    // ->mancave
+    'lost' => "Vous donnez l'impression d'être perdu ",
+    'pageUnavailable' => "la page que vous recherchez n'est pas disponible!",
+    'backHome' => "Retour à l'accueil",
+    //->mrPotato
+    'notRight' => "Quelque chose ne correspond pas.",
 ];

@@ -13,12 +13,12 @@
 
                         <div class="contant_box_404">
                             <h3 class="h2">
-                                Look like you're lost
+                                {{ __('ui.lost') }}
                             </h3>
 
-                            <p>the page you are looking for not avaible!</p>
+                            <p>{{__('ui.pageUnavailable')}}</p>
 
-                            <a href="{{ route('welcome') }}" class="link_404">Go to Home</a>
+                            <a href="{{ route('welcome') }}" class="link_404">{{__('ui.backHome')}}</a>
                         </div>
                     </div>
                 </div>
