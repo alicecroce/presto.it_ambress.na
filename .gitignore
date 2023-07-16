@@ -21,3 +21,4 @@ yarn-error.log
 /storage/advs.index-shm 
 /storage/advs.index-wal
 /storage/*.index
+/google_credentials.json

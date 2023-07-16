@@ -10,12 +10,14 @@ use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use App\Http\Requests\StoreAdvRequest;
+use App\Jobs\GoogleVisionSafeSearch;
+use App\Jobs\GoogleVisionLabelImage;
 use Illuminate\Contracts\Session\Session;
 
 class AdvCreateForm extends Component
 {
     use WithFileUploads;
-    public $title, $category_id, $price, $abstract, $description, $validated, $temporary_images, $images = [], $adv;
+    public $title, $category_id, $price, $abstract, $description, $validated, $temporary_images, $images = [], $adv, $image;
 
     protected $rules = [
         'title' => 'required',
@@ -65,6 +67,7 @@ class AdvCreateForm extends Component
             'user_id' => Auth::id(),
             'abstract' => $this->abstract,
             'description' => $this->description,
+ 
         ]);
 
 
@@ -75,6 +78,8 @@ class AdvCreateForm extends Component
                 $newImage = $this->adv->images()->create(['path' => $image->store($newFileName, 'public')]);
 
                 dispatch(new ResizeImage($newImage->path, 300, 300));
+                dispatch(new GoogleVisionSafeSearch($newImage->id));
+                dispatch(new GoogleVisionLabelImage($newImage->id));
             }
 
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
@@ -93,7 +98,8 @@ class AdvCreateForm extends Component
 
         // ]);
 
-        session()->flash('tasks', 'Adv successfully updated.');
+
+        session()->flash('adv', 'Adv successfully updated.');
         $this->reset(['title',  'price', 'category_id', 'abstract', 'description', 'images', 'temporary_images', 'image']);
         
         $message = '';
