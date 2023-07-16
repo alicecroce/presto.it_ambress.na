@@ -13,19 +13,7 @@
 
 
     <div class="container my-5">
-        {{-- Ho provato ma va in confitto con un controller, non sto capendo perché --}}
-        {{-- <div class="container my-2 d-inline d-flex">
-            <select class="form-select w-50" name="categories" id="">
-                <option value="">Scegli una categoria</option>
-                @forelse ($categories as $category)
-            
-                    <option value="">{{$category->name}}</option>
-                @empty
-                    Nessuna categoria, sorry
-                @endforelse
-            </select>
-            <a class="btn btn-cerca mx-3" href="">Filtra ricerca</a>
-        </div> --}}
+       
         <div class="row">
             <h1 id="categoryName">
                 @if (Route::currentRouteName() == 'categoryshow')

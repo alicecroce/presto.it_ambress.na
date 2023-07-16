@@ -63,8 +63,8 @@ return [
     'telephone' => 'Teléfono',
     'city' => 'Ciudad',
     'pwdConfirm' => 'Confirma contraseña',
-    'alreadySign' => 'Ya estás Regìstrado',
-    'noAccount' => 'No tienes una cuenta',
+    'alreadySign' => '¿Ya estás Regìstrado',
+    'noAccount' => '¿No tienes una cuenta',
     //CATEGORY
     'console_e_videogiochi' => 'Consolas y Videojuegos',
     'libri' => 'Libros',
@@ -82,8 +82,8 @@ return [
     'attrezzature-da-lavoro' => 'Herramientas de trabajo',
     'immobili' => 'Inmuebles',
     //CHECK MESSAGGE
-    'attention' => 'Atención!',
-    'confMessage' => " Estas modificando este anuncio, estas seguro?",
+    'attention' => '!Atención',
+    'confMessage' => "¿Estas modificando este anuncio, estas seguro?",
     'yes' => 'Sí',
     'no' => 'No',  
 ];
