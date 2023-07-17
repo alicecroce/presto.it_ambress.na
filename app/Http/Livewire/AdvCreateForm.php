@@ -17,7 +17,7 @@ use Illuminate\Contracts\Session\Session;
 class AdvCreateForm extends Component
 {
     use WithFileUploads;
-    public $title, $category_id, $price, $abstract, $description, $validated, $temporary_images, $images = [], $adv, $image;
+    public $title, $category_id, $price, $abstract, $description, $validated, $temporary_images, $images = [], $adv, $image, $message;
 
     protected $rules = [
         'title' => 'required',
