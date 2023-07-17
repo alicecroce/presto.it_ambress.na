@@ -8,7 +8,7 @@
     <meta name="x-apple-disable-message-reformatting">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="telephone=no" name="format-detection">
-    <title>Nuovo modello di email 2023-07-13</title>
+    <title>Rendi revisore</title>
     <!--[if (mso 16)]>
     <style type="text/css">
     a {text-decoration: none;}
@@ -397,7 +397,10 @@
     </style>
 </head>
 
-<body style="width:100%;height:100%;padding:0;Margin:0">
+<body style="width:100%;
+height:100%;
+padding:0;
+Margin:0">
     <div class="es-wrapper-color" style="background-color:#FFFFFF">
         <!--[if gte mso 9]>
    <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
@@ -405,29 +408,66 @@
    </v:background>
   <![endif]-->
         <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0"
-            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top;background-color:#FFFFFF">
+            style="mso-table-lspace:0pt;
+            mso-table-rspace:0pt;
+            border-collapse:collapse;
+            border-spacing:0px;
+            padding:0;Margin:0;
+            width:100%;
+            height:100%;
+            background-repeat:repeat;
+            background-position:center top;
+            background-color:#FFFFFF">
             <tr>
                 <td valign="top" style="padding:0;Margin:0">
                     <table cellpadding="0" cellspacing="0" class="es-footer" align="center"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important;background-color:transparent;background-repeat:repeat;background-position:center top">
+                        style="mso-table-lspace:0pt;
+                        mso-table-rspace:0pt;
+                        border-collapse:collapse;
+                        border-spacing:0px;
+                        width:100%;
+                        table-layout:fixed !important;
+                        background-color:transparent;
+                        background-repeat:repeat;
+                        background-position:center top">
                         <tr>
-                            <td align="center" style="padding:0;Margin:0">
+                            <td align="center" style="padding:0;
+                            Margin:0">
                                 <table bgcolor="#bcb8b1" class="es-footer-body" align="center" cellpadding="0"
                                     cellspacing="0"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">
+                                    style="mso-table-lspace:0pt;
+                                    mso-table-rspace:0pt;
+                                    border-collapse:collapse;
+                                    border-spacing:0px;
+                                    background-color:#FFFFFF;
+                                    width:600px">
                                     <tr>
                                         <td align="left"
-                                            style="Margin:0;padding-top:20px;padding-right:40px;padding-bottom:20px;padding-left:40px">
+                                            style="Margin:0;
+                                            padding-top:20px;
+                                            padding-right:40px;
+                                            padding-bottom:20px;
+                                            adding-left:40px">
                                             <table cellpadding="0" cellspacing="0" width="100%"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                style="mso-table-lspace:0pt;
+                                                mso-table-rspace:0pt;
+                                                border-collapse:collapse;
+                                                border-spacing:0px">
                                                 <tr>
                                                     <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:520px">
+                                                        style="padding:0;
+                                                        Margin:0;
+                                                        width:520px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                            style="mso-table-lspace:0pt;
+                                                            mso-table-rspace:0pt;
+                                                            border-collapse:collapse;
+                                                            border-spacing:0px">
                                                             <tr>
                                                                 <td align="center"
-                                                                    style="padding:0;Margin:0;display:none"></td>
+                                                                    style="padding:0;
+                                                                    Margin:0;
+                                                                    display:none"></td>
                                                             </tr>
                                                         </table>
                                                     </td>
@@ -440,30 +480,62 @@
                         </tr>
                     </table>
                     <table cellpadding="0" cellspacing="0" class="es-content" align="center"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important">
+                        style="mso-table-lspace:0pt;
+                        mso-table-rspace:0pt;
+                        border-collapse:collapse;
+                        border-spacing:0px;
+                        width:100%;
+                        table-layout:fixed !important">
                         <tr>
-                            <td align="center" style="padding:0;Margin:0">
+                            <td align="center" style="padding:0;
+                            Margin:0">
                                 <table bgcolor="#efefef" class="es-content-body" align="center" cellpadding="0"
                                     cellspacing="0"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#EFEFEF;border-radius:20px 20px 0 0;width:600px">
+                                    style="mso-table-lspace:0pt;
+                                    mso-table-rspace:0pt;
+                                    border-collapse:collapse;
+                                    border-spacing:0px;
+                                    background-color:#EFEFEF;
+                                    border-radius:20px 20px 0 0;
+                                    width:600px">
                                     <tr>
-                                        <td align="left" style="padding:0;Margin:0;padding-right:40px">
+                                        <td align="left" style="padding:0;
+                                        Margin:0;
+                                        padding-right:40px">
                                             <table cellpadding="0" cellspacing="0" width="100%"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                style="mso-table-lspace:0pt;
+                                                mso-table-rspace:0pt;
+                                                border-collapse:collapse;
+                                                border-spacing:0px">
                                                 <tr>
                                                     <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:520px">
+                                                        style="padding:0;
+                                                        Margin:0;
+                                                        width:520px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
                                                             role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                            style="mso-table-lspace:0pt;
+                                                            mso-table-rspace:0pt;
+                                                            border-collapse:collapse;
+                                                            border-spacing:0px">
                                                             <tr>
                                                                 <td align="left" class="es-m-txt-c"
-                                                                    style="padding:0;Margin:0;font-size:0px"><a
+                                                                    style="padding:0;
+                                                                    Margin:0;
+                                                                    font-size:0px"><a
                                                                         target="_blank" href="https://viewstripo.email"
-                                                                        style="mso-line-height-rule:exactly;text-decoration:underline;color:#2D3142;font-size:18px"><img
+                                                                        style="mso-line-height-rule:exactly;
+                                                                        text-decoration:underline;
+                                                                        color:#2D3142;
+                                                                        font-size:18px"><img
                                                                             src="{{ asset(Storage::url('public/img/prestoit-logo_alpha.png')) }}"
                                                                             alt="Logo"
-                                                                            style="display:block;font-size:18px;border:0;outline:none;text-decoration:none;border-radius:100px"
+                                                                            style="display:block;
+                                                                            font-size:18px;
+                                                                            border:0;
+                                                                            outline:none;
+                                                                            text-decoration:none;
+                                                                            border-radius:100px"
                                                                             height="150 " title="Logo"></a>
                                                                 </td>
                                                             </tr>
@@ -475,28 +547,62 @@
                                     </tr>
                                     <tr>
                                         <td align="left"
-                                            style="padding:0;Margin:0;padding-right:40px;padding-left:40px">
+                                            style="padding:0;
+                                            Margin:0;
+                                            padding-right:40px;
+                                            padding-left:40px">
                                             <table cellpadding="0" cellspacing="0" width="100%"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                style="mso-table-lspace:0pt;
+                                                mso-table-rspace:0pt;
+                                                border-collapse:collapse;
+                                                border-spacing:0px">
                                                 <tr>
                                                     <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:520px">
+                                                        style="padding:0;
+                                                        Margin:0;
+                                                        width:520px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separate;border-spacing:0px;border-radius:10px;background-color:#fafafa"
+                                                            style="mso-table-lspace:0pt;
+                                                            mso-table-rspace:0pt;
+                                                            border-collapse:separate;
+                                                            border-spacing:0px;
+                                                            border-radius:10px;
+                                                            background-color:#fafafa"
                                                             bgcolor="#fafafa" role="presentation">
                                                             <tr>
-                                                                <td align="left" style="padding:20px;Margin:0">
+                                                                <td align="left" style="padding:20px;
+                                                                Margin:0">
                                                                     <h1
-                                                                        style="Margin:0;font-family:Imprima, Arial, sans-serif;mso-line-height-rule:exactly;letter-spacing:0;font-size:28px;font-style:normal;font-weight:bold;line-height:34px;color:#2D3142">
+                                                                        style="Margin:0;
+                                                                        font-family:Imprima, Arial, sans-serif;
+                                                                        mso-line-height-rule:exactly;
+                                                                        letter-spacing:0;
+                                                                        font-size:28px;
+                                                                        font-style:normal;
+                                                                        font-weight:bold;
+                                                                        line-height:34px;
+                                                                        color:#2D3142">
                                                                         {{ $user->name }}&nbsp;ha chiesto di lavorare
                                                                         con noi!</h1>
 
                                                                     <p
-                                                                        style="Margin:0;mso-line-height-rule:exactly;font-family:Imprima, Arial, sans-serif;line-height:27px;letter-spacing:0;color:#2D3142;font-size:18px">
+                                                                        style="Margin:0;
+                                                                        mso-line-height-rule:exactly;
+                                                                        font-family:Imprima, Arial, sans-serif;
+                                                                        line-height:27px;
+                                                                        letter-spacing:0;
+                                                                        color:#2D3142;
+                                                                        font-size:18px">
                                                                         <br>
                                                                     </p>
                                                                     <p
-                                                                        style="Margin:0;mso-line-height-rule:exactly;font-family:Imprima, Arial, sans-serif;line-height:27px;letter-spacing:0;color:#2D3142;font-size:18px">
+                                                                        style="Margin:0;
+                                                                        mso-line-height-rule:exactly;
+                                                                        font-family:Imprima, Arial, sans-serif;
+                                                                        line-height:27px;
+                                                                        letter-spacing:0;
+                                                                        color:#2D3142;
+                                                                        font-size:18px">
                                                                         Dati personali
                                                                         <br>
                                                                         <br>
@@ -521,25 +627,48 @@
                         </tr>
                     </table>
                     <table cellpadding="0" cellspacing="0" class="es-content" align="center"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important">
+                        style="mso-table-lspace:0pt;
+                        mso-table-rspace:0pt;
+                        border-collapse:collapse;
+                        border-spacing:0px;
+                        width:100%;
+                        table-layout:fixed !important">
                         <tr>
-                            <td align="center" style="padding:0;Margin:0">
+                            <td align="center" style="padding:0;
+                            Margin:0">
                                 <table bgcolor="#efefef" class="es-content-body" align="center" cellpadding="0"
                                     cellspacing="0"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#EFEFEF;width:600px">
+                                    style="mso-table-lspace:0pt;
+                                    mso-table-rspace:0pt;
+                                    border-collapse:collapse;
+                                    border-spacing:0px;
+                                    background-color:#EFEFEF;
+                                    width:600px">
                                     <tr>
                                         <td align="left"
-                                            style="Margin:0;padding-right:40px;padding-left:40px;padding-top:30px">
+                                            style="Margin:0;
+                                            padding-right:40px;
+                                            padding-left:40px;
+                                            padding-top:30px">
                                             <table cellpadding="0" cellspacing="0" width="100%"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                style="mso-table-lspace:0pt;
+                                                mso-table-rspace:0pt;
+                                                border-collapse:collapse;
+                                                border-spacing:0px">
                                                 <tr>
                                                     <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:520px">
+                                                        style="padding:0;
+                                                        Margin:0;
+                                                        width:520px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
                                                             role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                            style="mso-table-lspace:0pt;
+                                                            mso-table-rspace:0pt;
+                                                            border-collapse:collapse;
+                                                            border-spacing:0px">
                                                             <tr>
-                                                                <td align="center" style="padding:0;Margin:0">
+                                                                <td align="center" style="padding:0;
+                                                                Margin:0">
                                                                     <!--[if mso]><a href="" target="_blank" hidden>
  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href=""
                 style="height:56px; v-text-anchor:middle; width:520px" arcsize="50%" stroke="f"  fillcolor="#7630f3">
@@ -549,10 +678,37 @@
 <![endif]-->
                                                                     <!--[if !mso]><!-- --><span
                                                                         class="es-button-border msohide"
-                                                                        style="border-style:solid;border-color:#2CB543;background:#7630f3;border-width:0px;display:block;border-radius:30px;width:auto;mso-hide:all"><a
+                                                                        style="border-style:solid;
+                                                                        border-color:#2CB543;
+                                                                        background:#7630f3;
+                                                                        border-width:0px;
+                                                                        display:block;
+                                                                        border-radius:30px;
+                                                                        width:auto;
+                                                                        mso-hide:all"><a
                                                                             href="{{ route('make.revisor', compact('user')) }}"
                                                                             class="es-button msohide"
-                                                                            style="mso-style-priority:100 !important;text-decoration:none !important;mso-line-height-rule:exactly;color:#FFFFFF;font-size:22px;padding:15px 20px 15px 20px;display:block;background:#6230a3;border-radius:30px;font-family:Imprima, Arial, sans-serif;font-weight:bold;font-style:normal;line-height:26px;width:auto;text-align:center;letter-spacing:0;mso-padding-alt:0;mso-border-alt:10px solid  #7630f3;mso-hide:all;padding-left:5px;padding-right:5px">Rendi
+                                                                            style="mso-style-priority:100 !important;
+                                                                            text-decoration:none !important;
+                                                                            mso-line-height-rule:exactly;
+                                                                            color:#FFFFFF;
+                                                                            font-size:22px;
+                                                                            padding:15px 20px 15px 20px;
+                                                                            display:block;
+                                                                            background:#6230a3;
+                                                                            border-radius:30px;
+                                                                            font-family:Imprima, Arial, sans-serif;
+                                                                            font-weight:bold;
+                                                                            font-style:normal;
+                                                                            line-height:26px;
+                                                                            width:auto;
+                                                                            text-align:center;
+                                                                            letter-spacing:0;
+                                                                            mso-padding-alt:0;
+                                                                            mso-border-alt:10px solid  #7630f3;
+                                                                            mso-hide:all;
+                                                                            padding-left:5px;
+                                                                            padding-right:5px">Rendi
                                                                             revisore</a></span>
                                                                     <!--<![endif]-->
                                                                 </td>
@@ -565,15 +721,26 @@
                                     </tr>
                                     <tr>
                                         <td align="left"
-                                            style="padding:0;Margin:0;padding-right:40px;padding-left:40px">
+                                            style="padding:0;
+                                            Margin:0;
+                                            padding-right:40px;
+                                            padding-left:40px">
                                             <table cellpadding="0" cellspacing="0" width="100%"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                style="mso-table-lspace:0pt;
+                                                mso-table-rspace:0pt;
+                                                border-collapse:collapse;
+                                                border-spacing:0px">
                                                 <tr>
                                                     <td align="center" valign="top"
-                                                        style="padding:0;Margin:0;width:520px">
+                                                        style="padding:0;
+                                                        Margin:0;
+                                                        width:520px">
                                                         <table cellpadding="0" cellspacing="0" width="100%"
                                                             role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                            style="mso-table-lspace:0pt;
+                                                            mso-table-rspace:0pt;
+                                                            border-collapse:collapse;
+                                                            border-spacing:0px">
                                                         </table>
                                                     </td>
                                                 </tr>
@@ -585,20 +752,41 @@
                         </tr>
                     </table>
                     <table cellpadding="0" cellspacing="0" class="es-content" align="center"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:100%;table-layout:fixed !important">
+                        style="mso-table-lspace:0pt;
+                        mso-table-rspace:0pt;
+                        border-collapse:collapse;
+                        border-spacing:0px;
+                        width:100%;
+                        table-layout:fixed !important">
                         <tr>
-                            <td align="center" style="padding:0;Margin:0">
+                            <td align="center" style="padding:0;
+                            Margin:0">
                                 <table bgcolor="#efefef" class="es-content-body" align="center" cellpadding="0"
                                     cellspacing="0"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#EFEFEF;border-radius:0 0 20px 20px;width:600px">
+                                    style="mso-table-lspace:0pt;
+                                    mso-table-rspace:0pt;
+                                    border-collapse:collapse;
+                                    border-spacing:0px;
+                                    background-color:#EFEFEF;
+                                    border-radius:0 0 20px 20px;
+                                    width:600px">
                                     <tr>
                                         <td class="esdev-adapt-off" align="left"
-                                            style="Margin:0;padding-top:20px;padding-right:40px;padding-bottom:20px;padding-left:40px">
+                                            style="Margin:0;
+                                            padding-top:20px;
+                                            padding-right:40px;
+                                            padding-bottom:20px;
+                                            padding-left:40px">
                                             <table cellpadding="0" cellspacing="0" class="esdev-mso-table"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:520px">
+                                                style="mso-table-lspace:0pt;
+                                                mso-table-rspace:0pt;
+                                                border-collapse:collapse;
+                                                border-spacing:0px;
+                                                width:520px">
                                                 <tr>
                                                     <td class="esdev-mso-td" valign="top"
-                                                        style="padding:0;Margin:0">
+                                                        style="padding:0;
+                                                        Margin:0">
 
                                                     </td>
                                                 </tr>
