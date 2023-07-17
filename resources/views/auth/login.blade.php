@@ -102,13 +102,7 @@
                                         <label for="password">Password</label>
                                     </div>
 
-                                    {{-- <div class="form-check mb-3">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="rememberPasswordCheck">
-                                        <label class="form-check-label" for="rememberPasswordCheck">
-                                            Remember password
-                                        </label>
-                                    </div> --}}
+                              
 
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
@@ -123,8 +117,8 @@
                                     </div>
 
                                 </form>
-                                <a href="{{route('socialite.login')}}" class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
-                                    >Accedi con Github</a>
+                                {{-- <a href="{{route('socialite.login')}}" class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
+                                    >Accedi con Github</a> --}}
                             </div>
                         </div>
                     </div>

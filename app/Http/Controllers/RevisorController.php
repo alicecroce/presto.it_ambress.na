@@ -21,19 +21,78 @@ class RevisorController extends Controller
     public function acceptAdv(Adv $adv)
     {
         $adv->setAccepted(true);
-        return redirect()->route('revisor.index')->with('success', 'Annuncio accettato');
+
+        $message = '';
+        
+        switch (session('locale')) {
+            case 'en':
+            $message = "Announcement accepted!";
+                break;
+            case 'fr':
+            $message = "Announce accepté!";
+                break;
+            case 'es':
+            $message = "¡Anuncio aceptado!";
+                break;
+            
+            default:
+            $message = 'Annuncio accettato!';
+                break;
+        }
+
+        return redirect()->route('revisor.index')->with('success', $message);
     }
 
     public function rejectAdv(Adv $adv)
     {
         $adv->setAccepted(false);
-        return redirect()->route('revisor.index')->with('success', 'Annuncio rifiutato');
+    
+        $message = '';
+        
+        switch (session('locale')) {
+            case 'en':
+            $message = "Announcement rejected!";
+                break;
+            case 'fr':
+            $message = "Announce rejeté!";
+                break;
+            case 'es':
+            $message = "¡Anuncio rechezado!";
+                break;
+            
+            default:
+            $message = 'Annuncio rifiutato';
+                break;
+        }
+        
+        return redirect()->route('revisor.index')->with('success', $message);
     }
 
     public function acceptRejectedAdv(Adv $adv)
     {
         $adv->setAccepted(true);
-        return redirect()->route('rejected')->with('success', 'Annuncio accettato');
+
+
+        $message = '';
+        
+        switch (session('locale')) {
+            case 'en':
+            $message = "Announcement accepted!";
+                break;
+            case 'fr':
+            $message = "Announce accepté!";
+                break;
+            case 'es':
+            $message = "¡Anuncio aceptado!";
+                break;
+            
+            default:
+            $message = 'Annuncio accettato!';
+                break;
+        }
+        
+
+        return redirect()->route('rejected')->with('success', $message);
     }
 
     // public function becomeRevisor()
@@ -50,13 +109,53 @@ class RevisorController extends Controller
     public function saveContact(Request $request)
     {
         Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user(), $request->description));
-        return redirect()->back()->with('success', 'La tua richiesta è stata correttamente inviata!');
+
+        $message = '';
+        
+        switch (session('locale')) {
+            case 'en':
+            $message = "You're request has been successfully sent";
+                break;
+            case 'fr':
+            $message = "Votre demande a été envoieé avec succès";
+                break;
+            case 'es':
+            $message = "¡Su petición fue enviada con éxito!";
+                break;
+            
+            default:
+            $message = 'La tua richiesta è stata correttamente inviata!';
+                break;
+        }
+        
+        return redirect()->back()->with('success', $message);
     }
 
     public function makeRevisor(User $user)
     {
         Artisan::call('presto:make-user-revisor', ["email" => $user->email]);
-        return redirect()->route('welcome')->with('success', 'Complimenti! Fai ufficialmente parte del team di Ambress.na, sei diventato revisore di Presto.it!');
+
+
+        
+        $message = '';
+        
+        switch (session('locale')) {
+            case 'en':
+            $message = "Congratulations! You're now officially a revisor for Presto.it";
+                break;
+            case 'fr':
+            $message = "Félicitations! Vous faites officiellement partie de notre équipe, vous êtes unə reviseurə pour Presto.it!";
+                break;
+            case 'es':
+            $message = "¡Felicitaciones! Estás oficialmente en el equipo de Ambress.na, eres un revisor por Presto.it";
+                break;
+            
+            default:
+            $message = 'Complimenti! Fai ufficialmente parte del team di Ambress.na, sei diventato revisore di Presto.it!';
+                break;
+        }
+        
+        return redirect()->route('welcome')->with('success', $message);
     }
 
     public function not_accepted()

@@ -86,4 +86,15 @@ return [
     'confMessage' => "You're about to edit this post, are you sure?",
     'yes' => 'Yes',
     'no' => 'No',
+    // ERRORS
+    // ->lotr
+    '403' => '403 - You Shall Not Pass',
+    'gandalf' => 'Uh oh, Gandalf is blocking the way!',
+    'gandalf2' => "Maybe you have a typo in the url? Or you meant to go to a different location? Like...Hobbiton?",
+    // ->mancave
+    'lost' => "Look like you're lost",
+    'pageUnavailable' => "the page you are looking for not avaible!",
+    'backHome' => 'Back Home',
+    //->mrPotato
+    'notRight' => "Something isn't quite right",
 ];

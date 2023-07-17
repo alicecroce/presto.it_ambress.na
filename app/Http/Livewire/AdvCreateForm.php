@@ -10,11 +10,14 @@ use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use App\Http\Requests\StoreAdvRequest;
+use App\Jobs\GoogleVisionSafeSearch;
+use App\Jobs\GoogleVisionLabelImage;
+use Illuminate\Contracts\Session\Session;
 
 class AdvCreateForm extends Component
 {
     use WithFileUploads;
-    public $title, $category_id, $price, $abstract, $description, $validated, $image, $temporary_images, $images = [], $adv;
+    public $title, $category_id, $price, $abstract, $description, $validated, $temporary_images, $images = [], $adv, $image;
 
     protected $rules = [
         'title' => 'required',
@@ -68,12 +71,15 @@ class AdvCreateForm extends Component
 
 
         if (count($this->images)) {
+            
             foreach ($this->images as $image) {
                 // $this->adv->images()->create(['path' => $image->store('images', 'public')]);
                 $newFileName = "advs/{$this->adv->id}";
                 $newImage = $this->adv->images()->create(['path' => $image->store($newFileName, 'public')]);
 
                 dispatch(new ResizeImage($newImage->path, 300, 300));
+                dispatch(new GoogleVisionSafeSearch($newImage->id));
+                dispatch(new GoogleVisionLabelImage($newImage->id));
             }
 
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
@@ -92,10 +98,30 @@ class AdvCreateForm extends Component
 
         // ]);
 
-        session()->flash('tasks', 'Adv successfully updated.');
-        $this->reset(['title',  'price', 'category_id', 'abstract', 'description', 'images', 'temporary_images', 'image']);
 
-        return redirect()->route('welcome')->with('success', 'Annuncio aggiunto con successo, sarà visibile dopo l\'approvazione di un nostro revisore!');
+        session()->flash('adv', 'Adv successfully updated.');
+        $this->reset(['title',  'price', 'category_id', 'abstract', 'description', 'images', 'temporary_images', 'image']);
+        
+        $message = '';
+
+            switch (session('locale')) {
+                case 'en':
+                $message = "Announcement successfully add! It'll be visible after the revisor's review!";
+                    break;
+                case 'fr':
+                $message = "Announce chargé avec succès! Serais visible après de la revisiòn du reviseur";
+                    break;
+                case 'es':
+                $message = "Anuncio añadido satifactoriamente, estarà visible prévia aprovación de un revisór";
+                    break;
+                
+                default:
+                $message = 'Annuncio aggiunto con successo, sarà visibile dopo l\'approvazione di un nostro revisore!';
+                    break;
+            }
+
+
+        return redirect()->route('welcome')->with('success', $message);
     }
     public function render()
     {

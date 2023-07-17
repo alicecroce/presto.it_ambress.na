@@ -16,7 +16,7 @@ return [
     //ADVS
     'allAdvs' => 'Todos los anuncios',
     'addAdv' => 'Publicar un anuncio',
-'editAdv' => 'Modifica tú annuncio',
+    'editAdv' => 'Modifica tú annuncio',
     'title' => 'Inserta el título de tú anuncio',
     'price' => 'Inserta el precio de tú articulo',
     'abstract' => 'Inserta una descripción pequeña',
@@ -63,8 +63,8 @@ return [
     'telephone' => 'Teléfono',
     'city' => 'Ciudad',
     'pwdConfirm' => 'Confirma contraseña',
-    'alreadySign' => 'Ya estás Regìstrado',
-    'noAccount' => 'No tienes una cuenta',
+    'alreadySign' => '¿Ya estás Regìstrado',
+    'noAccount' => '¿No tienes una cuenta',
     //CATEGORY
     'console_e_videogiochi' => 'Consolas y Videojuegos',
     'libri' => 'Libros',
@@ -82,8 +82,19 @@ return [
     'attrezzature-da-lavoro' => 'Herramientas de trabajo',
     'immobili' => 'Inmuebles',
     //CHECK MESSAGGE
-    'attention' => 'Atención!',
-    'confMessage' => " Estas modificando este anuncio, estas seguro?",
+    'attention' => '!Atención',
+    'confMessage' => "¿Estas modificando este anuncio, estas seguro?",
     'yes' => 'Sí',
-    'no' => 'No',  
+    'no' => 'No',
+    // ERRORS
+    //->lotr
+    '403' => '403 - ¡No puedes pasar!',
+    'gandalf' => 'Oh-oh, ¡Gandalf te está bloqueando el camino!',
+    'gandalf2' => "¿Quizás hay un error de escritura en la URL? ¿O tal vez querías ir a otro lugar? ¿Quizás a la Comarca?",
+    // ->mancave
+    'lost' => "Parece que te has perdido",
+    'pageUnavailable' => "La página que estás buscando no está disponible.",
+    'backHome' => 'Vuelve a la página de inicio.',
+    //->mrPotato
+    'notRight' => "Algo no concuerda",
 ];

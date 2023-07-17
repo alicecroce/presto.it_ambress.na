@@ -3,13 +3,12 @@
 
     <div class="d-flex justify-content-center">
         @if (session('success'))
-        <div class="alert alert-success alert-dismissible w-75" role="alert">
-            <div> {{ session('success') }}</div>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    @endif
+            <div class="alert alert-success alert-dismissible w-75" role="alert">
+                <div> {{ session('success') }}</div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
     </div>
-
 
     <div class="container">
         <div class="row justify-content-center my-2">
@@ -58,6 +57,33 @@
                                                 </div>
                                             </div>
                                         @endif
+
+
+                                        @if ($adv_to_check->images)
+                                            <div class="col-12 col-md-6">
+                                                <h5 class="tc-accent mt-3">Tags</h5>
+                                                <div class="p-2">
+                                                    @if ($image->labels)
+                                                        @foreach ($image->labels as $label)
+                                                            <p class="d-inline">{{ $label }}</p>
+                                                        @endforeach
+                                                    @endif
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="tc-accent">Revisione Immagini</h5>
+                                                    <p><b>Adulti:</b> <span class="{{ $image->adult }}"></span></p>
+                                                    <p><b>Satira:</b> <span class="{{ $image->spoof }}"></span></p>
+                                                    <p><b>Medicina:</b> <span class="{{ $image->medical }}"></span>
+                                                    </p>
+                                                    <p><b>Violenza:</b> <span class="{{ $image->violence }}"></span>
+                                                    </p>
+                                                    <p><b>Contenuto Ammiccante:</b> <span
+                                                            class="{{ $image->racy }}"></span></p>
+                                                </div>
+                                            </div>
+                                        @endif
+
+
 
                                         <button class="carousel-control-prev" type="button"
                                             data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -51,8 +51,6 @@ Route::delete('/profilo/elimina', [UserController::class, 'destroy'])->name('use
 
 Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('set_language_locale');
 
-//SOCIALITE
-
 
 //ERRORS 
 Route::get('/404_mancave', function () {
@@ -66,6 +64,8 @@ Route::get('/403_lotr', function () {
 Route::get('/500_mrpotato', function () {
     return view('errors.500');
 })->name('mrpotato');
+
+
 
 //SOCIALITE
 Route::get('/auth/redirect', function () {

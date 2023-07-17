@@ -5,7 +5,7 @@
             <div class="d-flex justify-content-center">
                 <div class="alert alert-success w-75 align-items-center text-center" role="alert">
                     <span class="bi bi-check-circle m-2"></span>
-                    {{ session('success') }}
+                    {{ session($message ) }}
                 </div>
             </div>
         @endif

@@ -34,6 +34,24 @@ class UserController extends Controller
     public function destroy(User $user){
         $user = Auth::user();
         $user->delete();
-        return redirect()->route('welcome')->with('success', 'Cancellazione account avvenuta');
+
+        $message = '';
+
+        switch (session('locale')) {
+            case 'en':
+            $message = "Account successfully deleted!";
+                break;
+            case 'fr':
+            $message = "Profil eliminé avec succès!";
+                break;
+            case 'es':
+            $message = "Perfil eliminado satifactoriamente";
+                break;
+            
+            default:
+            $message = 'Cancellazione account avvenuta';
+                break;
+        }
+        return redirect()->route('welcome')->with('success', $message);
     }
 }

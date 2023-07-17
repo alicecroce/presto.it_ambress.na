@@ -13,6 +13,10 @@ class Image extends Model
 
     protected $fillable = ['path'];
 
+    protected $casts = [
+        'labels' => 'array'
+    ];
+
     public function adv()
     {
         return $this->belongsTo(Adv::class);
