@@ -22,7 +22,8 @@
                                 <div class="swiper-wrapper align-items-center">
 
                                     <div id="carouselExampleIndicators" class="carousel slide">
-                                        @if ($adv_to_check->images)
+
+                                        @if ($adv_to_check->images->count() > 0)
                                             <div class="carousel-inner">
                                                 @foreach ($adv_to_check->images as $image)
                                                     <div
@@ -59,7 +60,7 @@
                                         @endif
 
 
-                                        @if ($adv_to_check->images)
+                                        @if ($adv_to_check->images->count() > 0)
                                             <div class="col-12 col-md-6">
                                                 <h5 class="tc-accent mt-3">Tags</h5>
                                                 <div class="p-2">
