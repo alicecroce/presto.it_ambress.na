@@ -102,7 +102,7 @@
                                         <label for="password">Password</label>
                                     </div>
 
-                              
+
 
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
@@ -110,6 +110,9 @@
                                         {{-- <div class="text-center">
                                             <a class="small" href="#">Forgot password?</a>
                                         </div> --}}
+                                        <a href="{{ route('socialite.login') }}"
+                                            class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca">Accedi
+                                            con Github</a>
                                         <div class="text-center">
                                             {{ __('ui.noAccount') }}?
                                             <a href="{{ route('register') }}">{{ __('ui.register') }}!</a>
@@ -117,8 +120,7 @@
                                     </div>
 
                                 </form>
-                                {{-- <a href="{{route('socialite.login')}}" class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca"
-                                    >Accedi con Github</a> --}}
+
                             </div>
                         </div>
                     </div>
