@@ -9,6 +9,7 @@ use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\RevisorController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\LoginWithGooglecontroller;
 use App\Models\User;
 
 /*
@@ -67,7 +68,7 @@ Route::get('/500_mrpotato', function () {
 
 
 
-//SOCIALITE
+//SOCIALITE-GITHUB
 Route::get('/auth/redirect', function () {
     return Socialite::driver('github')->redirect();
 })->name('socialite.login');
@@ -87,4 +88,10 @@ Route::get('/login/github/callback', function () {
         return redirect('/404_mancave');
     };
     // $user->token
+});
+
+//-GOOGLE
+Route::controller(LoginWithGooglecontroller::class)->group(function(){
+    Route::get('authorized/google', 'redirectToGoogle')->name('auth.google');
+    Route::get('authorized/google/callback', 'handleGoogleCallback');
 });

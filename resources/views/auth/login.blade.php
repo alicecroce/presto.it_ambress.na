@@ -110,10 +110,23 @@
                                         {{-- <div class="text-center">
                                             <a class="small" href="#">Forgot password?</a>
                                         </div> --}}
+                                        
                                         <a href="{{ route('socialite.login') }}"
-                                            class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca">Accedi
-                                            con Github</a>
+                                            class="btn btn-lg btn-login text-uppercase fw-bold mb-2 btn-cerca">Accedi con Github</a>
                                         <div class="text-center">
+
+                                            <div class="flex items-center justify-end mt-4">
+                                                <a href="{{ url('authorized/google') }}">
+                                                    <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png" style="margin-left: 3em;">
+                                                </a>
+                                            </div>
+
+
+
+
+
+
+
                                             {{ __('ui.noAccount') }}?
                                             <a href="{{ route('register') }}">{{ __('ui.register') }}!</a>
                                         </div>

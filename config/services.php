@@ -37,4 +37,10 @@ return [
         'redirect' => 'http://localhost:8000/login/github/callback',
     ],
 
+    'google' => [
+        'client_id' => '317380182643-1nfgba0ij750sv81n1p137a059p0ejm5.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => 'http://localhost:8000/authorized/google/callback',
+    ],
+
 ];
