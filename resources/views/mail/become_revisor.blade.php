@@ -574,7 +574,7 @@ Margin:0">
                                                                 Margin:0">
                                                                     <h1
                                                                         style="Margin:0;
-                                                                        font-family:Imprima, Arial, sans-serif;
+                                                                        font-family: Poppins, sans-serif;
                                                                         mso-line-height-rule:exactly;
                                                                         letter-spacing:0;
                                                                         font-size:28px;
@@ -582,7 +582,8 @@ Margin:0">
                                                                         font-weight:bold;
                                                                         line-height:34px;
                                                                         color:#2D3142">
-                                                                        {{ $user->name }}&nbsp;ha chiesto di lavorare
+                                                                        <span style="color:#6230a3">
+                                                                            {{ $user->name }}</span>&nbsp;ha chiesto di lavorare
                                                                         con noi!</h1>
 
                                                                     <p
@@ -598,7 +599,7 @@ Margin:0">
                                                                     <p
                                                                         style="Margin:0;
                                                                         mso-line-height-rule:exactly;
-                                                                        font-family:Imprima, Arial, sans-serif;
+                                                                        font-family: Poppins, sans-serif;
                                                                         line-height:27px;
                                                                         letter-spacing:0;
                                                                         color:#2D3142;
@@ -691,14 +692,14 @@ Margin:0">
                                                                             style="mso-style-priority:100 !important;
                                                                             text-decoration:none !important;
                                                                             mso-line-height-rule:exactly;
-                                                                            color:#FFFFFF;
+                                                                            color: #fec200;
                                                                             font-size:22px;
                                                                             padding:15px 20px 15px 20px;
                                                                             display:block;
                                                                             background:#6230a3;
                                                                             border-radius:30px;
-                                                                            font-family:Imprima, Arial, sans-serif;
-                                                                            font-weight:bold;
+                                                                            font-family: Junge, serif;
+                                                                            font-weight:normal;
                                                                             font-style:normal;
                                                                             line-height:26px;
                                                                             width:auto;
