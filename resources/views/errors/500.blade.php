@@ -1,4 +1,4 @@
-<x-main>
+<x-errors-view>
     <div class="mrpotatobody">
         <a href="/">
             <div class="mr">
@@ -68,4 +68,4 @@
 
 
 
-</x-main>
+</x-errors-view>

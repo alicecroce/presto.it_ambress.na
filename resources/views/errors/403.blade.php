@@ -1,4 +1,4 @@
-<x-main>
+<x-errors-view>
     
     <div class="gandalfbody">
         <a href="/">
@@ -22,4 +22,4 @@
         </div>
     </div>
 
-</x-main>
+</x-errors-view>

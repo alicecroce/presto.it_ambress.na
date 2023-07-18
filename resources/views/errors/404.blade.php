@@ -1,4 +1,4 @@
-<x-main>
+<x-errors-view>
 
     <section class="page_404 ">
         <div class="container ">
@@ -26,4 +26,4 @@
         </div>
     </section>
 
-</x-main>
+</x-errors-view>
