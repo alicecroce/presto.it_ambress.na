@@ -45,7 +45,7 @@
                                     € {{ $adv->price }}
                                 </div>
                             </div>
-                            <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}"
+                            <a href="{{ route('adv.show', ['adv' => $adv['slug']]) }}"
                                 class="btn btn-show position-absolute bottom-0 end-0 m-3">{{ __('ui.btnInfo') }}
                             </a>
                         </div>

@@ -13,7 +13,7 @@ class Adv extends Model
 {
     use HasFactory, Searchable;
 
-    protected $fillable = ['title', 'category_id', 'user_id', 'price', 'abstract', 'description', 'img'];
+    protected $fillable = ['title', 'category_id', 'user_id', 'price', 'abstract', 'description', 'img', 'slug'];
 
     public function toSearchableArray()
     {
@@ -60,11 +60,9 @@ class Adv extends Model
         return $this->hasMany(Image::class);
     }
 
-    // public function getRouteKeyName(): string
-    // {       
-    //     $title = Str::slug("title", '-');
-    //     dd($title);
+    public function getRouteKeyName(): string
+    {       
+        return 'slug';
+    }
 
-    //     return 'title';
-    // }
 }

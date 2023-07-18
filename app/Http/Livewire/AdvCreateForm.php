@@ -5,20 +5,21 @@ namespace App\Http\Livewire;
 use App\Models\Adv;
 use Livewire\Component;
 use App\Models\Category;
+use App\Jobs\RemoveFaces;
 use App\Jobs\ResizeImage;
+use Illuminate\Support\Str;
 use Livewire\WithFileUploads;
+use App\Jobs\GoogleVisionLabelImage;
+use App\Jobs\GoogleVisionSafeSearch;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use App\Http\Requests\StoreAdvRequest;
-use App\Jobs\GoogleVisionSafeSearch;
-use App\Jobs\GoogleVisionLabelImage;
-use App\Jobs\RemoveFaces;
 use Illuminate\Contracts\Session\Session;
 
 class AdvCreateForm extends Component
 {
     use WithFileUploads;
-    public $title, $category_id, $price, $abstract, $description, $validated, $temporary_images, $images = [], $adv, $image, $message;
+    public $title, $category_id, $price, $abstract, $description, $validated, $temporary_images, $images = [], $adv, $image, $message, $slug;
 
     protected $rules = [
         'title' => 'required',
@@ -59,6 +60,9 @@ class AdvCreateForm extends Component
     public function store()
     {
         $this->validate();
+        $slug = '';
+        $slug = Str::slug($this->title, '-');
+
 
         $category_id = Category::find($this->category_id);
         $this->adv = $category_id->advs()->create([
@@ -68,7 +72,12 @@ class AdvCreateForm extends Component
             'user_id' => Auth::id(),
             'abstract' => $this->abstract,
             'description' => $this->description,
+            'slug' => $slug
+
         ]);
+
+        // dd($slug);
+        // exit;
 
 
         if (count($this->images)) {
