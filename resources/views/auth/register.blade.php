@@ -137,13 +137,17 @@
                                         {{-- <div class="text-center">
                                             <a class="small" href="#">Forgot password?</a>
                                         </div> --}}
-                                        <div class="row d-flex justify-content-evenly">
+                                        <div class="d-flex flex-column align-items-center">
                                             <a href="{{ route('socialite.login') }}"
-                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-github col-5">Accedi
-                                                con GitHub <i class="bi bi-github"></i></a>
+                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-github col-7">Accedi
+                                                con GitHub <i class="bi bi-github ms-3"></i></a>
                                             <a href="{{ url('authorized/google') }}"
-                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-google col-5">Accedi
-                                                con Google <img src="{{asset(Storage::url('public/img/g-logo-btn.png'))}}" class="align-self-center" style="height: 15px; background-color:white" alt="g-logo"></i></a>
+                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-google col-7">Accedi
+                                                con Google <img
+                                                    src="{{ asset(Storage::url('public/img/g-logo.png')) }}"
+                                                    class="align-self-center ms-2"
+                                                    style="height: 15px"
+                                                    alt="g-logo"></i></a>
                                         </div>
                                         <div class="text-center">
                                             {{ __('ui.alreadySign') }}?
