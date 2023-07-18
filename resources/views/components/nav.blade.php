@@ -23,7 +23,7 @@
                     @auth
                         <a class="btn btn-accedi" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            {{ __('ui.profile') }}
+                            {{ Auth::user()->name }}
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{ route('user_profile.index') }}">{{ __('ui.profile') }}</a>
