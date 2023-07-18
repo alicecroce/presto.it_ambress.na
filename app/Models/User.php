@@ -28,6 +28,7 @@ class User extends Authenticatable
         'message',
         'password',
         'google_id',
+        
     ];
 
     /**

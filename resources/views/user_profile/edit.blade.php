@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 </div> --}}
-                <form action="{{ route('user-profile-information.update') }}" method="POST" class="was-validated">
+                <form action="{{ route('user-profile-information.update') }}" method="POST" class="was-validated" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <fieldset class="rounded  bg-custom text-white">
@@ -74,7 +74,12 @@
                             <input class="form-control w-75" type="text" name="phone"
                                 value="{{ Auth::user()->phone }}" id="phone" />
                         </div>
-                        <button id="edit-btn" type="submit"
+                        <div class="m-3 d-flex">
+                            <label class="form-label mx-auto" for="user_img">Inserisci un immagine</label>
+                            <input class="form-control w-75" type="file" name="user_img"
+                                value="" id="user_img" />
+                        </div>
+                        <button  type="submit"
                             class="btn btn-form m-3 float-end">{{ __('ui.editProfile') }}</button>
                     </fieldset>
                 </form>

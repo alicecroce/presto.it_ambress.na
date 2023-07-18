@@ -17,8 +17,13 @@
                 <div class="col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body text-center">
-                            <img src="{{ asset('storage/img/placeholderlogin.png') }}" alt="avatar"
-                                class="rounded-circle img-fluid" style="width: 150px;">
+                            <img src="
+                            @if (Auth::user()->user_img) 
+                            {{asset('storage/' . Auth::user()->user_img)}}
+                            @else
+                            {{ asset('storage/img/placeholderlogin.png') }} 
+                            @endif"
+                                alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
                             <h5 class="my-3">{{ Auth::user()->name }} {{ Auth::user()->surname }}</h5>
                             <p class="text-muted mb-4">{{ Auth::user()->city }}</p>
                             <div class="d-flex justify-content-center mb-2">
@@ -56,6 +61,15 @@
                                 </div>
                                 <div class="col-sm-9">
                                     <p class="text-muted mb-0">{{ Auth::user()->phone }}</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Annunci Online</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">Hai attualmente online {{ @count($advs) }} annunci</p>
                                 </div>
                             </div>
                         </div>
