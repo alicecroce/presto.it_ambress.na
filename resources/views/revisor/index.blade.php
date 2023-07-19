@@ -127,7 +127,7 @@
                                         {{ Str::ucfirst($adv_to_check->category->name) }}
                                     </li>
                                     <li><strong>{{ __('ui.Advertiser') }}</strong>: {{ Str::ucfirst($adv_to_check->user->name) }}
-                                        {{ Str::ucfirst($string) }}</li>
+                                        {{ Str::ucfirst($adv_to_check->user->surname) }}</li>
                                     <li><strong>{{ __('ui.pubDate') }}</strong>:
                                         {{ $adv_to_check->created_at->format('d/m/Y') }}</a>
                                     </li>
