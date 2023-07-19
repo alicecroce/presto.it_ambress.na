@@ -97,7 +97,7 @@
                                         </div>
                                         <div class="form-floating flex-grow-1 mb-3 ">
                                             <input type="text" name="surname" class="form-control" id="surname"
-                                                placeholder="Gini">
+                                                placeholder="Gino Gini">
                                             <label for="surname">{{ __('ui.surname') }}</label>
                                         </div>
                                     </div>
@@ -139,14 +139,13 @@
                                         </div> --}}
                                         <div class="d-flex flex-column align-items-center">
                                             <a href="{{ route('socialite.login') }}"
-                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-github col-7">Accedi
+                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-github col-12">Accedi
                                                 con GitHub <i class="bi bi-github ms-3"></i></a>
                                             <a href="{{ url('authorized/google') }}"
-                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-google col-7">Accedi
+                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-google col-12">Accedi
                                                 con Google <img
                                                     src="{{ asset(Storage::url('public/img/g-logo.png')) }}"
-                                                    class="align-self-center ms-2"
-                                                    style="height: 15px"
+                                                    class="align-self-center ms-2" style="height: 15px"
                                                     alt="g-logo"></i></a>
                                         </div>
                                         <div class="text-center">
