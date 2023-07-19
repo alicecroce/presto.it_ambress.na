@@ -103,24 +103,28 @@
                             </div>
 
                             <div class="portfolio-info">
-                                <h4 class="card-title fw-bold" style="color: #6230A3 ">{{ $adv_to_check->title }}
+                                <h4 class="card-title fw-bold" style="color: #6230A3 ">
+                                    {{ Str::ucfirst($adv_to_check->title) }}
                                 </h4>
                                 <hr>
                                 <ul>
                                     <li><strong>{{ __('ui.revPrice') }}</strong>: € {{ $adv_to_check->price }} </li>
-                                    <li><strong>{{ __('ui.from') }}</strong>: {{ $adv_to_check->user->city }} </li>
+                                    <li><strong>{{ __('ui.from') }}</strong>:
+                                        {{ Str::ucfirst($adv_to_check->user->city) }} </li>
                                 </ul>
                                 <hr>
-                                <div><strong>{{ __('ui.shortDesc') }}:</strong> {{ $adv_to_check->abstract }}</div>
+                                <div><strong>{{ __('ui.shortDesc') }}:</strong>
+                                    {{ Str::ucfirst($adv_to_check->abstract) }}</div>
                                 <br>
                                 <div class="text-justify about-text-justify">
                                     <strong>{{ __('ui.moreInfo') }}: </strong>
-                                    <p>{{ $adv_to_check->description }}</p>
+                                    <p>{{ Str::ucfirst($adv_to_check->description) }}</p>
                                 </div>
                                 <hr>
 
                                 <ul>
-                                    <li><strong>{{ __('ui.categ') }}</strong>: {{ $adv_to_check->category->name }}
+                                    <li><strong>{{ __('ui.categ') }}</strong>:
+                                        {{ Str::ucfirst($adv_to_check->category->name) }}
                                     </li>
                                     <li><strong>{{ __('ui.Advertiser') }}</strong>: {{ $adv_to_check->user->name }}
                                         {{ $adv_to_check->user->surname }}</li>

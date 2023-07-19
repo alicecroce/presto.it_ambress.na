@@ -20,14 +20,14 @@
                             alt="img placeholder">
                         <div class="card-body position-relative">
 
-                            <h5 class="card-title">{{ $adv->title }}</h5>
+                            <h5 class="card-title">{{ Str::ucfirst($adv->title) }}</h5>
                             <div class="h-50">
-                                <p class="card-text">{{ $adv->abstract }}</p>
+                                <p class="card-text">{{ Str::ucfirst($adv->abstract) }}</p>
                             </div>
 
                             <div class="row mt-3">
                                 <div class="col border-top">
-                                    {{ $adv->getCategory() }}
+                                    {{ Str::ucfirst($adv->getCategory()) }}
                                 </div>
                                 <div class="col">
                                     € {{ $adv->price }}

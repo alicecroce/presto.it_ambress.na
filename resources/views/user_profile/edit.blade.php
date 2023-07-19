@@ -22,8 +22,9 @@
                         <div class="card-body text-center">
                             <img src="{{ asset('/storage/img/placeholderlogin.png') }}" alt="avatar"
                                 class="rounded-circle img-fluid" style="width: 150px;">
-                            <h5 class="my-3">{{ Auth::user()->name }} {{ Auth::user()->surname }}</h5>
-                            <p class="text-muted mb-4">{{ Auth::user()->city }}</p>
+                            <h5 class="my-3">{{ Str::ucfirst(Auth::user()->name) }}
+                                {{ Str::ucfirst(Auth::user()->surname) }}</h5>
+                            <p class="text-muted mb-4">{{ Str::ucfirst(Auth::user()->city) }}</p>
                         </div>
                     </div>
                 </div>
@@ -44,7 +45,8 @@
                         </div>
                     </div>
                 </div> --}}
-                <form action="{{ route('user-profile-information.update') }}" method="POST" class="was-validated" enctype="multipart/form-data">
+                <form action="{{ route('user-profile-information.update') }}" method="POST" class="was-validated"
+                    enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <fieldset class="rounded  bg-custom text-white">
@@ -76,11 +78,10 @@
                         </div>
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="user_img">Inserisci un immagine</label>
-                            <input class="form-control w-75" type="file" name="user_img"
-                                value="" id="user_img" />
+                            <input class="form-control w-75" type="file" name="user_img" value=""
+                                id="user_img" />
                         </div>
-                        <button  type="submit"
-                            class="btn btn-form m-3 float-end">{{ __('ui.editProfile') }}</button>
+                        <button type="submit" class="btn btn-form m-3 float-end">{{ __('ui.editProfile') }}</button>
                     </fieldset>
                 </form>
 
@@ -88,7 +89,7 @@
                     id="delete-{{ Auth::user()->id }}">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-danger float-end m-3">{{ __('ui.btnDelete') }}</button>
+                    <button class="btn btn-danger float-end m-3">DA TRADURRE BOTTONE ELIMINA USER</button>
 
                 </form>
             </div>
