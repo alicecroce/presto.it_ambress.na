@@ -583,7 +583,7 @@ Margin:0">
                                                                         line-height:34px;
                                                                         color:#2D3142">
                                                                         <span style="color:#6230a3">
-                                                                            {{ $user->name }}</span>&nbsp;ha chiesto di lavorare
+                                                                            {{ Str::ucfirst($user->name) }}</span>&nbsp;ha chiesto di lavorare
                                                                         con noi!</h1>
 
                                                                     <p
@@ -607,13 +607,13 @@ Margin:0">
                                                                         Dati personali
                                                                         <br>
                                                                         <br>
-                                                                        Nome: {{ $user->name }}
+                                                                        Nome: {{ Str::ucfirst($user->name) }}
                                                                         <br>
-                                                                        Cognome: {{ $user->surname }}
+                                                                        Cognome: {{ Str::ucfirst($user->surname) }}
                                                                         <br>
                                                                         Email: {{ $user->email }}
                                                                         <br>
-                                                                        Messaggio: {{ $description }}
+                                                                        Messaggio: {{ Str::ucfirst($description) }}
                                                                     </p>
                                                                 </td>
                                                             </tr>
