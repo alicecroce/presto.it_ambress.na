@@ -98,4 +98,18 @@ return [
     'backHome' => "Retour à l'accueil",
     //->mrPotato
     'notRight' => "Quelque chose ne correspond pas.",
+    //MESSAGES
+    'titleRequired' => 'Insérez un titre.',
+    'titleMin' => 'La longueur doit être supérieure à 4 caractères.',
+    'priceRequired' => 'Insérez un prix.',
+    'categoryRequired' => 'Sélectionnez une catégorie.',
+    'abstractRequired' => 'Insérez une brève description.',
+    'abstractMin' => 'La description doit comporter au moins 4 caractères.',
+    'abstractMax' => "La description peut contenir jusqu'à 100 caractères.",
+    'descriptionMax' => "La description peut contenir jusqu'à 500 caractères.",
+    'tempImageRequired' => "L'image est requise.",
+    'tempImageFormat' => 'Les fichiers doivent être au format image.',
+    'tempImageMax' => "L'image doit avoir une taille maximale de 1 Mo (mégaoctet).",
+    'imageImage' => 'Les fichiers doivent être au format image',
+    'imageMax' => "L'image doit avoir une taille maximale de 1 Mo (mégaoctet).",
 ];

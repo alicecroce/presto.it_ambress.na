@@ -53,7 +53,7 @@
                 <input wire:model="temporary_images" type="file" name="images" multiple
                     class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="Img" />
                 @error('temporary_images.*')
-                    <p class="text-danger mt-2">{{ $message }}</p>
+                    <p class="text-danger mt-2">{{ __($message) }}</p>
                 @enderror
             </div>
             @if (!empty($images))
