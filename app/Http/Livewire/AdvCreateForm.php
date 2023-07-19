@@ -35,7 +35,7 @@ class AdvCreateForm extends Component
         'title.required' => 'ui.titleRequired',
         'title.min' => 'ui.titleMin',
         'price.required' => 'ui.priceRequired',
-        'category.required' => 'ui.categoryRequired',
+        'category_id.required' => 'ui.categoryRequired',
         'abstract.required' => 'ui.abstractRequired',
         'abstract.min' => 'ui.abstractMin',
         'abstract.max' => 'ui.abstractMax',

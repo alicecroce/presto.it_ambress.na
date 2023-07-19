@@ -97,4 +97,18 @@ return [
     'backHome' => 'Back Home',
     //->mrPotato
     'notRight' => "Something isn't quite right",
+    //MESSAGES
+    'titleRequired' => 'Please enter a title',
+    'titleMin' => 'The title length must be over 4 characters',
+    'priceRequired' => 'Please enter a price',
+    'categoryRequired' => 'Please select a category',
+    'abstractRequired' => 'Enter a short description',
+    'abstractMin' => 'Abstract must be at least 4 characters',
+    'abstractMax' => "Abstract can't be more than 100 characters",
+    'descriptionMax' => "Description can't be more than 500 characters",
+    'tempImageRequired' => "Image is mandatory",
+    'tempImageFormat' => 'File must be an image',
+    'tempImageMax' => "Image can be max 1mb",
+    'imageImage' => 'File must be image type',
+    'imageMax' => "Image can be max 1mb",
 ];
