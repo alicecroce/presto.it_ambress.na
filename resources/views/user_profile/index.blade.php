@@ -97,7 +97,7 @@
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="{{ route('adv.edit', ['adv' => $adv->id]) }}"
+                                            <a href="{{ route('adv.edit', ['adv' => $adv['slug']]) }}"
                                                 class="btn btn-show float-start mt-2">{{ __('ui.btnEdit') }}
                                             </a>
                                         </div>

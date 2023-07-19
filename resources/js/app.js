@@ -2,6 +2,7 @@ import "bootstrap";
 import "boxicons";
 
 let successDiv = document.getElementById("success-message");
+
 function hideDiv() {
     successDiv.classList.add('d-none');
 }

@@ -88,25 +88,27 @@
                                     </div>
 
                                     <button type="button" id="phone-button" class="col-3 btn btn-sm btn-accedi mx-2"
-                                        onclick="document.getElementById('phone-div').classList.remove('d-none')">
+                                        onclick="document.getElementById('phone-div').classList.remove('invisible')">
                                         <i class="bi bi-telephone m-1"></i>{{ __('ui.call-me') }}
                                     </button>
 
                                     <button type="button" class="col-3 btn btn-sm btn-accedi mx-2"
-                                        onclick="document.getElementById('mail-div').classList.remove('d-none')">
+                                        onclick="document.getElementById('mail-div').classList.remove('invisible')">
                                         <i class="bi bi-envelope m-1"></i>{{ __('ui.write-me') }}
                                     </button>
 
 
                                 </div>
                                 <div class="row">
+                                    <div class="col-4">
 
-                                    <button class="d-none btn btn-accedi btn-sm m-2 w-25 float-end" id="phone-div"
-                                        onclick="document.getElementById('phone-div').classList.add('d-none')">
+                                    </div>
+                                    <button class="invisible btn btn-accedi btn-sm m-2 w-25 col-3 " id="phone-div"
+                                        onclick="document.getElementById('phone-div').classList.add('invisible')">
                                         {{ $adv->user->phone }}
                                     </button>
-                                    <button class="d-none btn btn-accedi btn-sm m-2 w-25" id="mail-div"
-                                        onclick="document.getElementById('mail-div').classList.add('d-none')">
+                                    <button class="invisible btn btn-accedi btn-sm m-2 w-25 col-3" id="mail-div"
+                                        onclick="document.getElementById('mail-div').classList.add('invisible')">
                                         {{ $adv->user->email }}
                                     </button>
                                 </div>
@@ -122,5 +124,6 @@
         </div>
     </section>
 
+    <script></script>
 
 </x-main>

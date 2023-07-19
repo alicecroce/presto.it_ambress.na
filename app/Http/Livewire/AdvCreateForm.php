@@ -22,21 +22,29 @@ class AdvCreateForm extends Component
     public $title, $category_id, $price, $abstract, $description, $validated, $temporary_images, $images = [], $adv, $image, $message, $slug;
 
     protected $rules = [
-        'title' => 'required',
-        'category_id' => 'required',
+        'title' => 'required|min:4',
         'price' => 'required',
-        'abstract' => 'required',
+        'abstract' => 'required|min:4|max:100',
+        'category_id' => 'required',
         'description' => 'max:500',
         'images.*' => 'image|max:1024', // il .* è la validazione di liveWire
         'temporary_images.*' => 'image|max:1024',
     ];
 
     protected $messages = [
-        'temporary_images.required' => 'L\'immagine è richiesta',
-        'temporary_images.*.image' => 'I file devono essere formato immagine',
-        'temporary_images.*.max' => 'L\'immagine dev\'essere max 1 mb',
-        'images.image' => 'I file devono essere formato immagine',
-        'images.max' => 'L\'immagine dev\'essere max 1 mb',
+        'title.required' => 'ui.titleRequired',
+        'title.min' => 'ui.titleMin',
+        'price.required' => 'ui.priceRequired',
+        'category.required' => 'ui.categoryRequired',
+        'abstract.required' => 'ui.abstractRequired',
+        'abstract.min' => 'ui.abstractMin',
+        'abstract.max' => 'ui.abstractMax',
+        'description.max' => 'ui.desriptionMax',
+        'temporary_images.required' => 'ui.tempImageRequired',
+        'temporary_images.*.image' => 'ui.tempImageFormat',
+        'temporary_images.*.max' => 'ui.tempImageMax',
+        'images.image' => 'ui.imageImage',
+        'images.max' => 'ui.imageMax',
     ];
 
     public function updatedTemporaryImages()

@@ -97,4 +97,20 @@ return [
     'backHome' => 'Torna alla Home',
     //->mrPotato
     'notRight' => "C'è qualcosa che non quadra",
+    //MESSAGES
+    'titleRequired' => 'Inserisci un titolo',
+    'titleMin' => 'La lunghezza deve essere superiore a 4 caratteri',
+    'priceRequired' => 'Inserisci un prezzo',
+    'categoryRequired' => 'Seleziona una categoria',
+    'abstractRequired' => 'Inserisci una breve descrizione',
+    'abstractMin' => 'La descrizione deve avere minimo 4 caratteri',
+    'abstractMax' => 'La descrizione può avere massimo 100 caratteri',
+    'descriptionMax' => 'La descrizione può avere massimo 500 caratteri',
+    'tempImageRequired' => "L'immagine è richiesta",
+    'tempImageFormat' => 'I file devono essere formato immagine',
+    'tempImageMax' => "L'immagine dev'essere max 1 mb",
+    'imageImage' => 'I file devono essere formato immagine',
+    'imageMax' => "L'immagine dev'essere max 1 mb",
+    
+
 ];

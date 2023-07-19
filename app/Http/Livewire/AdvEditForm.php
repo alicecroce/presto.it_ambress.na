@@ -21,13 +21,28 @@ class AdvEditForm extends Component
     public $category_id;
 
     protected $rules = [
-        'title' => 'required|string|min:3',
+        'title' => 'required|min:4',
         'price' => 'required',
-        'abstract' => 'required|string|max:200',
-        'description' => 'required|string|max:500',
-        'images.*' => 'image|max:1024',
+        'abstract' => 'required|min:4|max:100',
+        'category_id' => 'required',
+        'description' => 'max:500',
+        'images.*' => 'image|max:1024', // il .* è la validazione di liveWire
         'temporary_images.*' => 'image|max:1024',
+    ];
 
+    protected $messages = [
+        'title.required' => 'ui.titleRequired',
+        'title.min' => 'ui.titleMin',
+        'category.required' => 'ui.categoryRequired',
+        'abstract.required' => 'ui.abstractRequired',
+        'abstract.min' => 'ui.abstractMin',
+        'abstract.max' => 'ui.abstractMax',
+        'description.max' => 'ui.desriptionMax',
+        'temporary_images.required' => 'ui.tempImageRequired',
+        'temporary_images.*.image' => 'ui.tempImageFormat',
+        'temporary_images.*.max' => 'ui.tempImageMax',
+        'images.image' => 'ui.imageImage',
+        'images.max' => 'ui.imageMax',
     ];
 
     public function mount()
