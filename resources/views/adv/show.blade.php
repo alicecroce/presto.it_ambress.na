@@ -70,7 +70,7 @@
                                 <h2><strong>€ {{ $adv->price }} </strong></h2>
                             </li>
 
-                            <li style="color: #778899"><i class="bi bi-tag"></i> {{ ucFirst($adv->category->name) }}
+                            <li style="color: #778899"><i class="bi bi-tag"></i> {{ __('ui.' . $adv->category->slug) }}
                             </li>
 
                             <li><strong>{{ __('ui.shortDesc') }}:</strong> {{ ucfirst($adv->abstract) }}</li>
@@ -82,22 +82,35 @@
 
                             <li>
                                 <div class="row">
-                                    <div class="col-4"> <i class="bi bi-person-circle" style="color: #778899"></i>
-                                        {{ ucFirst($adv->user->name) }} {{ $adv->user->surname }}</div>
+                                    <div class="col-4">
+                                        <i class="bi bi-person-circle" style="color: #778899"></i>
+                                        {{ ucFirst($adv->user->name) }} {{ $adv->user->surname }}
+                                    </div>
 
-                                    <a class="col-3 btn btn-sm btn-accedi mx-2" href="tel:{{ $adv->user->phone }}">
+                                    <button type="button" id="phone-button" class="col-3 btn btn-sm btn-accedi mx-2"
+                                        onclick="document.getElementById('phone-div').classList.remove('d-none')">
                                         <i class="bi bi-telephone m-1"></i>{{ __('ui.call-me') }}
-                                    </a>
-                                    <a class="col-3 btn btn-sm btn-accedi mx-2" href="email:{{ $adv->user->email }}">
+                                    </button>
+
+                                    <button type="button" class="col-3 btn btn-sm btn-accedi mx-2"
+                                        onclick="document.getElementById('mail-div').classList.remove('d-none')">
                                         <i class="bi bi-envelope m-1"></i>{{ __('ui.write-me') }}
-                                    </a>
+                                    </button>
+
 
                                 </div>
+                                <div class="row">
+
+                                    <button class="d-none btn btn-accedi btn-sm m-2 w-25 float-end" id="phone-div"
+                                        onclick="document.getElementById('phone-div').classList.add('d-none')">
+                                        {{ $adv->user->phone }}
+                                    </button>
+                                    <button class="d-none btn btn-accedi btn-sm m-2 w-25" id="mail-div"
+                                        onclick="document.getElementById('mail-div').classList.add('d-none')">
+                                        {{ $adv->user->email }}
+                                    </button>
+                                </div>
                             </li>
-
-
-
-
                         </ul>
                     </div>
 

@@ -27,9 +27,9 @@
             @forelse ($advs as $adv)
                 <div class="col-12 col-md-3">
                     <div class="card my-3" style="height: 36rem;">
-                        <a class="btn btn-warning no-pointer btn-sm text-violet text-capitalize position-absolute mt-3 ms-3 "
+                        <a class="btn btn-warning no-pointer btn-sm text-violet  position-absolute mt-3 ms-3 "
                             href="{{ route('categoryshow', ['category' => $adv->category_id]) }}">
-                            {{ $adv->category->name }}</a>
+                            {{ __('ui.' . $adv->category->slug)}}</a>
                         <img src="{{ !$adv->images()->get()->isEmpty()? asset($adv->images()->first()->getUrl(300, 300)): 'https://placehold.co/300/6230A3/FFFFFF/png' }}"
                             class="card-img-top" alt="...">
                         <div class="card-body position-relative">
@@ -39,7 +39,7 @@
                             </div>
                             <div class="row">
                                 <div class="col border-top">
-                                    {{ ucfirst($adv->getCategory()) }}
+                                    {{ __('ui.' . $adv->category->slug) }}
                                 </div>
                                 <div class="col">
                                     € {{ $adv->price }}

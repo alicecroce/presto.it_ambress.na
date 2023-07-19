@@ -23,7 +23,6 @@
                 href="{{ route('categoryshow', compact('category')) }}">
                 <i class="{{ $category->icons }} fs-1"></i>
                 <span>{{ __('ui.' . $category->slug) }}</span>
-                {{-- {{__('ui.'.$category->slug)}} --}}
             </a>
         @endforeach
     </div>

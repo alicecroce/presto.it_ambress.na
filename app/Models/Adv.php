@@ -35,7 +35,7 @@ class Adv extends Model
 
     public function getCategory()
     {
-        return Category::find($this->category_id)->name;
+        return Category::find($this->category_id)->slug;
     }
 
     public function user()

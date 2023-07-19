@@ -3,11 +3,9 @@ import "boxicons";
 
 let successDiv = document.getElementById("success-message");
 function hideDiv() {
-    successDiv.style.display = "none";
+    successDiv.classList.add('d-none');
 }
 setTimeout(hideDiv, 3000);
-
-
 
 
 let btn = document.getElementById('edit-btn');
