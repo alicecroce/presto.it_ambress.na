@@ -83,7 +83,7 @@
                                     @method('POST')
 
 
-                                    
+{{--                                     
                                     @if ($errors->any())
                                     <div class="alert alert-danger">
                                         <ul>
@@ -92,7 +92,7 @@
                                             @endforeach
                                         </ul>
                                     </div>
-                                @endif
+                                @endif --}}
                                     <div class="form-floating mb-3">
                                         <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email"
                                             placeholder="name@example.com">
