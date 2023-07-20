@@ -13,6 +13,7 @@ return [
     'register' => 'Enregistré',
     'editProfile' => 'Modifier le profil',
     'editInfo' => 'Modifier les information personnelles',
+    'deleteProfile' => 'Supprimez le profil',
     //ADVS
     'allAdvs' => 'Toutes les announces',
     'addAdv' => 'Entrez une announce',

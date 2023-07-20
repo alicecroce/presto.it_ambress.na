@@ -89,7 +89,7 @@
                     id="delete-{{ Auth::user()->id }}">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-danger float-end m-3">DA TRADURRE BOTTONE ELIMINA USER</button>
+                    <button class="btn btn-danger float-end m-3">{{__('ui.deleteProfile')}}</button>
 
                 </form>
             </div>

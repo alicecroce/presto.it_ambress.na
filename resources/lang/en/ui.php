@@ -13,6 +13,7 @@ return [
     'register' => 'Sign Up',
     'editProfile' => 'Edit profile',
     'editInfo' => 'Edit personal informations',
+    'deleteProfile' => 'Delete Profile',
     //ADVS
     'allAdvs' => 'All announcement',
     'addAdv' => 'Add post',

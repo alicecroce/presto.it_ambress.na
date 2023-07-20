@@ -13,6 +13,7 @@ return [
     'register' => 'Regìstrate',
     'editProfile' => 'Modifica perfil',
     'editInfo' => 'Modifica informaciónes personales',
+    'deleteProfile' => '>Eliminar el perfil',
     //ADVS
     'allAdvs' => 'Todos los anuncios',
     'addAdv' => 'Publicar un anuncio',
