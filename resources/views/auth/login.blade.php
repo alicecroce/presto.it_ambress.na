@@ -82,20 +82,25 @@
                                     @csrf
                                     @method('POST')
 
-                                    @if ($errors->any())
-                                        <div class="alert alert-danger">
-                                            <ul>
-                                                @foreach ($errors->all() as $error)
-                                                    <li>{{ $error }}</li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    @endif
 
+                                    
+                                    @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                     <div class="form-floating mb-3">
-                                        <input type="email" name="email" class="form-control" id="email"
+                                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email"
                                             placeholder="name@example.com">
                                         <label for="email">{{ __('ui.emailAdd') }}</label>
+                                        @error('email')
+                                        <p class="text-danger mt-1">{{ __($message) }}</p>
+                                    
+                                    @enderror
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="password" name="password" class="form-control" id="password">

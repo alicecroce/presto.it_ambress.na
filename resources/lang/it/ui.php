@@ -98,6 +98,7 @@ return [
     //->mrPotato
     'notRight' => "C'è qualcosa che non quadra",
     //MESSAGES
+    //->advs
     'titleRequired' => 'Inserisci un titolo',
     'titleMin' => 'La lunghezza deve essere superiore a 4 caratteri',
     'priceRequired' => 'Inserisci un prezzo',
@@ -111,6 +112,15 @@ return [
     'tempImageMax' => "L'immagine dev'essere max 1 mb",
     'imageImage' => 'I file devono essere formato immagine',
     'imageMax' => "L'immagine dev'essere max 1 mb",
-    
+    //->register/login
+    'nameRequired' => 'Il campo nome è obbligatorio',
+    'nameMax' => 'Il nome non può essere più lungo di 255 caratteri',
+    'mailRequired' => 'Il campo mail è obbligatorio',
+    'mailEmail' => 'Inserisci una mail valida',
+    'mailMax' => 'La mail non può essere più lunga di 255 caratteri',
+    'mailUnique' => "Questa mail è già registrata, per favore fornisci un'altra mail",
+    'surnameRequired' => 'Il cognome è obbligatorio',
+    'surnameMax' => 'Il cognome può avere massimo 255 caratteri',
+    'pwdRequired' => 'La password è obbligatoria',
 
 ];

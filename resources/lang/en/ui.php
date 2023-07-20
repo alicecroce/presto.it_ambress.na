@@ -98,6 +98,7 @@ return [
     //->mrPotato
     'notRight' => "Something isn't quite right",
     //MESSAGES
+    //->advs
     'titleRequired' => 'Please enter a title',
     'titleMin' => 'The title length must be over 4 characters',
     'priceRequired' => 'Please enter a price',
@@ -111,4 +112,14 @@ return [
     'tempImageMax' => "Image can be max 1mb",
     'imageImage' => 'File must be image type',
     'imageMax' => "Image can be max 1mb",
+    //->register/login
+    'nameRequired' => 'Name field is mandatory',
+    'nameMax' => 'Name cannot be longer than 255 characters',
+    'mailRequired' => 'Mail is mandatory',
+    'mailEmail' => 'Please enter a valid email',
+    'mailMax' => 'Mail cannot be longer than 255 characters',
+    'mailUnique' => "This email is already in use, please enter a new email",
+    'surnameRequired' => 'Surname field is mandatory',
+    'surnameMax' => 'Surname cannot be longer than 255 characters',
+    'pwdRequired' => 'Password is mandatory',
 ];

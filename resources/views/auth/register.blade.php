@@ -80,32 +80,33 @@
                                     @csrf
                                     @method('POST')
 
-                                    @if ($errors->any())
-                                        <div class="alert alert-danger">
-                                            <ul>
-                                                @foreach ($errors->all() as $error)
-                                                    <li>{{ $error }}</li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    @endif
                                     <div class="d-flex d-inline">
                                         <div class="form-floating flex-grow-1 mb-3 me-2">
-                                            <input type="text" name="name" class="form-control" id="name"
+                                            <input type="text" name="name"
+                                                class="form-control  @error('name') is-invalid @enderror" id="name"
                                                 placeholder="Gino">
                                             <label for="name">{{ __('ui.name') }}</label>
+                                            @error('name')
+                                                <p class="text-danger mt-1">{{ __($message) }}</p>
+                                            @enderror
                                         </div>
                                         <div class="form-floating flex-grow-1 mb-3 ">
-                                            <input type="text" name="surname" class="form-control" id="surname"
+                                            <input type="text" name="surname" class="form-control  @error('surname') is-invalid @enderror" id="surname"
                                                 placeholder="Gino Gini">
                                             <label for="surname">{{ __('ui.surname') }}</label>
+                                            @error('surname')
+                                                <p class="text-danger mt-1">{{ __($message) }}</p>
+                                            @enderror
                                         </div>
                                     </div>
 
                                     <div class="form-floating mb-3">
-                                        <input type="email" name="email" class="form-control" id="email"
+                                        <input type="email" name="email" class="form-control  @error('email') is-invalid @enderror" id="email"
                                             placeholder="name@example.com">
                                         <label for="email">{{ __('ui.emailAdd') }}</label>
+                                        @error('email')
+                                                <p class="text-danger mt-1">{{ __($message) }}</p>
+                                            @enderror
                                     </div>
                                     <div class="d-flex d-inline">
                                         <div class="form-floating flex-grow-1 mb-3 me-2">
@@ -121,8 +122,11 @@
                                     </div>
 
                                     <div class="form-floating mb-3">
-                                        <input type="password" name="password" class="form-control" id="password">
+                                        <input type="password" name="password" class="form-control  @error('password') is-invalid @enderror" id="password">
                                         <label for="password">Password</label>
+                                        @error('password')
+                                                <p class="text-danger mt-1">{{ __($message) }}</p>
+                                            @enderror
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="password" name="password_confirmation" class="form-control"

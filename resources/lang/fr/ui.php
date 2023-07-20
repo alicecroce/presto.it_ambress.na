@@ -99,6 +99,7 @@ return [
     //->mrPotato
     'notRight' => "Quelque chose ne correspond pas.",
     //MESSAGES
+    //->advs
     'titleRequired' => 'Insérez un titre.',
     'titleMin' => 'La longueur doit être supérieure à 4 caractères.',
     'priceRequired' => 'Insérez un prix.',
@@ -112,4 +113,14 @@ return [
     'tempImageMax' => "L'image doit avoir une taille maximale de 1 Mo (mégaoctet).",
     'imageImage' => 'Les fichiers doivent être au format image',
     'imageMax' => "L'image doit avoir une taille maximale de 1 Mo (mégaoctet).",
+    //->register/login
+    'nameRequired' => 'Le champ nom est obligatoire',
+    'nameMax' => 'Le nom ne peut pas dépasser 255 caractères',
+    'mailRequired' => 'Mail is mandatory',
+    'mailEmail' => "L'adresse e-mail est obligatoire",
+    'mailMax' => "L'adresse e-mail ne peut pas dépasser 255 caractères",
+    'mailUnique' => "Cet e-mail est déjà utilisé, veuillez entrer une nouvelle adresse e-mail",
+    'surnameRequired' => 'Le champ "Nom de famille" est obligatoire',
+    'surnameMax' => 'Le nom de famille ne peut pas dépasser 255 caractères',
+    'pwdRequired' => 'Le mot de passe est obligatoire',
 ];
