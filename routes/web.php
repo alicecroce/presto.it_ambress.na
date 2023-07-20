@@ -76,14 +76,21 @@ Route::get('/auth/redirect', function () {
 Route::get('/login/github/callback', function () {
     $git_user = Socialite::driver('github')->stateless()->user();
     if ($git_user) {
-        $user = User::create([
-            'email' => $git_user->email,
-            'name' => explode(" ", $git_user->name)[0],
-            'surname' => explode(" ", $git_user->name)[1],
-            'password' => bcrypt(''), //cripta la pass
-        ]);
-        Auth::login($user);
-        return redirect('/');
+
+        $user = User::where('email', $git_user->email)->first();
+        if (!empty($user)) {
+            Auth::login($user);
+            return redirect('/');
+        } else {
+            $user = User::create([
+                'email' => $git_user->email,
+                'name' => explode(" ", $git_user->name)[0],
+                'surname' => explode(" ", $git_user->name)[1],
+                'password' => bcrypt(''), //cripta la pass
+            ]);
+            Auth::login($user);
+            return redirect('/');
+        }
     } else {
         return redirect('/404_mancave');
     };
@@ -91,7 +98,7 @@ Route::get('/login/github/callback', function () {
 });
 
 //-GOOGLE
-Route::controller(LoginWithGooglecontroller::class)->group(function(){
+Route::controller(LoginWithGooglecontroller::class)->group(function () {
     Route::get('authorized/google', 'redirectToGoogle')->name('auth.google');
     Route::get('authorized/google/callback', 'handleGoogleCallback');
 });
