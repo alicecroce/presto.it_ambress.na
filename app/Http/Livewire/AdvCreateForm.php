@@ -84,9 +84,6 @@ class AdvCreateForm extends Component
 
         ]);
 
-        dd($slug);
-        exit;
-
 
         if (count($this->images)) {
 
