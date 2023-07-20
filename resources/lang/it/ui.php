@@ -66,6 +66,8 @@ return [
     'pwdConfirm' => 'Conferma password',
     'alreadySign' => 'Sei già registratə',
     'noAccount' => 'Non hai un account',
+    'gitHub' => 'Accedi con GitHub',
+    'google' => 'Accedi con Google',
     //CATEGORY
     'console_e_videogiochi' => 'Console e Videogiochi',
     'libri' => 'Libri',

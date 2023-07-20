@@ -143,11 +143,9 @@
                                         </div> --}}
                                         <div class="d-flex flex-column align-items-center">
                                             <a href="{{ route('socialite.login') }}"
-                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-github col-12">Accedi
-                                                con GitHub <i class="bi bi-github ms-3"></i></a>
+                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-github col-12">{{ __('ui.gitHub') }} <i class="bi bi-github ms-3"></i></a>
                                             <a href="{{ url('authorized/google') }}"
-                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-google col-12">Accedi
-                                                con Google <img
+                                                class="btn btn-login text-uppercase fw-bold mb-2 px-1 btn-google col-12">{{ __('ui.google') }} <img
                                                     src="{{ asset(Storage::url('public/img/g-logo.png')) }}"
                                                     class="align-self-center ms-2" style="height: 15px"
                                                     alt="g-logo"></i></a>
