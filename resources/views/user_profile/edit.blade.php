@@ -45,6 +45,15 @@
                         </div>
                     </div>
                 </div> --}}
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
                 <form action="{{ route('user-profile-information.update') }}" method="POST" class="was-validated"
                     enctype="multipart/form-data">
                     @csrf
@@ -53,19 +62,34 @@
                         <legend class="m-2 text-center">{{ __('ui.editInfo') }}</legend>
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="name">{{ __('ui.name') }}</label>
-                            <input class="form-control w-75" type="text" name="name"
-                                value="{{ Auth::user()->name }}" id="name" />
+                            <input class="form-control w-75 @error('name') is-invalid @enderror" type="text"
+                                name="name" value="{{ Auth::user()->name }}" id="name" />
                         </div>
+                        @error('name')
+                        <p class="text-danger mt-1 d-flex justify-content-center">{{ __($message) }}</p>
+                    @enderror
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="surname">{{ __('ui.surname') }}</label>
-                            <input class="form-control w-75" type="text" name="surname"
-                                value="{{ Auth::user()->surname }}" id="surname" />
+                            <input class="form-control w-75 @error('surname') is-invalid @enderror" type="text"
+                                name="surname" value="{{ Auth::user()->surname }}" id="surname" />
+                            @error('surname')
+                                <p class="text-danger mt-1">{{ __($message) }}</p>
+                            @enderror
                         </div>
+                        @error('surname')
+                        <p class="text-danger mt-1 d-flex justify-content-center">{{ __($message) }}</p>
+                    @enderror
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="email">{{ __('ui.emailAdd') }}</label>
-                            <input class="form-control w-75" type="mail" name="email"
-                                value="{{ Auth::user()->email }}" id="email" />
+                            <input class="form-control w-75 @error('email') is-invalid @enderror" type="mail"
+                                name="email" value="{{ Auth::user()->email }}" id="email" />
+                            @error('email')
+                                <p class="text-danger mt-1">{{ __($message) }}</p>
+                            @enderror
                         </div>
+                        @error('email')
+                        <p class="text-danger mt-1 d-flex justify-content-center">{{ __($message) }}</p>
+                    @enderror
                         <div class="m-3 d-flex">
                             <label class="form-label mx-auto" for="city">{{ __('ui.city') }}</label>
                             <input class="form-control w-75" type="text" name="city"
@@ -89,7 +113,7 @@
                     id="delete-{{ Auth::user()->id }}">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-danger float-end m-3">{{__('ui.deleteProfile')}}</button>
+                    <button class="btn btn-danger float-end m-3">{{ __('ui.deleteProfile') }}</button>
 
                 </form>
             </div>

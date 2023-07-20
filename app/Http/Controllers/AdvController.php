@@ -16,7 +16,7 @@ class AdvController extends Controller
      */
     public function index()
     {
-        $advs = Adv::orderBy('created_at', 'desc')->where('is_accepted', true)->paginate(8);
+        $advs = Adv::orderBy('created_at', 'desc')->where('is_accepted', true)->paginate(12);
         $categories = Category::all();
 
         return view('adv.index', compact('advs', 'categories'));

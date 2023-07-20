@@ -19,7 +19,18 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
     public function update(User $user, array $input): void
     {
 
-        // dd($input);
+
+        $messages = [
+            'name.required' => 'ui.nameRequired',
+            'name.max' => 'ui.nameMax',
+            'email.required' => 'ui.mailRequired',
+            'email.email' => 'ui.mailEmail',
+            'email.max' => 'ui.mailMax',
+            'email.unique' => 'ui.mailUnique',
+            'surname.required' => 'ui.surnameRequired',
+            'surname.max' => 'ui.surnameMax',
+            'password.required' => 'ui.pwdRequired',
+        ];
 
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
@@ -35,7 +46,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'city' => ['string', 'max:255'],
             'phone' => ['string', 'max:255'],
             'user_img' => ['mimes:jpg,jpeg,png,gif', 'max:4096'],
-        ])->validateWithBag('updateProfileInformation');
+        ], $messages)->validate();
 
         if (
             $input['email'] !== $user->email &&
@@ -46,7 +57,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             $path = $user->user_img;
 
             if (array_key_exists('user_img', $input)) {
-              
+
                 if ($user->user_img) {
                     File::deleteDirectory(storage_path("app/public/user/{$user->id}"));
                     File::deleteDirectory(storage_path('app/livewire-tmp'));
@@ -75,7 +86,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
 
 
             if (array_key_exists('user_img', $input)) {
-                
+
                 if ($user->user_img) {
                     File::deleteDirectory(storage_path("app/public/user/{$user->id}"));
                     File::deleteDirectory(storage_path('app/livewire-tmp'));

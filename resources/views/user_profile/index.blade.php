@@ -92,7 +92,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <a href="{{ route('adv.show', ['adv' => $adv['id']]) }}"
+                                            <a href="{{ route('adv.show', ['adv' => $adv['slug']]) }}"
                                                 class="btn btn-show float-end mt-2">{{ __('ui.btnInfo') }}
                                             </a>
                                         </div>

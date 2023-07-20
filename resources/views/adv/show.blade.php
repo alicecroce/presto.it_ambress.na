@@ -103,12 +103,12 @@
                                     <div class="col-4">
 
                                     </div>
-                                    <button class="invisible btn btn-accedi btn-sm m-2 w-25 col-3 " id="phone-div"
+                                    <button class="invisible btn btn-accedi btn-sm m-2 col-3 " id="phone-div"
                                         onclick="document.getElementById('phone-div').classList.add('invisible')">
                                         {{ $adv->user->phone }}
                                     </button>
-                                    <button class="invisible btn btn-accedi btn-sm m-2 w-25 col-3" id="mail-div"
-                                        onclick="document.getElementById('mail-div').classList.add('invisible')">
+                                    <button class="invisible btn btn-accedi btn-sm m-2 col-3" id="mail-div"
+                                        onclick="document.getElementById('mail-div').classList.add('invisible')" style="width: fit-content">
                                         {{ $adv->user->email }}
                                     </button>
                                 </div>

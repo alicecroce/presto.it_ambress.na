@@ -13,7 +13,7 @@
 
 
     <div class="container my-5">
-       
+
         <div class="row">
             <h1 id="categoryName">
                 @if (Route::currentRouteName() == 'categoryshow')
@@ -26,28 +26,31 @@
         <div class="row">
             @forelse ($advs as $adv)
                 <div class="col-12 col-md-3">
-                    <div class="card my-3" style="height: 36rem;">
+                    <div class="card my-3">
                         <a class="btn btn-warning no-pointer btn-sm text-violet  position-absolute mt-3 ms-3 "
                             href="{{ route('categoryshow', ['category' => $adv->category_id]) }}">
-                            {{ __('ui.' . $adv->category->slug)}}</a>
+                            {{ __('ui.' . $adv->category->slug) }}</a>
                         <img src="{{ !$adv->images()->get()->isEmpty()? asset($adv->images()->first()->getUrl(300, 300)): 'https://placehold.co/300/6230A3/FFFFFF/png' }}"
                             class="card-img-top" alt="...">
-                        <div class="card-body position-relative">
-                            <h5 class="card-title">{{ ucFirst($adv->title) }}</h5>
-                            <div class="h-50">
-                                <p class="card-text">{{ ucFirst($adv->abstract) }}</p>
-                            </div>
-                            <div class="row">
-                                <div class="col border-top">
+                        <div class="card-body position-relative" style="height: 14rem">
+                            <h6 class="card-title"><strong>{{ ucFirst($adv->title) }}</strong></h6>
+                            <hr>
+                            <div class="row m-2">
+                                <div class="text-center">
                                     {{ __('ui.' . $adv->category->slug) }}
                                 </div>
-                                <div class="col">
-                                    € {{ $adv->price }}
-                                </div>
                             </div>
-                            <a href="{{ route('adv.show', ['adv' => $adv['slug']]) }}"
-                                class="btn btn-show position-absolute bottom-0 end-0 m-3">{{ __('ui.btnInfo') }}
-                            </a>
+                            <div class="position-absolute bottom-0 start-0 m-3">
+                                € {{ $adv->price }}
+                            </div>
+                            <div class="m-2 ">
+                                <a href="{{ route('adv.show', ['adv' => $adv['slug']]) }}"
+                                    class="btn btn-show m-3 position-absolute bottom-0 end-0">{{ __('ui.btnInfo') }}
+                                </a>
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -61,5 +64,8 @@
         @endforelse
         {{ $advs->links() }}
     </div>
+
+    
+    <x-footer/>
 
 </x-main>
